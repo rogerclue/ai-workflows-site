@@ -13,11 +13,14 @@ Auto-generated index of all video reports. Use this to find the right report whe
 
 ### Content Creation & Video
 - **[Claude Video Editing](reports/claude-video-editing-hyperframes.md)** — Natural language → trimmed/subtitled/motion-graphics video via Hyperframes + Remotion. *Beginner / manual-assisted*
+- **[Claude + Hyperframes V2](reports/hyperframes-v2-video-editing-bit-framework.md)** — 3-level pipeline: website-to-video → storyboard-first → raw footage + BIT framework for iterative agent taste-training. *Intermediate / manual-assisted*
 - **[Claude + CapCut Animations (Remotion)](reports/claude-capcut-animations-remotion.md)** — LUT generation, animated pill overlays, motion backgrounds, map animations, SRT counting numbers via Remotion + Claude Code. *Intermediate / manual-assisted*
 - **[Claude + Higgsfield Content Creation](reports/claude-higgsfield-content-creation-storyboard.md)** — 3-level UGC ad pipeline: Higgsfield MCP setup → character reference + video prompt builder → storyboard method → Claude Routines autopilot. *Intermediate / automated-pipeline*
 - **[Claude Cinematic Ads Agent (fal.ai)](reports/claude-cinematic-ads-agent-fal.md)** — 4-step agent skill: product drop → 3 storyboard directions → GPT-image-2 storyboard → C-dance 2.0 final video. *Intermediate / automated-pipeline*
 - **[Hermes Agent — 7 Use Cases](reports/hermes-agent-7-use-cases.md)** — Content creation (text + images + TTS), deep research, unified messaging inbox. *Intermediate / agent-loop*
 - **[Claude Routines](reports/claude-routines-scheduled-agents.md)** — Weekly self-interview for content ideas; weekly content research via NotebookLM + YouTube outliers tracker. *Beginner / automated-pipeline*
+- **[Claude Cowork — Social Media Automation](reports/claude-cowork-social-media-blotato.md)** — Interview-to-skill creation, screenshot → multi-platform posts, Blotato MCP for infographics + scheduling, "update the skill" continuous improvement. *Beginner / manual-assisted*
+- **[Content Team with Claude Code — 11 Skills](reports/claude-code-content-team-11-skills.md)** — Orchestrator + 11 sub-skills (lookalike content, post enricher, platform formatters) with monthly analytics feedback loop that auto-updates all skills. *Advanced / agent-loop*
 
 ### Productivity & Scheduling
 - **[Claude Routines](reports/claude-routines-scheduled-agents.md)** — 6 live founder routines: daily brief, meeting digest, product brief, revenue pulse. *Beginner / automated-pipeline*
@@ -30,6 +33,7 @@ Auto-generated index of all video reports. Use this to find the right report whe
 - **[Stop Using Claude. Start Using Codex?](reports/stop-using-claude-start-codex-isenberg.md)** — Codex skills, automations, browser use, and Remotion integration for non-technical founders. *Beginner / agent-loop*
 - **[Vibe Coded $400K/mo App](reports/vibe-coded-400k-app-claude-code.md)** — Full iOS app pipeline: Claude chat generates prompt → Claude Code builds React Native + Expo → Dribbble design ref → Expo Go testing. *Beginner / manual-assisted*
 - **[Utility Site Passive Income](reports/utility-site-passive-income-hostinger.md)** — Build Google Ads-monetized utility site in <1 hour using Hostinger Horizons; keyword gap research method. *Beginner / manual-assisted*
+- **[design.md — AI Consistent UI Generation](reports/design-md-ai-consistent-ui-generation.md)** — Serialize any design system into a markdown file; attach to Claude Code/Codex/Lovable for drift-free multi-medium UI generation. *Intermediate / manual-assisted*
 
 ### Developer Skills & Tooling
 - **[15 Claude Code Tricks](reports/claude-code-15-tricks.md)** — `--chrome` flag, `/branch` forking, remote control/teleport cross-device, Git worktrees, `/grill-me` disambiguation, CLAUDE.md discipline, token analysis. *Intermediate / manual-assisted*
@@ -63,6 +67,7 @@ Auto-generated index of all video reports. Use this to find the right report whe
 | [AI Audit for Boomer Businesses](reports/ai-audit-boomer-business-corey-ganim.md) | Voice agent intake → Claude report → upsell |
 | [Vibe Coded $400K/mo App](reports/vibe-coded-400k-app-claude-code.md) | Claude chat prompt → React Native iOS app → Expo Go testing |
 | [Stop Using Claude. Start Using Codex?](reports/stop-using-claude-start-codex-isenberg.md) | Codex skills, automations, browser use, Remotion |
+| [Claude Cowork — Social Media Automation](reports/claude-cowork-social-media-blotato.md) | Interview → write-content skill → screenshot → Blotato → schedule |
 
 ### Intermediate
 | Report | Core Workflow |
@@ -74,6 +79,8 @@ Auto-generated index of all video reports. Use this to find the right report whe
 | [Claude + CapCut Animations (Remotion)](reports/claude-capcut-animations-remotion.md) | LUT → animated overlays → motion backgrounds via Remotion |
 | [Claude + Higgsfield Content Creation](reports/claude-higgsfield-content-creation-storyboard.md) | Character ref sheet → storyboard method → autopilot ad engine |
 | [Claude Cinematic Ads Agent (fal.ai)](reports/claude-cinematic-ads-agent-fal.md) | Product image → storyboard → C-dance video via fal.ai |
+| [Claude + Hyperframes V2](reports/hyperframes-v2-video-editing-bit-framework.md) | Raw footage → storyboard → animated video; BIT framework for skill calibration |
+| [design.md — AI Consistent UI Generation](reports/design-md-ai-consistent-ui-generation.md) | design.md file → drift-free multi-medium UI across all agents/tools |
 
 ### Advanced
 | Report | Core Workflow |
@@ -82,6 +89,7 @@ Auto-generated index of all video reports. Use this to find the right report whe
 | [AI Agents Run My Business](reports/greg-isenberg-ai-agents-run-business.md) | Multi-agent org with autonomous ad management |
 | [Claude Code for Quant Trading](reports/claude-code-trading-quant-systems.md) | Regime detection + Monte Carlo + portfolio dashboard + trading bot |
 | [Self-Evolving Agents — Memory Architecture](reports/self-evolving-agents-memory-ai-jason.md) | Hot/warm/cold memory blueprint + async skill extraction + hooks |
+| [Content Team with Claude Code — 11 Skills](reports/claude-code-content-team-11-skills.md) | Orchestrator + 11 skills + monthly analytics feedback loop |
 
 ---
 
@@ -100,15 +108,19 @@ Auto-generated index of all video reports. Use this to find the right report whe
 - [Hermes Agent v0.12](reports/hermes-agent-v012-self-maintaining.md)
 - [Stop Using Claude. Start Using Codex?](reports/stop-using-claude-start-codex-isenberg.md)
 - [Self-Evolving Agents — Memory Architecture](reports/self-evolving-agents-memory-ai-jason.md)
+- [Content Team with Claude Code — 11 Skills](reports/claude-code-content-team-11-skills.md)
 
 ### manual-assisted (human in loop)
 - [Claude Video Editing](reports/claude-video-editing-hyperframes.md)
+- [Claude + Hyperframes V2](reports/hyperframes-v2-video-editing-bit-framework.md)
 - [Codex](reports/codex-best-software-ever.md)
 - [Open Design](reports/open-design-vibe-coding-ui.md)
 - [AI Audit for Boomer Businesses](reports/ai-audit-boomer-business-corey-ganim.md)
 - [15 Claude Code Tricks](reports/claude-code-15-tricks.md)
 - [Claude + CapCut Animations (Remotion)](reports/claude-capcut-animations-remotion.md)
 - [Vibe Coded $400K/mo App](reports/vibe-coded-400k-app-claude-code.md)
+- [Claude Cowork — Social Media Automation](reports/claude-cowork-social-media-blotato.md)
+- [design.md — AI Consistent UI Generation](reports/design-md-ai-consistent-ui-generation.md)
 
 ---
 
@@ -130,11 +142,41 @@ Auto-generated index of all video reports. Use this to find the right report whe
 
 **instagram-ads**: higgsfield-mcp-instagram-ad-campaign
 
-**video-editing**: claude-video-editing-hyperframes
+**video-editing**: claude-video-editing-hyperframes, hyperframes-v2-video-editing-bit-framework
+
+**hyperframes**: hyperframes-v2-video-editing-bit-framework
+
+**bit-framework**: hyperframes-v2-video-editing-bit-framework
+
+**storyboard**: claude-higgsfield-content-creation-storyboard, claude-cinematic-ads-agent-fal, hyperframes-v2-video-editing-bit-framework
+
+**social-media**: claude-cowork-social-media-blotato, claude-code-content-team-11-skills
+
+**content-creation**: hermes-agent-7-use-cases, claude-routines-scheduled-agents, claude-higgsfield-mcp-marketing, claude-cowork-social-media-blotato, claude-code-content-team-11-skills
+
+**claude-cowork**: claude-cowork-social-media-blotato
+
+**blotato**: claude-cowork-social-media-blotato
+
+**mcp**: higgsfield-mcp-instagram-ad-campaign, claude-higgsfield-mcp-marketing, claude-cowork-social-media-blotato
+
+**skill-creation**: claude-cowork-social-media-blotato, claude-code-content-team-11-skills
+
+**multi-agent**: claude-code-content-team-11-skills
+
+**orchestrator**: claude-code-content-team-11-skills
+
+**feedback-loop**: claude-code-content-team-11-skills
+
+**design-system**: design-md-ai-consistent-ui-generation
+
+**design-md**: design-md-ai-consistent-ui-generation
+
+**vibe-coding**: open-design-vibe-coding-ui, codex-best-software-ever, vibe-coded-400k-app-claude-code, stop-using-claude-start-codex-isenberg, design-md-ai-consistent-ui-generation
 
 **scheduling**: claude-routines-scheduled-agents
 
-**ui-design**: open-design-vibe-coding-ui
+**ui-design**: open-design-vibe-coding-ui, design-md-ai-consistent-ui-generation
 
 **multi-tasking**: codex-best-software-ever
 
@@ -226,6 +268,10 @@ Auto-generated index of all video reports. Use this to find the right report whe
 
 | Date | Report | Channel | Complexity |
 |------|--------|---------|------------|
+| 2026-05-06 | [Content Team with Claude Code — 11 Skills](reports/claude-code-content-team-11-skills.md) | Marketing Against the Grain | Advanced |
+| 2026-05-06 | [Claude Cowork — Social Media Automation](reports/claude-cowork-social-media-blotato.md) | Marketing Against the Grain | Beginner |
+| 2026-05-06 | [design.md — AI Consistent UI Generation](reports/design-md-ai-consistent-ui-generation.md) | Greg Isenberg (Startup Ideas Podcast) | Intermediate |
+| 2026-05-06 | [Claude + Hyperframes V2](reports/hyperframes-v2-video-editing-bit-framework.md) | Jay E \| RoboNuggets | Intermediate |
 | 2026-05-06 | [Self-Evolving Agents — Memory Architecture](reports/self-evolving-agents-memory-ai-jason.md) | AI Jason | Advanced |
 | 2026-05-06 | [Claude Cinematic Ads Agent (fal.ai)](reports/claude-cinematic-ads-agent-fal.md) | Jay E \| RoboNuggets | Intermediate |
 | 2026-05-06 | [Claude + Higgsfield Content Creation](reports/claude-higgsfield-content-creation-storyboard.md) | Samin Yasar | Intermediate |

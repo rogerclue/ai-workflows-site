@@ -35,7 +35,11 @@ Auto-generated from 19 video reports. Each entry includes cost/tier, role, and w
 
 | Tool | Description | Cost/Tier | Reports |
 |------|-------------|-----------|---------|
-| **Hyperframes** | Paid SaaS that exposes natural language → video editing (trim, motion graphics, subtitles) powered by Remotion | Paid (SaaS, price undisclosed) | claude-video-editing-hyperframes |
+| **Hyperframes** | Open-source video rendering from HTML/code; V2 adds subtitles, floating card animations, 3D assets, color keying, and Hyperframes Studio (localhost timeline UI) | Free / open-source | claude-video-editing-hyperframes, hyperframes-v2-video-editing-bit-framework |
+| **Hyperframes Studio** | Localhost timeline UI for previewing and manually fine-tuning Hyperframes renders before final export | Included with Hyperframes | hyperframes-v2-video-editing-bit-framework |
+| **fast-whisper** | Audio transcription with word-level timestamps; used under the hood by Hyperframes V2 raw footage pipeline | Free / open-source | hyperframes-v2-video-editing-bit-framework |
+| **Nano Banana 2** | Generates logo/character images with green screen backgrounds for 3D logo workflow; available via Higgsfield | Via Higgsfield | hyperframes-v2-video-editing-bit-framework |
+| **Kling 3.0** | Animates green-screen images into rotating 3D objects; used for 3D logo generation in Hyperframes pipeline | Via Higgsfield | hyperframes-v2-video-editing-bit-framework |
 | **Remotion** | Programmatic video rendering framework; React-based, version-controlled; used by Hyperframes, Claude Code built-in skill, and Codex for motion graphics generation | Open-source | claude-video-editing-hyperframes, claude-capcut-animations-remotion, stop-using-claude-start-codex-isenberg |
 | **Higgsfield MCP** | Claude Code MCP connector to Higgsfield AI's image + video generation platform; connect via Claude desktop Settings → Connectors → Add Custom Connector (remote URL: `https://mcp.higgsfield.ai/mcp`) | Higgsfield subscription | claude-higgsfield-mcp-marketing, higgsfield-mcp-instagram-ad-campaign, claude-higgsfield-content-creation-storyboard |
 | **C-dance 2.0** | Cinematic video generation model by ByteDance; best current model for motion/cinematic scenes; natively understands storyboard format; face detection policy requires blurred-face workaround | Included in Higgsfield / fal.ai | claude-higgsfield-mcp-marketing, claude-higgsfield-content-creation-storyboard, claude-cinematic-ads-agent-fal |
@@ -49,6 +53,10 @@ Auto-generated from 19 video reports. Each entry includes cost/tier, role, and w
 | Tool | Description | Cost/Tier | Reports |
 |------|-------------|-----------|---------|
 | **Open Design** | Free open-source Claw Design clone (22k+ GitHub stars); 71 built-in design systems, bring-your-own LLM, HTML output | Free/open-source | open-design-vibe-coding-ui |
+| **design.md** | Google open-source format for serializing a complete design system (colors, typography, spacing, animation) into a markdown file; attach to any agent for drift-free multi-medium UI | Free/open-source | design-md-ai-consistent-ui-generation |
+| **Variant.com** | Community for discovering and remixing design.md files; one-click remix to find aesthetics | Free | design-md-ai-consistent-ui-generation |
+| **Google Stitch** | Google's AI UI generation tool; works with design.md format | Google (beta) | design-md-ai-consistent-ui-generation |
+| **21st.dev** | HTML component library; source of animation components (globes, shaders) for Hyperframes injection | Free | hyperframes-v2-video-editing-bit-framework |
 | **TouchDesigner MCP** | Generative visuals / interactive media tool; bundled with Hermes v0.12 | TouchDesigner license | hermes-agent-v012-self-maintaining |
 
 ---
@@ -101,6 +109,25 @@ Auto-generated from 19 video reports. Each entry includes cost/tier, role, and w
 | **Gamma** | AI-powered document/slideshow creation; auto-populates branded audit report templates from `.docx` uploads | Paid (SaaS) | ai-audit-boomer-business-corey-ganim |
 | **Futurepedia** | Curated AI tool directory; Claude searches it to find off-the-shelf solutions matching client pain points | Free | ai-audit-boomer-business-corey-ganim |
 | **GoHighLevel** | CRM + AI employee platform; sold as upsell to SMB clients; includes 24/7 AI phone agent for lead capture | SaaS subscription | ai-audit-boomer-business-corey-ganim |
+
+---
+
+## Social Media & Content Scheduling
+
+| Tool | Description | Cost/Tier | Reports |
+|------|-------------|-----------|---------|
+| **Blotato** | Social media scheduling + infographic generation with Claude MCP connector; called directly from Claude Cowork to generate visuals and schedule posts without leaving chat | Paid | claude-cowork-social-media-blotato, claude-code-content-team-11-skills |
+| **Buffer** | Social media scheduling output for some platforms; alternative to Blotato for distribution | Freemium | claude-cowork-social-media-blotato |
+
+---
+
+## Research & Web Intelligence
+
+| Tool | Description | Cost/Tier | Reports |
+|------|-------------|-----------|---------|
+| **Perplexity** | Real-time research API; used for talking point extraction with current stats and recent news | API (paid) | claude-code-content-team-11-skills |
+| **Firecrawl** | URL content extraction and web scraping API; used for repurposing web content into social posts | API (paid) | claude-code-content-team-11-skills |
+| **X API** | Twitter/X analytics and post data; used in monthly feedback loop to pull performance metrics for skill-update analysis | Free tier / paid | claude-code-content-team-11-skills |
 
 ---
 

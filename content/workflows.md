@@ -438,6 +438,83 @@ Extracted cross-report primitives. Each pattern is tool-agnostic where possible,
 
 ---
 
+## 24. BIT Framework — Iterative Agent Taste Training
+
+**What it does**: Systematically improves an agent's output quality toward your specific taste over multiple sessions — without manual prompt engineering. Applies to any creative workflow (video, writing, design, code style).
+
+**Steps**:
+1. **Build**: Complete a creative session with heavy iterative feedback to guide quality toward your standard
+2. **Integrate**: After session, prompt: "Capture all learnings and update the [skill] based on my feedback and our best practices" — Claude reviews session → updates skill file
+3. **Tune**: Next session, start with the updated skill; less guidance needed; continue feedback loop
+4. Repeat: each cycle, the skill gets closer to your specific quality standard
+
+**Shortcut — `/calibrate` skill pattern**: build a dedicated end-of-session skill that auto-runs the Integrate step; prompts Claude to output 6 bullet-point recommendations for skill updates → review → apply
+
+**Tools**: Claude Code + any creative skill (Hyperframes helper, write-content, design.md, etc.)
+**Report**: [Claude + Hyperframes V2](reports/hyperframes-v2-video-editing-bit-framework.md)
+**Key insight**: The feedback loop is the moat — manual prompting gets you one good output; BIT gets you an agent that produces good outputs by default after N sessions
+
+---
+
+## 25. Interview-to-Skill Creation
+
+**What it does**: Creates a personalized agent skill file by having Claude interview you — faster and more accurate than writing a skill from scratch, and produces a skill that genuinely reflects your preferences.
+
+**Steps**:
+1. Open Claude (Cowork or Code) and say: "I want to create a skill that [does X] in my voice/style"
+2. Claude interviews you: asks about tone, style, audience, examples you like/dislike, constraints
+3. Based on answers, Claude drafts a skill `.md` file
+4. Review draft → approve or iterate → save as skill
+5. Use "update the skill" pattern after each session to continuously improve it
+
+**Applicable to**: write-content skills, coding style skills, design preferences, review criteria — any domain where "taste" matters
+
+**Tools**: Claude Cowork / Claude Code
+**Reports**: [Claude Cowork — Social Media Automation](reports/claude-cowork-social-media-blotato.md), [Content Team with Claude Code — 11 Skills](reports/claude-code-content-team-11-skills.md)
+**Key insight**: The interview externalizes implicit preferences that you couldn't easily articulate in a prompt — Claude's questions surface what you actually want
+
+---
+
+## 26. Orchestrator + Sub-Skill Architecture (Content Team Pattern)
+
+**What it does**: Replaces a content team with a system of specialized skills coordinated by one orchestrator — each skill handles one "team member" role, the orchestrator acts as project manager.
+
+**Skill roles** (example from 11-skill content system):
+- **Orchestrator**: receives request → decides which skills to invoke → sequences output
+- **Audience profile**: holds ICP; used by all other skills
+- **Writing style**: voice, tone, platform formatting rules
+- **Talking point extractor**: given URL/topic → pulls key claims, stats, angles (via Perplexity)
+- **Lookalike content**: analyzes post library → extracts winning patterns → shapes new ideas
+- **Post enricher**: takes draft → adds hooks, data, examples, CTAs
+- **Platform skills**: separate formatter per platform (Twitter thread, LinkedIn, Instagram)
+- **Feedback skill**: pulls analytics → identifies top/bottom posts → proposes skill updates monthly
+
+**Tools**: Claude Code + Blotato + Perplexity + Firecrawl + X API + OpenAI API
+**Report**: [Content Team with Claude Code — 11 Skills](reports/claude-code-content-team-11-skills.md)
+**Key insight**: The monthly feedback loop skill is the compounding mechanism — after 6 months, the system knows your audience better than most human teams
+
+---
+
+## 27. design.md — Portable Design System for AI Agents
+
+**What it does**: Eliminates design drift across long sessions and across different AI tools by encoding a complete design system into a single markdown file that any agent can consume.
+
+**Steps**:
+1. Find a design.md: browse Variant.com → click remix until aesthetics click → download; OR extract from screenshot: paste image into Claude → "extract this as design.md with all colors, typography, spacing, component rules"
+2. Save design.md to project root (or attach per session)
+3. At session start: attach design.md to Claude Code / Codex / Lovable prompt
+4. Agent commits design system to session memory — all outputs from that session inherit it
+5. For differentiation: add specialty skill files on top (laser effects, glassmorphism, liquid glass)
+6. Multi-medium: use same design.md to generate landing page → promo video → slides → mobile screens — all share visual DNA
+
+**Anti-drift rule**: always attach design.md before any UI generation prompt in a long session
+
+**Tools**: Claude Code / Codex / Lovable + Variant.com + Google Stitch
+**Report**: [design.md — AI Consistent UI Generation](reports/design-md-ai-consistent-ui-generation.md)
+**Key insight**: design.md is CLAUDE.md for aesthetics — the same pattern that makes CLAUDE.md work applies directly to visual consistency across sessions and tools
+
+---
+
 ## Decision Framework: Automation Tool Selection
 
 ```
@@ -485,4 +562,16 @@ Do you want programmatic motion graphics?
 
 Do you need an agent platform without a terminal (non-technical founders)?
   → Codex (skills, automations, browser use, Remotion — all in a GUI)
+
+Do you want to edit raw footage into an animated video with motion graphics?
+  → Claude Code + Hyperframes V2 (storyboard first, then render; BIT framework for quality calibration)
+
+Do you want consistent brand design across all AI-generated outputs?
+  → design.md (serialize design system once → attach to every agent session → zero drift)
+
+Do you want to build a social media content skill in your own voice?
+  → Claude Cowork interview-to-skill pattern → "update the skill" loop after each session
+
+Do you want to replace a content team with an automated system?
+  → 11-skill orchestrator pattern (Claude Code) + monthly analytics feedback loop
 ```
