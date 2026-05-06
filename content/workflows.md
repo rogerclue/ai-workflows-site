@@ -329,6 +329,115 @@ Extracted cross-report primitives. Each pattern is tool-agnostic where possible,
 
 ---
 
+## 19. Product Image → Storyboard → Cinematic Video (4-Step Ad Agent)
+
+**What it does**: Takes a single product image and autonomously produces a full cinematic advertisement — product analysis → storyboard options → GPT-image-2 storyboard image → C-dance 2.0 final video.
+
+**Steps**:
+1. Drop product image + brief context (use case, attributes, end-tag text) into Claude Code
+2. Agent extracts brand name, product name, category automatically
+3. Agent generates 3 distinct storyboard directions (concept name, vibe, hero moment, visual keywords)
+4. **Human approval gate**: select preferred direction before any generation costs are incurred
+5. Agent builds detailed GPT-image-2 prompt: 6 panels, layout, text placement, scene descriptions with timestamps; blurs any faces to bypass C-dance content policy
+6. Agent calls GPT-image-2 via fal.ai → 6-panel storyboard image with correct text, timestamps, camera directions
+7. Optional second gate: review storyboard before video generation
+8. Agent summarizes pre-generation params (model, resolution, duration, aspect ratio)
+9. Agent submits storyboard + product photo to C-dance 2.0 via fal.ai → 15-second cinematic video
+10. Output: final video ready for use
+
+**Tools**: Claude Code + fal.ai (GPT-image-2 + C-dance 2.0)
+**Report**: [Claude Cinematic Ads Agent (fal.ai)](reports/claude-cinematic-ads-agent-fal.md)
+**Key insight**: GPT-image-2's near-perfect text rendering produces storyboards detailed enough that C-dance interprets them directly as shot instructions — the two models complement each other
+**Access pattern**: fal.ai "Copy content for LLMs" → paste into agent → agent gains full API access autonomously
+
+---
+
+## 20. Character Reference Sheet → Storyboard → Long-Form Video (Higgsfield Pipeline)
+
+**What it does**: Generates consistent-character long-form videos by building explicit start/end frames for each scene, then stitching clips — mirrors professional director workflow.
+
+**Steps**:
+1. Photo → Claude + GPT-image-2 → multi-angle character reference sheet
+2. Create video brief with full concept
+3. Generate image prompts for each scene's start and end frames
+4. Generate start/end frames using GPT-image-2 (highest realism) or Nano Banana Pro
+5. Submit each clip: start frame + end frame + structured C-dance prompt → Higgsfield MCP
+6. Claude stitches all clips via ffmpeg → final multi-scene video
+7. Optional: Claude Routines (remote) autopilot → hourly generation → large A/B variation library
+
+**Tools**: Claude Code + Higgsfield MCP + GPT-image-2 + C-dance 2.0 + Claude Routines
+**Report**: [Claude + Higgsfield Content Creation](reports/claude-higgsfield-content-creation-storyboard.md)
+**Key insight**: Start/end frame control (not just a text prompt) is the quality lever — explicit first and last frames give granular control over every scene transition
+**Autopilot**: Claude Routines (remote) runs without local machine; brute-forces Higgsfield subscription value
+
+---
+
+## 21. Niche App Research → Mobile App Build → Phone Testing
+
+**What it does**: Full pipeline from niche market research to a testable iOS app — no coding experience required.
+
+**Steps**:
+1. Sensor Tower → search simple identifier apps → find single-feature concepts making $40K–$500K/mo
+2. Paste competitor App Store URL into Claude chat → ask for detailed Claude Code build prompt
+3. Open Claude Code → paste generated prompt → Claude builds React Native + Expo project
+4. Preview at localhost → iterate: drag Dribbble design screenshot as context → "apply this design"
+5. API integration: ask Claude to create `.env` file → paste key → Claude wires camera to API
+6. Expo Go: ask Claude to generate QR code → scan with iPhone → test on real device
+7. Describe any errors to Claude → Claude diagnoses and fixes
+
+**Tools**: Claude Code + React Native + Expo + Expo Go + Anthropic API + Dribbble + Sensor Tower
+**Report**: [Vibe Coded $400K/mo App](reports/vibe-coded-400k-app-claude-code.md)
+**Key insight**: Use Claude chat to write your Claude Code prompt — pasting a competitor app link produces far more specific build instructions than anything you'd write yourself
+**Model tiering**: Sonnet for most tasks → Opus only for complex unsolvable errors → Haiku for research
+
+---
+
+## 22. Programmatic Motion Graphics via Remotion (Claude Code Skill)
+
+**What it does**: Generate LUTs, animated overlays, motion backgrounds, and counting-number animations programmatically using Claude Code's built-in Remotion skill — free tier available.
+
+**Steps**:
+1. Free tier: Ask Claude Code to generate a LUT file for color grading; export to CapCut
+2. Paid (Remotion skill): Describe animation → Claude generates React/Remotion component
+   - Animated pill overlays (text + icons, timed to beats)
+   - Motion backgrounds (particle systems, geometric patterns)
+   - Map animations (route tracing, location pins)
+   - SRT counting numbers (animated number sequences synced to transcript)
+3. End every complex prompt with: "Ask me any clarifying questions so we nail this spot on"
+4. Preview renders in Claude Code canvas; export to MP4 or use as component
+
+**Tools**: Claude Code + Remotion (built-in skill)
+**Report**: [Claude + CapCut Animations (Remotion)](reports/claude-capcut-animations-remotion.md)
+**Key insight**: The clarifying-questions prompt suffix dramatically improves first-attempt quality on complex animation requests
+
+---
+
+## 23. Three-Layer Agent Memory Architecture (Hot / Warm / Cold)
+
+**What it does**: Makes any agent continuously smarter by implementing structured memory tiers — facts always in context, domain knowledge loaded on demand, full history searchable — with async background processes that extract and update each layer automatically.
+
+**Architecture**:
+- **Hot memory** (always in system prompt, ≤4K chars): `user.md` (persona, preferences, workflow habits) + `memory.md` (environment facts, conventions)
+- **Warm memory** (on demand): skills — domain knowledge files loaded only when relevant; primary store for task knowledge
+- **Cold memory** (searchable): SQLite DB of raw conversation history; retrieve past sessions by keyword or semantic search
+- **Semantic layer** (optional): Mem Zero or Qdrant for natural language retrieval over historical conversations
+
+**Async extraction triggers** (don't block main agent):
+1. After every complex task → skill reviewer sub-agent reviews conversation → creates/patches skill if non-trivial approach used
+2. Every 10 agent turns → memory reviewer spawns → checks for revealed user preferences/persona → updates `user.md` / `memory.md`
+3. Hooks reinforce behavior: `UserPromptSubmit` hook appends memory reminder; `PostToolUse` (Bash) catches errors and appends learning prompt
+
+**Implementation options**:
+- **Hermes Agent**: native 4-tier implementation out of the box
+- **Claude Code**: enable Auto Memory feature + use CLAUDE.md as index to warm memory files + add hooks
+- **Open Claw / any agent**: add `.learnings/` folder (learnings.md, errors.md, feature-requests.md) + hooks
+
+**Tools**: Claude Code / Hermes Agent / Open Claw + SQLite + Mem Zero / Qdrant (optional)
+**Report**: [Self-Evolving Agents — Memory Architecture](reports/self-evolving-agents-memory-ai-jason.md)
+**Key insight**: The async background skill/memory extractor (not the main agent, not the human) is what makes agents feel progressively smarter — it requires no manual capture and doesn't slow down the primary workflow
+
+---
+
 ## Decision Framework: Automation Tool Selection
 
 ```
@@ -361,4 +470,19 @@ Do you want to build a passive income website without coding?
 
 Do you want to sell AI services to non-technical businesses?
   → AI audit model: Retell intake agent + Claude report + Gamma delivery + upsell menu
+
+Do you want to make a cinematic product ad from a single image?
+  → Claude Code + fal.ai (GPT-image-2 storyboard → C-dance 2.0 video); use approval gates before each generation step
+
+Do you want consistent-character long-form video?
+  → Character reference sheet + start/end frames → C-dance clips via Higgsfield MCP → ffmpeg stitch
+
+Do you want to build a mobile app without coding experience?
+  → Claude chat (generate prompt from competitor URL) → Claude Code + Expo → Expo Go testing
+
+Do you want programmatic motion graphics?
+  → Claude Code + Remotion skill (free: LUTs; paid: animated overlays, backgrounds, map animations)
+
+Do you need an agent platform without a terminal (non-technical founders)?
+  → Codex (skills, automations, browser use, Remotion — all in a GUI)
 ```

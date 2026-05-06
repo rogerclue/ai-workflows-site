@@ -13,6 +13,9 @@ Auto-generated index of all video reports. Use this to find the right report whe
 
 ### Content Creation & Video
 - **[Claude Video Editing](reports/claude-video-editing-hyperframes.md)** — Natural language → trimmed/subtitled/motion-graphics video via Hyperframes + Remotion. *Beginner / manual-assisted*
+- **[Claude + CapCut Animations (Remotion)](reports/claude-capcut-animations-remotion.md)** — LUT generation, animated pill overlays, motion backgrounds, map animations, SRT counting numbers via Remotion + Claude Code. *Intermediate / manual-assisted*
+- **[Claude + Higgsfield Content Creation](reports/claude-higgsfield-content-creation-storyboard.md)** — 3-level UGC ad pipeline: Higgsfield MCP setup → character reference + video prompt builder → storyboard method → Claude Routines autopilot. *Intermediate / automated-pipeline*
+- **[Claude Cinematic Ads Agent (fal.ai)](reports/claude-cinematic-ads-agent-fal.md)** — 4-step agent skill: product drop → 3 storyboard directions → GPT-image-2 storyboard → C-dance 2.0 final video. *Intermediate / automated-pipeline*
 - **[Hermes Agent — 7 Use Cases](reports/hermes-agent-7-use-cases.md)** — Content creation (text + images + TTS), deep research, unified messaging inbox. *Intermediate / agent-loop*
 - **[Claude Routines](reports/claude-routines-scheduled-agents.md)** — Weekly self-interview for content ideas; weekly content research via NotebookLM + YouTube outliers tracker. *Beginner / automated-pipeline*
 
@@ -24,9 +27,15 @@ Auto-generated index of all video reports. Use this to find the right report whe
 - **[Open Design](reports/open-design-vibe-coding-ui.md)** — PRD → landing page in 5 minutes; 71 design systems; mobile → desktop translation. *Beginner / manual-assisted*
 - **[Codex](reports/codex-best-software-ever.md)** — Image → working browser game; parallel multi-task execution; time-based pricing model. *Beginner / manual-assisted*
 - **[Codex Automate Anything](reports/codex-automate-anything-goldie.md)** — High-level overview: Codex as computer-use agent for email, landing pages, browser research, parallel tasks. *Beginner / manual-assisted*
+- **[Stop Using Claude. Start Using Codex?](reports/stop-using-claude-start-codex-isenberg.md)** — Codex skills, automations, browser use, and Remotion integration for non-technical founders. *Beginner / agent-loop*
+- **[Vibe Coded $400K/mo App](reports/vibe-coded-400k-app-claude-code.md)** — Full iOS app pipeline: Claude chat generates prompt → Claude Code builds React Native + Expo → Dribbble design ref → Expo Go testing. *Beginner / manual-assisted*
 - **[Utility Site Passive Income](reports/utility-site-passive-income-hostinger.md)** — Build Google Ads-monetized utility site in <1 hour using Hostinger Horizons; keyword gap research method. *Beginner / manual-assisted*
 
+### Developer Skills & Tooling
+- **[15 Claude Code Tricks](reports/claude-code-15-tricks.md)** — `--chrome` flag, `/branch` forking, remote control/teleport cross-device, Git worktrees, `/grill-me` disambiguation, CLAUDE.md discipline, token analysis. *Intermediate / manual-assisted*
+
 ### Agent Infrastructure
+- **[Self-Evolving Agents — Memory Architecture](reports/self-evolving-agents-memory-ai-jason.md)** — State-of-the-art 3-layer memory blueprint (hot/warm/cold), async skill extraction, hooks-based self-improvement for Claude Code and Hermes Agent. *Advanced / agent-loop*
 - **[Hermes Agent v0.12](reports/hermes-agent-v012-self-maintaining.md)** — Autonomous skill curator (7-day cycle), self-improvement loop, LM Studio, Spotify/Meet integrations. *Advanced / agent-loop*
 - **[AI Agents Run My Business](reports/greg-isenberg-ai-agents-run-business.md)** — Harbor agent harness, three-agent org, vector DB for portfolio intelligence. *Advanced / automated-pipeline*
 
@@ -52,6 +61,8 @@ Auto-generated index of all video reports. Use this to find the right report whe
 | [Open Design](reports/open-design-vibe-coding-ui.md) | PRD → landing page with design system |
 | [Claude Routines](reports/claude-routines-scheduled-agents.md) | Scheduled reasoning agents via `/schedule` |
 | [AI Audit for Boomer Businesses](reports/ai-audit-boomer-business-corey-ganim.md) | Voice agent intake → Claude report → upsell |
+| [Vibe Coded $400K/mo App](reports/vibe-coded-400k-app-claude-code.md) | Claude chat prompt → React Native iOS app → Expo Go testing |
+| [Stop Using Claude. Start Using Codex?](reports/stop-using-claude-start-codex-isenberg.md) | Codex skills, automations, browser use, Remotion |
 
 ### Intermediate
 | Report | Core Workflow |
@@ -59,6 +70,10 @@ Auto-generated index of all video reports. Use this to find the right report whe
 | [Hermes Agent — 7 Use Cases](reports/hermes-agent-7-use-cases.md) | Self-improving agent with skill library |
 | [Higgsfield MCP — Instagram Ad Campaign](reports/higgsfield-mcp-instagram-ad-campaign.md) | Product photo → 50 ads via competitive research + Higgsfield MCP |
 | [Claude + Higgsfield MCP](reports/claude-higgsfield-mcp-marketing.md) | Brand → assets → website in one session |
+| [15 Claude Code Tricks](reports/claude-code-15-tricks.md) | Power-user tricks: `--chrome`, worktrees, remote control, CLAUDE.md |
+| [Claude + CapCut Animations (Remotion)](reports/claude-capcut-animations-remotion.md) | LUT → animated overlays → motion backgrounds via Remotion |
+| [Claude + Higgsfield Content Creation](reports/claude-higgsfield-content-creation-storyboard.md) | Character ref sheet → storyboard method → autopilot ad engine |
+| [Claude Cinematic Ads Agent (fal.ai)](reports/claude-cinematic-ads-agent-fal.md) | Product image → storyboard → C-dance video via fal.ai |
 
 ### Advanced
 | Report | Core Workflow |
@@ -66,6 +81,7 @@ Auto-generated index of all video reports. Use this to find the right report whe
 | [Hermes Agent v0.12](reports/hermes-agent-v012-self-maintaining.md) | Self-maintaining agent; autonomous curator |
 | [AI Agents Run My Business](reports/greg-isenberg-ai-agents-run-business.md) | Multi-agent org with autonomous ad management |
 | [Claude Code for Quant Trading](reports/claude-code-trading-quant-systems.md) | Regime detection + Monte Carlo + portfolio dashboard + trading bot |
+| [Self-Evolving Agents — Memory Architecture](reports/self-evolving-agents-memory-ai-jason.md) | Hot/warm/cold memory blueprint + async skill extraction + hooks |
 
 ---
 
@@ -76,16 +92,23 @@ Auto-generated index of all video reports. Use this to find the right report whe
 - [Higgsfield MCP — Instagram Ad Campaign](reports/higgsfield-mcp-instagram-ad-campaign.md)
 - [Claude + Higgsfield MCP](reports/claude-higgsfield-mcp-marketing.md)
 - [AI Agents Run My Business](reports/greg-isenberg-ai-agents-run-business.md)
+- [Claude + Higgsfield Content Creation](reports/claude-higgsfield-content-creation-storyboard.md)
+- [Claude Cinematic Ads Agent (fal.ai)](reports/claude-cinematic-ads-agent-fal.md)
 
 ### agent-loop (persistent, self-improving)
 - [Hermes Agent — 7 Use Cases](reports/hermes-agent-7-use-cases.md)
 - [Hermes Agent v0.12](reports/hermes-agent-v012-self-maintaining.md)
+- [Stop Using Claude. Start Using Codex?](reports/stop-using-claude-start-codex-isenberg.md)
+- [Self-Evolving Agents — Memory Architecture](reports/self-evolving-agents-memory-ai-jason.md)
 
 ### manual-assisted (human in loop)
 - [Claude Video Editing](reports/claude-video-editing-hyperframes.md)
 - [Codex](reports/codex-best-software-ever.md)
 - [Open Design](reports/open-design-vibe-coding-ui.md)
 - [AI Audit for Boomer Businesses](reports/ai-audit-boomer-business-corey-ganim.md)
+- [15 Claude Code Tricks](reports/claude-code-15-tricks.md)
+- [Claude + CapCut Animations (Remotion)](reports/claude-capcut-animations-remotion.md)
+- [Vibe Coded $400K/mo App](reports/vibe-coded-400k-app-claude-code.md)
 
 ---
 
@@ -161,12 +184,55 @@ Auto-generated index of all video reports. Use this to find the right report whe
 
 **google-ads**: utility-site-passive-income-hostinger
 
+**claude-code**: claude-code-15-tricks, vibe-coded-400k-app-claude-code, claude-higgsfield-content-creation-storyboard, claude-cinematic-ads-agent-fal
+
+**remotion**: claude-capcut-animations-remotion, stop-using-claude-start-codex-isenberg
+
+**cinematic-ads**: claude-cinematic-ads-agent-fal
+
+**storyboard**: claude-higgsfield-content-creation-storyboard, claude-cinematic-ads-agent-fal
+
+**fal-ai**: claude-cinematic-ads-agent-fal
+
+**ugc-video**: claude-higgsfield-content-creation-storyboard
+
+**c-dance**: claude-higgsfield-content-creation-storyboard, claude-cinematic-ads-agent-fal
+
+**mobile-app**: vibe-coded-400k-app-claude-code
+
+**react-native**: vibe-coded-400k-app-claude-code
+
+**vibe-coding**: vibe-coded-400k-app-claude-code, stop-using-claude-start-codex-isenberg
+
+**codex**: stop-using-claude-start-codex-isenberg, codex-best-software-ever, codex-automate-anything-goldie
+
+**browser-use**: stop-using-claude-start-codex-isenberg
+
+**motion-graphics**: claude-capcut-animations-remotion
+
+**agent-skill**: claude-code-15-tricks, claude-cinematic-ads-agent-fal
+
+**agent-memory**: self-evolving-agents-memory-ai-jason, hermes-agent-7-use-cases, hermes-agent-v012-self-maintaining
+
+**self-evolving-agents**: self-evolving-agents-memory-ai-jason, hermes-agent-v012-self-maintaining
+
+**hooks**: self-evolving-agents-memory-ai-jason
+
+**skill-extraction**: self-evolving-agents-memory-ai-jason, hermes-agent-7-use-cases
+
 ---
 
 ## All Reports (Chronological)
 
 | Date | Report | Channel | Complexity |
 |------|--------|---------|------------|
+| 2026-05-06 | [Self-Evolving Agents — Memory Architecture](reports/self-evolving-agents-memory-ai-jason.md) | AI Jason | Advanced |
+| 2026-05-06 | [Claude Cinematic Ads Agent (fal.ai)](reports/claude-cinematic-ads-agent-fal.md) | Jay E \| RoboNuggets | Intermediate |
+| 2026-05-06 | [Claude + Higgsfield Content Creation](reports/claude-higgsfield-content-creation-storyboard.md) | Samin Yasar | Intermediate |
+| 2026-05-06 | [Vibe Coded $400K/mo App](reports/vibe-coded-400k-app-claude-code.md) | Jason Lee | Beginner |
+| 2026-05-06 | [Stop Using Claude. Start Using Codex?](reports/stop-using-claude-start-codex-isenberg.md) | Greg Isenberg | Beginner |
+| 2026-05-06 | [Claude + CapCut Animations (Remotion)](reports/claude-capcut-animations-remotion.md) | (Remotion/CapCut demo) | Intermediate |
+| 2026-05-06 | [15 Claude Code Tricks](reports/claude-code-15-tricks.md) | Boris | Intermediate |
 | 2026-05-05 | [Utility Site Passive Income](reports/utility-site-passive-income-hostinger.md) | Jonathan's Jam | Beginner |
 | 2026-05-05 | [Claude Code for Quant Trading](reports/claude-code-trading-quant-systems.md) | AI Pathways | Advanced |
 | 2026-05-05 | [Codex Automate Anything](reports/codex-automate-anything-goldie.md) | Goldie SEO | Beginner |

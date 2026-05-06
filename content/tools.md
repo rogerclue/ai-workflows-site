@@ -1,6 +1,6 @@
 # AI Workflows — Master Tool Registry
 
-Auto-generated from 13 video reports. Each entry includes cost/tier, role, and which reports reference it.
+Auto-generated from 19 video reports. Each entry includes cost/tier, role, and which reports reference it.
 
 ---
 
@@ -9,6 +9,8 @@ Auto-generated from 13 video reports. Each entry includes cost/tier, role, and w
 | Tool | Description | Cost/Tier | Reports |
 |------|-------------|-----------|---------|
 | **Claude Code** | Primary CLI coding agent, orchestrates MCP servers, skills, and hooks | Paid (Claude Max) | all |
+| **Expo / Expo Go** | React Native development toolchain; Expo Go enables phone testing without App Store submission; QR code → live app on device | Free / open-source | vibe-coded-400k-app-claude-code |
+| **React Native** | Cross-platform mobile app framework; Claude Code sets up project scaffold automatically | Free / open-source | vibe-coded-400k-app-claude-code |
 | **Playwright MCP** | Browser automation MCP server (Microsoft open-source); used for structured scraping of Meta Ads Library and web pages; install via `git clone github.com/microsoft/playwright-mcp` | Free/open-source | higgsfield-mcp-instagram-ad-campaign |
 | **Codex** (OpenAI) | General-purpose knowledge work orchestrator with time-based pricing (5–10 hr/mo at $100/mo); parallel tasks, computer use, browser use, dictation, Chronicle memory | $100/mo | codex-best-software-ever |
 | **Hermes Agent** | Open-source self-improving agent with persistent skill library, learning loop, cron scheduling, and multi-platform messaging | Free/open-source | hermes-agent-7-use-cases, hermes-agent-v012-self-maintaining |
@@ -21,7 +23,9 @@ Auto-generated from 13 video reports. Each entry includes cost/tier, role, and w
 
 | Tool | Description | Cost/Tier | Reports |
 |------|-------------|-----------|---------|
-| **GPT-image-2** | OpenAI photorealistic image generation; used for product images and UI mockups | OpenAI paid / Included via Higgsfield | claude-higgsfield-mcp-marketing, codex-best-software-ever |
+| **GPT-image-2** | OpenAI photorealistic image generation; used for product images, UI mockups, and 6-panel cinematic storyboards; near-perfect text rendering | OpenAI paid / Included via Higgsfield / fal.ai | claude-higgsfield-mcp-marketing, codex-best-software-ever, claude-higgsfield-content-creation-storyboard, claude-cinematic-ads-agent-fal |
+| **fal.ai** | Model-as-a-service aggregator; hosts GPT-image-2 and C-dance 2.0 APIs; "Copy content for LLMs" pattern gives agents full API access without manual integration | Usage-based | claude-cinematic-ads-agent-fal |
+| **Nano Banana Pro** | Alternative image generation model for character reference sheets; available via Higgsfield | Included via Higgsfield | claude-higgsfield-content-creation-storyboard |
 | **Flux** (via ComfyUI) | Local image generation model; accessed via Hermes News Portal subscription | Paid (subscription) | hermes-agent-7-use-cases |
 | **ComfyUI** | Local image generation runner; bundled with Hermes v0.12 (hardware-gated); supports Flux | Free (local) | hermes-agent-7-use-cases, hermes-agent-v012-self-maintaining |
 
@@ -32,9 +36,9 @@ Auto-generated from 13 video reports. Each entry includes cost/tier, role, and w
 | Tool | Description | Cost/Tier | Reports |
 |------|-------------|-----------|---------|
 | **Hyperframes** | Paid SaaS that exposes natural language → video editing (trim, motion graphics, subtitles) powered by Remotion | Paid (SaaS, price undisclosed) | claude-video-editing-hyperframes |
-| **Remotion** | Programmatic video rendering framework (under the hood in Hyperframes); React-based, version-controlled | Open-source | claude-video-editing-hyperframes |
-| **Higgsfield MCP** | Claude Code MCP connector to Higgsfield AI's image + video generation platform; connect via Claude desktop Settings → Connectors → Add Custom Connector (remote URL: `https://mcp.higgsfield.ai/mcp`) | Higgsfield subscription | claude-higgsfield-mcp-marketing, higgsfield-mcp-instagram-ad-campaign |
-| **C-dance 2.0** (Sora) | UGC video generation model (via Higgsfield); produces avatar-based authentic-feeling videos | Included in Higgsfield | claude-higgsfield-mcp-marketing |
+| **Remotion** | Programmatic video rendering framework; React-based, version-controlled; used by Hyperframes, Claude Code built-in skill, and Codex for motion graphics generation | Open-source | claude-video-editing-hyperframes, claude-capcut-animations-remotion, stop-using-claude-start-codex-isenberg |
+| **Higgsfield MCP** | Claude Code MCP connector to Higgsfield AI's image + video generation platform; connect via Claude desktop Settings → Connectors → Add Custom Connector (remote URL: `https://mcp.higgsfield.ai/mcp`) | Higgsfield subscription | claude-higgsfield-mcp-marketing, higgsfield-mcp-instagram-ad-campaign, claude-higgsfield-content-creation-storyboard |
+| **C-dance 2.0** | Cinematic video generation model by ByteDance; best current model for motion/cinematic scenes; natively understands storyboard format; face detection policy requires blurred-face workaround | Included in Higgsfield / fal.ai | claude-higgsfield-mcp-marketing, claude-higgsfield-content-creation-storyboard, claude-cinematic-ads-agent-fal |
 | **Higgsfield Marketing Studio** | UGC category management + avatar library within Higgsfield | Included | claude-higgsfield-mcp-marketing |
 | **ffmpeg** | Video processing CLI; used by `/watch` skill for frame extraction, and by Remotion/Hyperframes | Free | claude-video-editing-hyperframes |
 
@@ -54,6 +58,9 @@ Auto-generated from 13 video reports. Each entry includes cost/tier, role, and w
 | Tool | Description | Cost/Tier | Reports |
 |------|-------------|-----------|---------|
 | **PostHog** | Product analytics; used as data feed for marketing agents and product briefs | Free tier / paid | greg-isenberg-ai-agents-run-business, claude-routines-scheduled-agents |
+| **Airtable** | Kanban board for tracking ad generation variations, market research, and generated assets in autopilot ad pipelines | Free tier / paid | claude-higgsfield-content-creation-storyboard |
+| **Dribbble** | Design inspiration gallery; used to find iOS app UI references; drag screenshot into Claude Code as design context | Free | vibe-coded-400k-app-claude-code |
+| **Sensor Tower** | App store analytics; used to identify profitable niche app categories and validate revenue benchmarks ($40K–$500K/mo) | Paid | vibe-coded-400k-app-claude-code |
 | **Stripe** | Revenue data connector for monthly revenue pulse routines | % of revenue | claude-routines-scheduled-agents |
 
 ---
@@ -63,6 +70,9 @@ Auto-generated from 13 video reports. Each entry includes cost/tier, role, and w
 | Tool | Description | Cost/Tier | Reports |
 |------|-------------|-----------|---------|
 | **Pinecone** | Vector database; used for portfolio intelligence (trained on 132 investments) and business data | Paid | greg-isenberg-ai-agents-run-business |
+| **Mem Zero** | Semantic memory layer; pluggable into Hermes Agent for long-term natural language retrieval over conversation history | Usage-based | self-evolving-agents-memory-ai-jason |
+| **Qdrant** | Vector database alternative to Pinecone; used as semantic memory backend in Hermes Agent | Free/paid | self-evolving-agents-memory-ai-jason |
+| **SQLite** | Local database for raw conversation history (cold memory layer); Hermes Agent stores all sessions for searchable retrieval | Free | self-evolving-agents-memory-ai-jason |
 | **Gbrain** | Markdown-based knowledge base / second brain; receives nightly transcript uploads | Paid | greg-isenberg-ai-agents-run-business |
 | **Chronicle** | Screenshot-based persistent memory built into Codex; raises privacy concerns | Included in Codex | codex-best-software-ever |
 | **Notion** | Knowledge base for meeting digests, product briefs, revenue reports from Claude Routines | Free / paid | claude-routines-scheduled-agents |
@@ -180,3 +190,8 @@ Auto-generated from 13 video reports. Each entry includes cost/tier, role, and w
 | Product analytics → autonomous ad optimization | PostHog → marketing agent (Harbor) |
 | Meeting transcript → structured digest | Fathom/Fireflies → Claude Routines → Notion |
 | Portfolio/business intelligence via natural language | Fireflies → Pinecone → Gbrain |
+| Cinematic ad from product image | fal.ai (GPT-image-2 storyboard → C-dance 2.0 video) via Claude Code skill |
+| Mobile app with no coding experience | Claude chat (generate prompt) → Claude Code + React Native + Expo → Expo Go |
+| Motion graphics / animated overlays | Claude Code + Remotion skill |
+| Automated ad generation on a schedule | Claude Routines (remote) + Higgsfield MCP |
+| Niche app market research | Sensor Tower → find single-feature apps → validate revenue |
