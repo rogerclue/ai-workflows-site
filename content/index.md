@@ -7,6 +7,7 @@ Auto-generated index of all video reports. Use this to find the right report whe
 ## By Use Case
 
 ### Marketing & Brand Automation
+- **[Higgsfield MCP — Instagram Ad Campaign](reports/higgsfield-mcp-instagram-ad-campaign.md)** — 50-ad Instagram campaign (5 angles × 5 concepts × 2 ratios) from one product photo; competitive research via Playwright + Meta Ads Library. *Intermediate / automated-pipeline*
 - **[Claude + Higgsfield MCP](reports/claude-higgsfield-mcp-marketing.md)** — Brand Launch Pack + GTM Pack + UGC generation via Claude Code slash commands; full Shopify rebrand pipeline. *Intermediate / automated-pipeline*
 - **[AI Agents Run My Business](reports/greg-isenberg-ai-agents-run-business.md)** — Autonomous marketing agent managing Meta/Reddit ads via PostHog data; three-agent business stack (support + dev + marketing). *Advanced / automated-pipeline*
 
@@ -22,10 +23,18 @@ Auto-generated index of all video reports. Use this to find the right report whe
 ### Vibe Coding & UI Design
 - **[Open Design](reports/open-design-vibe-coding-ui.md)** — PRD → landing page in 5 minutes; 71 design systems; mobile → desktop translation. *Beginner / manual-assisted*
 - **[Codex](reports/codex-best-software-ever.md)** — Image → working browser game; parallel multi-task execution; time-based pricing model. *Beginner / manual-assisted*
+- **[Codex Automate Anything](reports/codex-automate-anything-goldie.md)** — High-level overview: Codex as computer-use agent for email, landing pages, browser research, parallel tasks. *Beginner / manual-assisted*
+- **[Utility Site Passive Income](reports/utility-site-passive-income-hostinger.md)** — Build Google Ads-monetized utility site in <1 hour using Hostinger Horizons; keyword gap research method. *Beginner / manual-assisted*
 
 ### Agent Infrastructure
 - **[Hermes Agent v0.12](reports/hermes-agent-v012-self-maintaining.md)** — Autonomous skill curator (7-day cycle), self-improvement loop, LM Studio, Spotify/Meet integrations. *Advanced / agent-loop*
 - **[AI Agents Run My Business](reports/greg-isenberg-ai-agents-run-business.md)** — Harbor agent harness, three-agent org, vector DB for portfolio intelligence. *Advanced / automated-pipeline*
+
+### AI Consulting & Service Business
+- **[AI Audit for Boomer Businesses](reports/ai-audit-boomer-business-corey-ganim.md)** — $1,000 AI assessment for SMBs: voice agent intake → Claude report → upsell menu ($1k–$10k). Zero coding required. *Beginner / manual-assisted*
+
+### Trading & Finance
+- **[Claude Code for Quant Trading](reports/claude-code-trading-quant-systems.md)** — 5 institutional-grade trading systems built with Claude Code: regime detection, Monte Carlo backtesting, portfolio risk dashboard, sentiment analysis, correlation break detector. *Advanced / manual-assisted*
 
 ### Analytics & Business Intelligence
 - **[AI Agents Run My Business](reports/greg-isenberg-ai-agents-run-business.md)** — Fireflies → Pinecone → Gbrain portfolio intelligence; PostHog → marketing agent loop. *Advanced / automated-pipeline*
@@ -42,11 +51,13 @@ Auto-generated index of all video reports. Use this to find the right report whe
 | [Codex](reports/codex-best-software-ever.md) | Parallel autonomous tasks; image → game |
 | [Open Design](reports/open-design-vibe-coding-ui.md) | PRD → landing page with design system |
 | [Claude Routines](reports/claude-routines-scheduled-agents.md) | Scheduled reasoning agents via `/schedule` |
+| [AI Audit for Boomer Businesses](reports/ai-audit-boomer-business-corey-ganim.md) | Voice agent intake → Claude report → upsell |
 
 ### Intermediate
 | Report | Core Workflow |
 |--------|--------------|
 | [Hermes Agent — 7 Use Cases](reports/hermes-agent-7-use-cases.md) | Self-improving agent with skill library |
+| [Higgsfield MCP — Instagram Ad Campaign](reports/higgsfield-mcp-instagram-ad-campaign.md) | Product photo → 50 ads via competitive research + Higgsfield MCP |
 | [Claude + Higgsfield MCP](reports/claude-higgsfield-mcp-marketing.md) | Brand → assets → website in one session |
 
 ### Advanced
@@ -54,6 +65,7 @@ Auto-generated index of all video reports. Use this to find the right report whe
 |--------|--------------|
 | [Hermes Agent v0.12](reports/hermes-agent-v012-self-maintaining.md) | Self-maintaining agent; autonomous curator |
 | [AI Agents Run My Business](reports/greg-isenberg-ai-agents-run-business.md) | Multi-agent org with autonomous ad management |
+| [Claude Code for Quant Trading](reports/claude-code-trading-quant-systems.md) | Regime detection + Monte Carlo + portfolio dashboard + trading bot |
 
 ---
 
@@ -61,6 +73,7 @@ Auto-generated index of all video reports. Use this to find the right report whe
 
 ### automated-pipeline (set and forget)
 - [Claude Routines](reports/claude-routines-scheduled-agents.md)
+- [Higgsfield MCP — Instagram Ad Campaign](reports/higgsfield-mcp-instagram-ad-campaign.md)
 - [Claude + Higgsfield MCP](reports/claude-higgsfield-mcp-marketing.md)
 - [AI Agents Run My Business](reports/greg-isenberg-ai-agents-run-business.md)
 
@@ -72,6 +85,7 @@ Auto-generated index of all video reports. Use this to find the right report whe
 - [Claude Video Editing](reports/claude-video-editing-hyperframes.md)
 - [Codex](reports/codex-best-software-ever.md)
 - [Open Design](reports/open-design-vibe-coding-ui.md)
+- [AI Audit for Boomer Businesses](reports/ai-audit-boomer-business-corey-ganim.md)
 
 ---
 
@@ -85,7 +99,13 @@ Auto-generated index of all video reports. Use this to find the right report whe
 
 **content-creation**: hermes-agent-7-use-cases, claude-routines-scheduled-agents, claude-higgsfield-mcp-marketing
 
-**marketing-automation**: claude-higgsfield-mcp-marketing, greg-isenberg-ai-agents-run-business
+**marketing-automation**: higgsfield-mcp-instagram-ad-campaign, claude-higgsfield-mcp-marketing, greg-isenberg-ai-agents-run-business
+
+**ai-advertising**: higgsfield-mcp-instagram-ad-campaign
+
+**image-generation**: higgsfield-mcp-instagram-ad-campaign, claude-higgsfield-mcp-marketing
+
+**instagram-ads**: higgsfield-mcp-instagram-ad-campaign
 
 **video-editing**: claude-video-editing-hyperframes
 
@@ -107,9 +127,39 @@ Auto-generated index of all video reports. Use this to find the right report whe
 
 **local-llm**: hermes-agent-v012-self-maintaining
 
-**mcp**: claude-higgsfield-mcp-marketing
+**mcp**: higgsfield-mcp-instagram-ad-campaign, claude-higgsfield-mcp-marketing
 
 **productivity**: hermes-agent-7-use-cases, claude-routines-scheduled-agents
+
+**ai-consulting**: ai-audit-boomer-business-corey-ganim
+
+**ai-audit**: ai-audit-boomer-business-corey-ganim
+
+**small-business**: ai-audit-boomer-business-corey-ganim
+
+**voice-agent**: ai-audit-boomer-business-corey-ganim
+
+**service-business**: ai-audit-boomer-business-corey-ganim
+
+**trading**: claude-code-trading-quant-systems
+
+**quantitative-finance**: claude-code-trading-quant-systems
+
+**backtesting**: claude-code-trading-quant-systems
+
+**streamlit**: claude-code-trading-quant-systems
+
+**data-analysis**: claude-code-trading-quant-systems
+
+**passive-income**: utility-site-passive-income-hostinger
+
+**utility-sites**: utility-site-passive-income-hostinger
+
+**no-code**: utility-site-passive-income-hostinger
+
+**seo**: utility-site-passive-income-hostinger
+
+**google-ads**: utility-site-passive-income-hostinger
 
 ---
 
@@ -117,6 +167,11 @@ Auto-generated index of all video reports. Use this to find the right report whe
 
 | Date | Report | Channel | Complexity |
 |------|--------|---------|------------|
+| 2026-05-05 | [Utility Site Passive Income](reports/utility-site-passive-income-hostinger.md) | Jonathan's Jam | Beginner |
+| 2026-05-05 | [Claude Code for Quant Trading](reports/claude-code-trading-quant-systems.md) | AI Pathways | Advanced |
+| 2026-05-05 | [Codex Automate Anything](reports/codex-automate-anything-goldie.md) | Goldie SEO | Beginner |
+| 2026-05-05 | [AI Audit for Boomer Businesses](reports/ai-audit-boomer-business-corey-ganim.md) | Corey Ganim | Beginner |
+| 2026-05-05 | [Higgsfield MCP — Instagram Ad Campaign](reports/higgsfield-mcp-instagram-ad-campaign.md) | AI Aidan | Intermediate |
 | 2026-05-04 | [Hermes Agent — 7 Use Cases](reports/hermes-agent-7-use-cases.md) | Panda Making Money | Intermediate |
 | 2026-05-04 | [Claude Video Editing](reports/claude-video-editing-hyperframes.md) | Nate Herk \| AI Automation | Beginner |
 | 2026-05-04 | [Codex](reports/codex-best-software-ever.md) | andrew olsson | Beginner |

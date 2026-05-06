@@ -238,6 +238,97 @@ Extracted cross-report primitives. Each pattern is tool-agnostic where possible,
 
 ---
 
+## 15. Competitive Research → Creative Strategy → Batch Ad Generation
+
+**What it does**: Starting from a single product image, autonomously researches competitor ads + industry trends, builds a strategic N×M creative matrix, and generates all ads via image generation MCP — no manual prompting per image.
+
+**Steps**:
+1. Provide product image + minimal brand context to Claude Code
+2. Playwright MCP scrapes Meta Ads Library for brand's active ads (competitive intel)
+3. WebSearch pulls current-year platform trend reports (CTR benchmarks, format data)
+4. Claude synthesizes a Creative Brief (5 performance findings, category-specific insights)
+5. Claude proposes N creative angles × M concepts = N×M unique ads
+6. Each concept generates 2 aspect ratio variants (1:1 feed + 9:16 stories/reels)
+7. **Approval Gate**: Claude presents full matrix, asks 3 yes/no questions, waits for "approved"
+8. After approval, Claude batch-submits all jobs to Higgsfield MCP
+9. Claude polls for completion, re-fires dropped jobs, downloads everything via curl
+10. Output: Organized folder tree by angle + concept + ratio, top-5 A/B test picks
+
+**Tools**: Claude Code + Playwright MCP + WebSearch + Higgsfield MCP
+**Report**: [Higgsfield MCP — Instagram Ad Campaign](reports/higgsfield-mcp-instagram-ad-campaign.md)
+**Scale**: 50 ads in one session (~$8 in Higgsfield credits, ~839 credits, 103MB)
+**Key insight**: The approval gate before generation prevents wasted credits on a matrix you'd revise anyway
+
+---
+
+## 16. Voice Agent Intake → AI Report → Upsell (AI Consulting Business Pattern)
+
+**What it does**: Replaces human discovery calls with a 24/7 voice agent that conducts structured intake interviews, automatically generates a branded assessment report, and creates natural upsell opportunities worth $1k–$10k per client.
+
+**Steps**:
+1. Client calls a dedicated phone number (or you schedule a Zoom call for early-stage)
+2. Voice agent (Retell AI) conducts 20–30 min structured interview: business overview, tools used, daily pain points, team size
+3. Agent uses a master question bank tuned by industry; starts general, goes specific
+4. Transcript automatically routed to report-generation agent (Claude)
+5. Claude analyzes pain points, searches Futurepedia/AI directories for matching tools
+6. Claude generates structured `.docx` report (executive summary, effort/impact matrix, tool recommendations, 4-day quick win plan, upsell seeds, ROI quantification)
+7. Upload `.docx` to Gamma template → branded slide deck auto-generated
+8. Deliver report within 48 hours; schedule 30-min follow-up call
+9. Screen-share through report → pitch upsell from menu (process optimization, automation build, custom GPT, speed-to-lead agent, CRM setup)
+
+**Tools**: Retell AI + Claude + Gamma + Zapier/Make.com (for automation upsells)
+**Report**: [AI Audit for Boomer Businesses](reports/ai-audit-boomer-business-corey-ganim.md)
+**Pricing**: $1,000 assessment → $1,500–$10,000 upsells per client
+**Sweet spot**: 5–50 employee businesses; any industry with repetitive manual processes
+**Key insight**: The $1,000 price point is strategic — cheap enough to be a no-brainer, expensive enough that clients take it seriously and are primed for upsells
+
+---
+
+## 17. Prompt → Quantitative Trading Dashboard (Regime-First Architecture)
+
+**What it does**: Build institutional-grade trading analysis tools (regime detection, backtesting, portfolio risk, sentiment) from plain-English prompts in Claude Code — no prior coding required. Each tool is a standalone Streamlit app.
+
+**Steps**:
+1. Define what you want to measure (regime, backtest layer, risk, sentiment, correlation)
+2. Write a structured prompt specifying: algorithm choice, data source, features, UI layout, output metrics
+3. Paste prompt into Claude Code (VS Code extension) → Claude builds complete Streamlit app
+4. Run locally; iterate with follow-up prompts to fix or extend
+5. Stack multiple tools into a validation pipeline:
+   - Layer 1: Traditional backtest (walk-forward, out-of-sample)
+   - Layer 2: Monte Carlo simulation (1,000 randomized variations)
+   - Layer 3: Sensitivity analysis (parameter stability heatmap)
+   - Layer 4: Multi-asset regime comparison (SPY, BTC, Gold, Bonds)
+6. Only deploy live after 1+ month of paper trading validation
+
+**Tools**: Claude Code + Streamlit + Yahoo Finance + Plotly + Alpaca/IBKR
+**Report**: [Claude Code for Quant Trading](reports/claude-code-trading-quant-systems.md)
+**Key insight**: "Knowing what to ask" (algorithm choice, bias avoidance, regime logic) is more valuable than coding skill — Claude handles implementation, you supply trading domain knowledge
+
+---
+
+## 18. SERP Gap Research → No-Code Utility Site → Google Ads Monetization
+
+**What it does**: Find an underserved search query where Google is already ranking new sites, build a working utility tool in under an hour using an AI no-code builder, publish it, and monetize with Google Display Ads (RPM model).
+
+**Steps**:
+1. Pick a seed category (calculator, generator, converter, checker)
+2. Enter seed keyword into Clearer → filter max difficulty ≤ 10 → sort by difficulty
+3. Identify queries that could be answered by a web app
+4. Use Clearer's SERP analysis → flag queries where new/low-trust sites rank on page 1 (blue highlight = opportunity)
+5. Open Hostinger Horizons → describe tool in plain English → get working app in minutes
+6. Iterate with natural-language fixes: "move the button", "add this feature", "change colors"
+7. Connect custom `.com` domain matching the tool's function
+8. Sign up for Google AdSense → copy code → paste into Horizons chat → publish
+9. Add legal pages, explanatory content, 3–5 related tools (required for AdSense approval)
+10. Scale: repeat for multiple tools/sites; each adds independent traffic and ad revenue
+
+**Tools**: Clearer + Hostinger Horizons + Google AdSense
+**Report**: [Utility Site Passive Income](reports/utility-site-passive-income-hostinger.md)
+**Revenue model**: RPM × page views (target $3–12 per 1,000 views); portfolio of 5–10 tools compounds
+**Key insight**: The SERP gap signal (new sites already ranking) is more reliable than keyword difficulty alone — it proves Google is actively looking for better answers to that query
+
+---
+
 ## Decision Framework: Automation Tool Selection
 
 ```
@@ -261,4 +352,13 @@ Do you need parallel long-running tasks with time-based pricing?
 
 Do you need UI that doesn't look like AI slop?
   → Open Design (pick design system first)
+
+Do you want to build trading/quant tools without coding?
+  → Claude Code + Streamlit (regime-first: detect market environment before choosing strategy)
+
+Do you want to build a passive income website without coding?
+  → Hostinger Horizons + Clearer (find SERP gap first, then build)
+
+Do you want to sell AI services to non-technical businesses?
+  → AI audit model: Retell intake agent + Claude report + Gamma delivery + upsell menu
 ```
