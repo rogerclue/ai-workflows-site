@@ -49,6 +49,7 @@ Auto-generated index of all video reports. Use this to find the right report whe
 ### Developer Skills & Tooling
 - **[15 Claude Code Tricks](reports/claude-code-15-tricks.md)** — `--chrome` flag, `/branch` forking, remote control/teleport cross-device, Git worktrees, `/grill-me` disambiguation, CLAUDE.md discipline, token analysis. *Intermediate / manual-assisted*
 - **[Scrape Website → Personal Video API](reports/scrape-website-video-api.md)** — Reverse-engineer a web-based video generation tool via DevTools inspection → Python API wrapper → custom web interface. *Intermediate / manual-assisted*
+- **[Claude Security — Enterprise Code Scanning](reports/claude-security-enterprise-code-scanning.md)** — Claude Enterprise scans entire codebases, traces data flows, validates findings (no false positives), and writes patches. *Beginner / manual-assisted*
 
 ### Agent Infrastructure
 - **[Self-Evolving Agents — Memory Architecture](reports/self-evolving-agents-memory-ai-jason.md)** — State-of-the-art 3-layer memory blueprint (hot/warm/cold), async skill extraction, hooks-based self-improvement for Claude Code and Hermes Agent. *Advanced / agent-loop*
@@ -86,6 +87,7 @@ Auto-generated index of all video reports. Use this to find the right report whe
 | [Claude Cowork — Social Media Automation](reports/claude-cowork-social-media-blotato.md) | Interview → write-content skill → screenshot → Blotato → schedule |
 | [Higgsfield MCP Solo App Marketing Ads](reports/higgsfield-mcp-solo-app-marketing-ads.md) | Product URL → UGC ad via Higgsfield MCP in Claude Desktop |
 | [Claude Ads Skill Multi-Platform Planning](reports/claude-ads-skill-multi-platform-planning.md) | Multi-platform ad strategy + PDF report from website URL |
+| [Claude Security — Enterprise Code Scanning](reports/claude-security-enterprise-code-scanning.md) | Full codebase scan → validated findings → one-click patches |
 
 ### Intermediate
 | Report | Core Workflow |
@@ -163,6 +165,7 @@ Auto-generated index of all video reports. Use this to find the right report whe
 - [Claude Ads Skill Multi-Platform Planning](reports/claude-ads-skill-multi-platform-planning.md)
 - [Automate EVERY AI Model with Higgsfield + Claude](reports/higgsfield-mcp-claude-all-ai-models.md)
 - [Scrape Website → Personal Video API](reports/scrape-website-video-api.md)
+- [Claude Security — Enterprise Code Scanning](reports/claude-security-enterprise-code-scanning.md)
 
 ---
 
@@ -334,12 +337,23 @@ Auto-generated index of all video reports. Use this to find the right report whe
 
 **perplexity**: scrape-website-video-api
 
+**claude-security**: claude-security-enterprise-code-scanning
+
+**code-security**: claude-security-enterprise-code-scanning
+
+**security-scanning**: claude-security-enterprise-code-scanning
+
+**enterprise**: claude-security-enterprise-code-scanning
+
+**vulnerability-detection**: claude-security-enterprise-code-scanning
+
 ---
 
 ## All Reports (Chronological)
 
 | Date | Report | Channel | Complexity |
 |------|--------|---------|------------|
+| 2026-05-07 | [Claude Security — Enterprise Code Scanning](reports/claude-security-enterprise-code-scanning.md) | Next Level AI | Beginner |
 | 2026-05-07 | [Scrape Website → Personal Video API](reports/scrape-website-video-api.md) | Creator's Journey | Intermediate |
 | 2026-05-06 | [Automate EVERY AI Model with Higgsfield + Claude](reports/higgsfield-mcp-claude-all-ai-models.md) | Jay E \| RoboNuggets | Intermediate |
 | 2026-05-06 | [Hermes Agent SEO Content Engine](reports/hermes-agent-seo-content-engine.md) | AR Profit | Intermediate |

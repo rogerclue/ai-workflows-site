@@ -1,6 +1,6 @@
 # AI Workflows — Master Tool Registry
 
-Auto-generated from 32 video reports. Each entry includes cost/tier, role, and which reports reference it.
+Auto-generated from 33 video reports. Each entry includes cost/tier, role, and which reports reference it.
 
 ---
 
@@ -221,6 +221,16 @@ Auto-generated from 32 video reports. Each entry includes cost/tier, role, and w
 | **Google AdSense** | Display ad network; monetizes page views automatically (RPM model, no clicks needed) | Free (revenue share) | utility-site-passive-income-hostinger |
 | **Clearer** | SEO keyword research tool with SERP analysis; surfaces queries where new/low-trust sites already rank on page 1 | Paid (SaaS) | utility-site-passive-income-hostinger |
 | **SimilarWeb** | Chrome extension for traffic estimation on competitor sites | Free tier | utility-site-passive-income-hostinger |
+
+---
+
+## Security & Code Quality
+
+| Tool | Description | Cost/Tier | Reports |
+|------|-------------|-----------|---------|
+| **Claude Security** | AI-powered codebase security scanning built into Claude Enterprise; scans entire repos, traces data flows across files, validates findings before surfacing (eliminates false positives), generates patches for approved issues; enterprise beta as of 2026-05 | Claude Enterprise | claude-security-enterprise-code-scanning |
+| **Snyk** | Legacy static analysis security tool; pattern-based vulnerability detection; replaced/supplemented by Claude Security in many workflows | Paid SaaS | claude-security-enterprise-code-scanning |
+| **SonarQube** | Legacy code quality and security scanning platform; pattern-based; compared unfavorably to reasoning-based Claude Security approach | Free/Paid | claude-security-enterprise-code-scanning |
 
 ---
 
