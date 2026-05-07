@@ -546,7 +546,7 @@ Extracted cross-report primitives. Each pattern is tool-agnostic where possible,
 **Applicable to**: Seedance/SeaDance prompting, Higgsfield UGC Marketing Studio, Arcads, fal.ai Seedance API
 
 **Tools**: Claude + custom skill file
-**Reports**: [Seedance Prompting + Omni Reference](reports/seedance-prompting-omni-reference-genhq.md), [Claude Code + Seedance + fal.ai](reports/claude-code-seedance-fal-promotional-video.md), [Claude + Higgsfield UGC Skill](reports/claude-higgsfield-ugc-skill-marketing-studio.md)
+**Reports**: [Seedance Prompting + Omni Reference](reports/seedance-prompting-omni-reference-genhq.md), [Claude Code + Seedance + fal.ai](reports/claude-code-seedance-fal-promotional-video.md), [Claude + Higgsfield UGC Skill](reports/claude-higgsfield-ugc-skill-marketing-studio.md), [Claude + Seedance 2.0 UGC Ads](reports/claude-seedance-ugc-ads-alex-robinson.md)
 **Key insight**: The skill file IS the competitive advantage — encode expert-level platform knowledge once, use it forever
 
 ---
@@ -719,6 +719,31 @@ Script format: [JSON structure]
 **Tools**: Claude Code + Higgsfield MCP + Nano Banana 2 + GPT Image 2 + Seedance 2.0
 **Report**: [Automate EVERY AI Model with Higgsfield + Claude](reports/higgsfield-mcp-claude-all-ai-models.md)
 **Key insight**: **Staying in one Claude conversation from logo to working website** eliminates context loss — the brand colors, typography, and design decisions made in step 2 are still in context when building the website in step 7, so everything stays visually consistent without re-briefing
+
+---
+
+## Pattern 39: PDF Framework → Claude Project → Multi-Chunk Video Script
+
+**What it does**: Turns any domain-expert document (script frameworks, hook libraries, brand guides) into Claude's operating "brain" for a session — upload once to a Claude Project, and Claude generates fully-formatted multi-chunk Seedance scripts that include runtime estimates, product tagging, and consistency direction blocks without any manual prompt engineering.
+
+**Steps**:
+1. Prepare two assets: a domain PDF (e.g., UGC script framework with hook library) + viral hook list
+2. Create a Claude Project → upload the PDF as project knowledge
+3. Per session: attach avatar image + product image + paste hook list → send one prompt: "Study this PDF and create one ad using the [framework type] format"
+4. Claude outputs multi-chunk script where each chunk includes:
+   - Voiceover text (naturally phrased, handles tricky word pronunciations)
+   - Estimated runtime (seconds) for that clip
+   - Universal Direction Block (stays the same across all clips — character lock, hair, UGC realism blocks)
+   - Per-clip direction (framing, action, product `@tag` include/exclude flag)
+5. Copy Universal Direction Block → paste as prompt prefix in every Higgsfield generation
+6. Copy each chunk → replace voiceover section → adjust runtime → generate
+7. Optional: turn PDF into a Claude Code skill (`/ugc-script`) for one-command generation in future sessions
+
+**Key format detail**: Claude outputs `@[element-name]` product tags that auto-populate product images in Higgsfield when the element name matches — eliminates manual re-attachment per clip.
+
+**Tools**: Claude (Project) + Higgsfield Seedance 2.0 + CapCut
+**Report**: [Claude + Seedance 2.0 UGC Ads](reports/claude-seedance-ugc-ads-alex-robinson.md)
+**Key insight**: The PDF upload makes Claude an expert in your specific script methodology — it doesn't just generate scripts, it generates scripts that already know your hook style, pacing constraints, and platform vocabulary, which is why the output sounds natural without post-editing
 
 ---
 

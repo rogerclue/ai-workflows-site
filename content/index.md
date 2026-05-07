@@ -7,6 +7,7 @@ Auto-generated index of all video reports. Use this to find the right report whe
 ## By Use Case
 
 ### Marketing & Brand Automation
+- **[Claude + Seedance 2.0 UGC Ads (Alex Robinson)](reports/claude-seedance-ugc-ads-alex-robinson.md)** — PDF script framework → Claude multi-chunk script → Higgsfield Seedance clips → CapCut assembly; character-consistent UGC for e-commerce. *Beginner / manual-assisted*
 - **[Automate EVERY AI Model with Higgsfield + Claude](reports/higgsfield-mcp-claude-all-ai-models.md)** — Logo → brand book (multi-model comparison) → storyboard → Seedance animation → landing page mockup → working website. *Intermediate / manual-assisted*
 - **[Higgsfield MCP — Instagram Ad Campaign](reports/higgsfield-mcp-instagram-ad-campaign.md)** — 50-ad Instagram campaign (5 angles × 5 concepts × 2 ratios) from one product photo; competitive research via Playwright + Meta Ads Library. *Intermediate / automated-pipeline*
 - **[Claude + Higgsfield MCP](reports/claude-higgsfield-mcp-marketing.md)** — Brand Launch Pack + GTM Pack + UGC generation via Claude Code slash commands; full Shopify rebrand pipeline. *Intermediate / automated-pipeline*
@@ -88,6 +89,7 @@ Auto-generated index of all video reports. Use this to find the right report whe
 | [Higgsfield MCP Solo App Marketing Ads](reports/higgsfield-mcp-solo-app-marketing-ads.md) | Product URL → UGC ad via Higgsfield MCP in Claude Desktop |
 | [Claude Ads Skill Multi-Platform Planning](reports/claude-ads-skill-multi-platform-planning.md) | Multi-platform ad strategy + PDF report from website URL |
 | [Claude Security — Enterprise Code Scanning](reports/claude-security-enterprise-code-scanning.md) | Full codebase scan → validated findings → one-click patches |
+| [Claude + Seedance 2.0 UGC Ads](reports/claude-seedance-ugc-ads-alex-robinson.md) | PDF framework → Claude script → Seedance clips → CapCut assembly |
 
 ### Intermediate
 | Report | Core Workflow |
@@ -166,6 +168,7 @@ Auto-generated index of all video reports. Use this to find the right report whe
 - [Automate EVERY AI Model with Higgsfield + Claude](reports/higgsfield-mcp-claude-all-ai-models.md)
 - [Scrape Website → Personal Video API](reports/scrape-website-video-api.md)
 - [Claude Security — Enterprise Code Scanning](reports/claude-security-enterprise-code-scanning.md)
+- [Claude + Seedance 2.0 UGC Ads](reports/claude-seedance-ugc-ads-alex-robinson.md)
 
 ---
 
@@ -313,9 +316,9 @@ Auto-generated index of all video reports. Use this to find the right report whe
 
 **skill-extraction**: self-evolving-agents-memory-ai-jason, hermes-agent-7-use-cases
 
-**ugc**: claude-higgsfield-ugc-skill-marketing-studio, claude-cowork-arcads-dropshipping-ugc, claude-seedance-ugc-autopilot-arcads, seedance-ugc-skill-gpt-image-capcut, higgsfield-mcp-solo-app-marketing-ads, claude-browser-starop-ugc-five-formats, claude-arcads-autonomous-ad-engine-pink
+**ugc**: claude-higgsfield-ugc-skill-marketing-studio, claude-cowork-arcads-dropshipping-ugc, claude-seedance-ugc-autopilot-arcads, seedance-ugc-skill-gpt-image-capcut, higgsfield-mcp-solo-app-marketing-ads, claude-browser-starop-ugc-five-formats, claude-arcads-autonomous-ad-engine-pink, claude-seedance-ugc-ads-alex-robinson
 
-**seedance**: claude-seedance-ugc-autopilot-arcads, seedance-ugc-skill-gpt-image-capcut, claude-code-seedance-fal-promotional-video, seedance-prompting-omni-reference-genhq
+**seedance**: claude-seedance-ugc-autopilot-arcads, seedance-ugc-skill-gpt-image-capcut, claude-code-seedance-fal-promotional-video, seedance-prompting-omni-reference-genhq, claude-seedance-ugc-ads-alex-robinson
 
 **arcads**: claude-cowork-arcads-dropshipping-ugc, claude-seedance-ugc-autopilot-arcads, claude-arcads-autonomous-ad-engine-pink, claude-browser-starop-ugc-five-formats
 
@@ -337,6 +340,8 @@ Auto-generated index of all video reports. Use this to find the right report whe
 
 **perplexity**: scrape-website-video-api
 
+**ecommerce**: claude-seedance-ugc-ads-alex-robinson
+
 **claude-security**: claude-security-enterprise-code-scanning
 
 **code-security**: claude-security-enterprise-code-scanning
@@ -353,6 +358,7 @@ Auto-generated index of all video reports. Use this to find the right report whe
 
 | Date | Report | Channel | Complexity |
 |------|--------|---------|------------|
+| 2026-05-07 | [Claude + Seedance 2.0 UGC Ads](reports/claude-seedance-ugc-ads-alex-robinson.md) | Alex Robinson | Beginner |
 | 2026-05-07 | [Claude Security — Enterprise Code Scanning](reports/claude-security-enterprise-code-scanning.md) | Next Level AI | Beginner |
 | 2026-05-07 | [Scrape Website → Personal Video API](reports/scrape-website-video-api.md) | Creator's Journey | Intermediate |
 | 2026-05-06 | [Automate EVERY AI Model with Higgsfield + Claude](reports/higgsfield-mcp-claude-all-ai-models.md) | Jay E \| RoboNuggets | Intermediate |
