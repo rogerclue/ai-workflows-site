@@ -1,6 +1,6 @@
 # AI Workflows — Master Tool Registry
 
-Auto-generated from 19 video reports. Each entry includes cost/tier, role, and which reports reference it.
+Auto-generated from 30 video reports. Each entry includes cost/tier, role, and which reports reference it.
 
 ---
 
@@ -13,7 +13,7 @@ Auto-generated from 19 video reports. Each entry includes cost/tier, role, and w
 | **React Native** | Cross-platform mobile app framework; Claude Code sets up project scaffold automatically | Free / open-source | vibe-coded-400k-app-claude-code |
 | **Playwright MCP** | Browser automation MCP server (Microsoft open-source); used for structured scraping of Meta Ads Library and web pages; install via `git clone github.com/microsoft/playwright-mcp` | Free/open-source | higgsfield-mcp-instagram-ad-campaign |
 | **Codex** (OpenAI) | General-purpose knowledge work orchestrator with time-based pricing (5–10 hr/mo at $100/mo); parallel tasks, computer use, browser use, dictation, Chronicle memory | $100/mo | codex-best-software-ever |
-| **Hermes Agent** | Open-source self-improving agent with persistent skill library, learning loop, cron scheduling, and multi-platform messaging | Free/open-source | hermes-agent-7-use-cases, hermes-agent-v012-self-maintaining |
+| **Hermes Agent** | Open-source self-improving agent with persistent skill library, learning loop, cron scheduling, and multi-platform messaging | Free/open-source | hermes-agent-7-use-cases, hermes-agent-v012-self-maintaining, hermes-agent-seo-content-engine |
 | **Harbor** | Open-source GUI agent harness (org-chart view, knowledge bases, env vars) for multi-agent orchestration; built on OpenClaw | Open-source | greg-isenberg-ai-agents-run-business |
 | **Claude Routines** | Native Claude (web/desktop) scheduled agent feature via `/schedule` command; 15 daily slots on Max, 5 on Pro | Claude Max/Pro | claude-routines-scheduled-agents |
 
@@ -23,8 +23,8 @@ Auto-generated from 19 video reports. Each entry includes cost/tier, role, and w
 
 | Tool | Description | Cost/Tier | Reports |
 |------|-------------|-----------|---------|
-| **GPT-image-2** | OpenAI photorealistic image generation; used for product images, UI mockups, and 6-panel cinematic storyboards; near-perfect text rendering | OpenAI paid / Included via Higgsfield / fal.ai | claude-higgsfield-mcp-marketing, codex-best-software-ever, claude-higgsfield-content-creation-storyboard, claude-cinematic-ads-agent-fal |
-| **fal.ai** | Model-as-a-service aggregator; hosts GPT-image-2 and C-dance 2.0 APIs; "Copy content for LLMs" pattern gives agents full API access without manual integration | Usage-based | claude-cinematic-ads-agent-fal |
+| **GPT-image-2** | OpenAI photorealistic image generation; used for product images, UI mockups, and 6-panel cinematic storyboards; near-perfect text rendering | OpenAI paid / Included via Higgsfield / fal.ai | claude-higgsfield-mcp-marketing, codex-best-software-ever, claude-higgsfield-content-creation-storyboard, claude-cinematic-ads-agent-fal, seedance-ugc-skill-gpt-image-capcut |
+| **fal.ai** | Model-as-a-service aggregator; hosts GPT-image-2 and C-dance 2.0 APIs; "Copy content for LLMs" pattern gives agents full API access without manual integration | Usage-based | claude-cinematic-ads-agent-fal, claude-code-seedance-fal-promotional-video |
 | **Nano Banana Pro** | Alternative image generation model for character reference sheets; available via Higgsfield | Included via Higgsfield | claude-higgsfield-content-creation-storyboard |
 | **Flux** (via ComfyUI) | Local image generation model; accessed via Hermes News Portal subscription | Paid (subscription) | hermes-agent-7-use-cases |
 | **ComfyUI** | Local image generation runner; bundled with Hermes v0.12 (hardware-gated); supports Flux | Free (local) | hermes-agent-7-use-cases, hermes-agent-v012-self-maintaining |
@@ -42,9 +42,10 @@ Auto-generated from 19 video reports. Each entry includes cost/tier, role, and w
 | **Kling 3.0** | Animates green-screen images into rotating 3D objects; used for 3D logo generation in Hyperframes pipeline | Via Higgsfield | hyperframes-v2-video-editing-bit-framework |
 | **Remotion** | Programmatic video rendering framework; React-based, version-controlled; used by Hyperframes, Claude Code built-in skill, and Codex for motion graphics generation | Open-source | claude-video-editing-hyperframes, claude-capcut-animations-remotion, stop-using-claude-start-codex-isenberg |
 | **Higgsfield MCP** | Claude Code MCP connector to Higgsfield AI's image + video generation platform; connect via Claude desktop Settings → Connectors → Add Custom Connector (remote URL: `https://mcp.higgsfield.ai/mcp`) | Higgsfield subscription | claude-higgsfield-mcp-marketing, higgsfield-mcp-instagram-ad-campaign, claude-higgsfield-content-creation-storyboard |
-| **C-dance 2.0** | Cinematic video generation model by ByteDance; best current model for motion/cinematic scenes; natively understands storyboard format; face detection policy requires blurred-face workaround | Included in Higgsfield / fal.ai | claude-higgsfield-mcp-marketing, claude-higgsfield-content-creation-storyboard, claude-cinematic-ads-agent-fal |
-| **Higgsfield Marketing Studio** | UGC category management + avatar library within Higgsfield | Included | claude-higgsfield-mcp-marketing |
+| **C-dance 2.0** (aka Seedance 2.0 / SeaDance 2.0) | Cinematic video generation model by ByteDance; best current model for motion/cinematic scenes; natively understands storyboard format; face detection policy requires blurred-face workaround; marketed by Higgsfield as SeaDance 2.0 | Included in Higgsfield / fal.ai | claude-higgsfield-mcp-marketing, claude-higgsfield-content-creation-storyboard, claude-cinematic-ads-agent-fal, claude-seedance-ugc-autopilot-arcads, seedance-ugc-skill-gpt-image-capcut, claude-code-seedance-fal-promotional-video, seedance-prompting-omni-reference-genhq, claude-higgsfield-ugc-skill-marketing-studio, claude-cowork-arcads-dropshipping-ugc, higgsfield-mcp-solo-app-marketing-ads, claude-arcads-autonomous-ad-engine-pink, claude-browser-starop-ugc-five-formats |
+| **Higgsfield Marketing Studio** | UGC category management + avatar library within Higgsfield | Included | claude-higgsfield-mcp-marketing, claude-higgsfield-ugc-skill-marketing-studio, higgsfield-mcp-solo-app-marketing-ads |
 | **ffmpeg** | Video processing CLI; used by `/watch` skill for frame extraction, and by Remotion/Hyperframes | Free | claude-video-editing-hyperframes |
+| **CapCut** | Mobile/desktop video editing app; used for post-production of Seedance clips — arranging, adding captions, color grading, export | Free/Pro | seedance-ugc-skill-gpt-image-capcut |
 
 ---
 
@@ -131,6 +132,14 @@ Auto-generated from 19 video reports. Each entry includes cost/tier, role, and w
 
 ---
 
+## SEO Tools
+
+| Tool | Description | Cost/Tier | Reports |
+|------|-------------|-----------|---------|
+| **Ahrefs** | SEO analysis platform; backlink tracking, keyword research, competitor analysis, domain rating; used to measure SEO impact of Hermes content engine | Paid | hermes-agent-seo-content-engine |
+
+---
+
 ## Advertising & Marketing Platforms
 
 | Tool | Description | Cost/Tier | Reports |
@@ -139,6 +148,8 @@ Auto-generated from 19 video reports. Each entry includes cost/tier, role, and w
 | **Meta Ads Library** | Public database of all active Meta ads; scraped via Playwright MCP for competitive creative research | Free | higgsfield-mcp-instagram-ad-campaign |
 | **Reddit Ads** | Autonomous ad management alongside Meta | Ad spend | greg-isenberg-ai-agents-run-business |
 | **Shopify** | Target platform for website rebrand via Claude Code + Higgsfield brand assets | Shopify subscription | claude-higgsfield-mcp-marketing |
+| **Arcads** | AI actor video generation platform with public API; used for bulk UGC ad generation with demographically-matched actors; Pro plan ($200/mo) required for API access | Pro ~$200/mo | claude-cowork-arcads-dropshipping-ugc, claude-seedance-ugc-autopilot-arcads, claude-arcads-autonomous-ad-engine-pink |
+| **Starop** | AI video generation platform with 13 UGC ad formats; brand DNA auto-extraction from product URL; Claude Chrome extension drives it via browser automation | Paid | claude-browser-starop-ugc-five-formats, claude-cowork-arcads-dropshipping-ugc |
 
 ---
 
@@ -157,6 +168,16 @@ Auto-generated from 19 video reports. Each entry includes cost/tier, role, and w
 | **n8n** | Workflow automation platform; recommended for high-frequency, deterministic (non-reasoning) tasks | Open-source / paid | claude-routines-scheduled-agents |
 | **Browser Use** | Built-in browser automation in Codex; also available via Hermes News Portal | Included in Codex / Hermes | codex-best-software-ever, hermes-agent-7-use-cases |
 | **Computer Use plugin** (Codex) | Mouse control across native Mac apps via Codex | Included | codex-best-software-ever |
+| **Claude Chrome Extension** | Official Claude browser extension enabling Claude to control Chrome; used with Claude Desktop code tab to automate UI interactions in web apps (Arcads, Starop) without API access | Free | claude-browser-starop-ugc-five-formats, claude-arcads-autonomous-ad-engine-pink, claude-cowork-arcads-dropshipping-ugc |
+
+---
+
+## Claude Code Skills (npm-installable)
+
+| Tool | Description | Cost/Tier | Reports |
+|------|-------------|-----------|---------|
+| **Claude Ads Skill** | Open-source Claude Code skill covering 6 ad platforms (Google, Meta, YouTube, LinkedIn, TikTok, Microsoft) with 190+ audit checks, industry templates, parallel subagent delegation; install via npm | Free (GitHub) | claude-ads-skill-multi-platform-planning |
+| **Hyperframes skill** | Free Claude Code skill for AI video generation (script → voiceover → animated slides → render); integrates with Hermes agent | Free | hermes-agent-seo-content-engine |
 
 ---
 
@@ -222,3 +243,10 @@ Auto-generated from 19 video reports. Each entry includes cost/tier, role, and w
 | Motion graphics / animated overlays | Claude Code + Remotion skill |
 | Automated ad generation on a schedule | Claude Routines (remote) + Higgsfield MCP |
 | Niche app market research | Sensor Tower → find single-feature apps → validate revenue |
+| UGC video ads for physical products (API-driven, 200-500/mo) | Arcads Pro + CLAUDE.md brain + Claude Cowork |
+| UGC video ads in browser (13 formats, no API required) | Claude Chrome Extension + Starop + Claude Code tab |
+| Seedance video generation without browser UI | fal.ai API + Claude Code (paste LLM docs to configure) |
+| Omni reference multi-ingredient video (character + location + product) | Higgsfield SeaDance 2.0 + Claude video prompt builder skill |
+| Autonomous SEO content engine with daily publishing | Hermes Agent + Hyperframes + HeyGen + Netlify/WordPress |
+| Multi-platform ad strategy PDF from website URL | Claude Code + Claude Ads skill (npm install) |
+| UGC ad iteration and improvement feedback | Gemini (upload video file → frame-by-frame analysis) |

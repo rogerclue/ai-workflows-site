@@ -10,6 +10,15 @@ Auto-generated index of all video reports. Use this to find the right report whe
 - **[Higgsfield MCP — Instagram Ad Campaign](reports/higgsfield-mcp-instagram-ad-campaign.md)** — 50-ad Instagram campaign (5 angles × 5 concepts × 2 ratios) from one product photo; competitive research via Playwright + Meta Ads Library. *Intermediate / automated-pipeline*
 - **[Claude + Higgsfield MCP](reports/claude-higgsfield-mcp-marketing.md)** — Brand Launch Pack + GTM Pack + UGC generation via Claude Code slash commands; full Shopify rebrand pipeline. *Intermediate / automated-pipeline*
 - **[AI Agents Run My Business](reports/greg-isenberg-ai-agents-run-business.md)** — Autonomous marketing agent managing Meta/Reddit ads via PostHog data; three-agent business stack (support + dev + marketing). *Advanced / automated-pipeline*
+- **[Claude + Higgsfield UGC Skill + Marketing Studio](reports/claude-higgsfield-ugc-skill-marketing-studio.md)** — Claude UGC skill → Higgsfield Marketing Studio + competitor clone pipeline. *Intermediate / manual-assisted*
+- **[Claude Cowork + Arcads Dropshipping UGC](reports/claude-cowork-arcads-dropshipping-ugc.md)** — Claude Cowork + Arcads full pipeline with CLAUDE.md + feedback loop. *Intermediate / agent-loop*
+- **[Claude + Seedance/Arcads UGC Autopilot](reports/claude-seedance-ugc-autopilot-arcads.md)** — Competitor clone + video extension via ffmpeg + Arcads/Seedance autopilot. *Advanced / automated-pipeline*
+- **[Seedance UGC Skill + GPT Image + CapCut](reports/seedance-ugc-skill-gpt-image-capcut.md)** — Claude skill → GPT Image 2.0 character → Seedance → CapCut with character consistency. *Intermediate / manual-assisted*
+- **[Claude Code + Seedance + fal.ai Promotional Video](reports/claude-code-seedance-fal-promotional-video.md)** — fal.ai API + Seedance + Claude Code skill, no browser UI required. *Advanced / automated-pipeline*
+- **[Higgsfield MCP Solo App Marketing Ads](reports/higgsfield-mcp-solo-app-marketing-ads.md)** — Product URL → UGC ad via Higgsfield MCP in Claude Desktop. *Beginner / manual-assisted*
+- **[Claude Browser + Starop UGC Five Formats](reports/claude-browser-starop-ugc-five-formats.md)** — Claude browser automation → Starop 5-format UGC generation. *Intermediate / automated-pipeline*
+- **[Claude + Arcads Autonomous Ad Engine](reports/claude-arcads-autonomous-ad-engine-pink.md)** — CLAUDE.md brain + Arcads API + 48-hour performance feedback loop. *Intermediate / agent-loop*
+- **[Claude Ads Skill Multi-Platform Planning](reports/claude-ads-skill-multi-platform-planning.md)** — Multi-platform ad strategy + PDF report from website URL. *Beginner / manual-assisted*
 
 ### Content Creation & Video
 - **[Claude Video Editing](reports/claude-video-editing-hyperframes.md)** — Natural language → trimmed/subtitled/motion-graphics video via Hyperframes + Remotion. *Beginner / manual-assisted*
@@ -21,6 +30,7 @@ Auto-generated index of all video reports. Use this to find the right report whe
 - **[Claude Routines](reports/claude-routines-scheduled-agents.md)** — Weekly self-interview for content ideas; weekly content research via NotebookLM + YouTube outliers tracker. *Beginner / automated-pipeline*
 - **[Claude Cowork — Social Media Automation](reports/claude-cowork-social-media-blotato.md)** — Interview-to-skill creation, screenshot → multi-platform posts, Blotato MCP for infographics + scheduling, "update the skill" continuous improvement. *Beginner / manual-assisted*
 - **[Content Team with Claude Code — 11 Skills](reports/claude-code-content-team-11-skills.md)** — Orchestrator + 11 sub-skills (lookalike content, post enricher, platform formatters) with monthly analytics feedback loop that auto-updates all skills. *Advanced / agent-loop*
+- **[Seedance Prompting + Omni Reference (GenHQ)](reports/seedance-prompting-omni-reference-genhq.md)** — SeaDance Omni reference + VFX + real footage integration. *Intermediate / manual-assisted*
 
 ### Productivity & Scheduling
 - **[Claude Routines](reports/claude-routines-scheduled-agents.md)** — 6 live founder routines: daily brief, meeting digest, product brief, revenue pulse. *Beginner / automated-pipeline*
@@ -42,6 +52,10 @@ Auto-generated index of all video reports. Use this to find the right report whe
 - **[Self-Evolving Agents — Memory Architecture](reports/self-evolving-agents-memory-ai-jason.md)** — State-of-the-art 3-layer memory blueprint (hot/warm/cold), async skill extraction, hooks-based self-improvement for Claude Code and Hermes Agent. *Advanced / agent-loop*
 - **[Hermes Agent v0.12](reports/hermes-agent-v012-self-maintaining.md)** — Autonomous skill curator (7-day cycle), self-improvement loop, LM Studio, Spotify/Meet integrations. *Advanced / agent-loop*
 - **[AI Agents Run My Business](reports/greg-isenberg-ai-agents-run-business.md)** — Harbor agent harness, three-agent org, vector DB for portfolio intelligence. *Advanced / automated-pipeline*
+- **[Hermes Agent SEO Content Engine](reports/hermes-agent-seo-content-engine.md)** — Autonomous SEO engine: persistent goals + agent swarms + self-improving content loops. *Intermediate / agent-loop*
+
+### SEO & Content Growth
+- **[Hermes Agent SEO Content Engine](reports/hermes-agent-seo-content-engine.md)** — Autonomous SEO engine: persistent goals + agent swarms + self-improving content loops. *Intermediate / agent-loop*
 
 ### AI Consulting & Service Business
 - **[AI Audit for Boomer Businesses](reports/ai-audit-boomer-business-corey-ganim.md)** — $1,000 AI assessment for SMBs: voice agent intake → Claude report → upsell menu ($1k–$10k). Zero coding required. *Beginner / manual-assisted*
@@ -68,6 +82,8 @@ Auto-generated index of all video reports. Use this to find the right report whe
 | [Vibe Coded $400K/mo App](reports/vibe-coded-400k-app-claude-code.md) | Claude chat prompt → React Native iOS app → Expo Go testing |
 | [Stop Using Claude. Start Using Codex?](reports/stop-using-claude-start-codex-isenberg.md) | Codex skills, automations, browser use, Remotion |
 | [Claude Cowork — Social Media Automation](reports/claude-cowork-social-media-blotato.md) | Interview → write-content skill → screenshot → Blotato → schedule |
+| [Higgsfield MCP Solo App Marketing Ads](reports/higgsfield-mcp-solo-app-marketing-ads.md) | Product URL → UGC ad via Higgsfield MCP in Claude Desktop |
+| [Claude Ads Skill Multi-Platform Planning](reports/claude-ads-skill-multi-platform-planning.md) | Multi-platform ad strategy + PDF report from website URL |
 
 ### Intermediate
 | Report | Core Workflow |
@@ -81,6 +97,13 @@ Auto-generated index of all video reports. Use this to find the right report whe
 | [Claude Cinematic Ads Agent (fal.ai)](reports/claude-cinematic-ads-agent-fal.md) | Product image → storyboard → C-dance video via fal.ai |
 | [Claude + Hyperframes V2](reports/hyperframes-v2-video-editing-bit-framework.md) | Raw footage → storyboard → animated video; BIT framework for skill calibration |
 | [design.md — AI Consistent UI Generation](reports/design-md-ai-consistent-ui-generation.md) | design.md file → drift-free multi-medium UI across all agents/tools |
+| [Claude + Higgsfield UGC Skill + Marketing Studio](reports/claude-higgsfield-ugc-skill-marketing-studio.md) | Claude UGC skill → Higgsfield Marketing Studio + competitor clone |
+| [Claude Cowork + Arcads Dropshipping UGC](reports/claude-cowork-arcads-dropshipping-ugc.md) | Claude Cowork + Arcads full pipeline with CLAUDE.md + feedback loop |
+| [Seedance UGC Skill + GPT Image + CapCut](reports/seedance-ugc-skill-gpt-image-capcut.md) | Claude skill → GPT Image 2.0 character → Seedance → CapCut |
+| [Seedance Prompting + Omni Reference (GenHQ)](reports/seedance-prompting-omni-reference-genhq.md) | SeaDance Omni reference + VFX + real footage integration |
+| [Claude Browser + Starop UGC Five Formats](reports/claude-browser-starop-ugc-five-formats.md) | Claude browser automation → Starop 5-format UGC generation |
+| [Claude + Arcads Autonomous Ad Engine](reports/claude-arcads-autonomous-ad-engine-pink.md) | CLAUDE.md brain + Arcads API + 48-hour performance feedback loop |
+| [Hermes Agent SEO Content Engine](reports/hermes-agent-seo-content-engine.md) | Autonomous SEO engine: persistent goals + agent swarms + self-improving |
 
 ### Advanced
 | Report | Core Workflow |
@@ -90,6 +113,8 @@ Auto-generated index of all video reports. Use this to find the right report whe
 | [Claude Code for Quant Trading](reports/claude-code-trading-quant-systems.md) | Regime detection + Monte Carlo + portfolio dashboard + trading bot |
 | [Self-Evolving Agents — Memory Architecture](reports/self-evolving-agents-memory-ai-jason.md) | Hot/warm/cold memory blueprint + async skill extraction + hooks |
 | [Content Team with Claude Code — 11 Skills](reports/claude-code-content-team-11-skills.md) | Orchestrator + 11 skills + monthly analytics feedback loop |
+| [Claude + Seedance/Arcads UGC Autopilot](reports/claude-seedance-ugc-autopilot-arcads.md) | Competitor clone + video extension via ffmpeg + Arcads/Seedance |
+| [Claude Code + Seedance + fal.ai Promotional Video](reports/claude-code-seedance-fal-promotional-video.md) | fal.ai API + Seedance + Claude Code skill, no browser UI |
 
 ---
 
@@ -102,6 +127,9 @@ Auto-generated index of all video reports. Use this to find the right report whe
 - [AI Agents Run My Business](reports/greg-isenberg-ai-agents-run-business.md)
 - [Claude + Higgsfield Content Creation](reports/claude-higgsfield-content-creation-storyboard.md)
 - [Claude Cinematic Ads Agent (fal.ai)](reports/claude-cinematic-ads-agent-fal.md)
+- [Claude + Seedance/Arcads UGC Autopilot](reports/claude-seedance-ugc-autopilot-arcads.md)
+- [Claude Code + Seedance + fal.ai Promotional Video](reports/claude-code-seedance-fal-promotional-video.md)
+- [Claude Browser + Starop UGC Five Formats](reports/claude-browser-starop-ugc-five-formats.md)
 
 ### agent-loop (persistent, self-improving)
 - [Hermes Agent — 7 Use Cases](reports/hermes-agent-7-use-cases.md)
@@ -109,6 +137,9 @@ Auto-generated index of all video reports. Use this to find the right report whe
 - [Stop Using Claude. Start Using Codex?](reports/stop-using-claude-start-codex-isenberg.md)
 - [Self-Evolving Agents — Memory Architecture](reports/self-evolving-agents-memory-ai-jason.md)
 - [Content Team with Claude Code — 11 Skills](reports/claude-code-content-team-11-skills.md)
+- [Claude Cowork + Arcads Dropshipping UGC](reports/claude-cowork-arcads-dropshipping-ugc.md)
+- [Claude + Arcads Autonomous Ad Engine](reports/claude-arcads-autonomous-ad-engine-pink.md)
+- [Hermes Agent SEO Content Engine](reports/hermes-agent-seo-content-engine.md)
 
 ### manual-assisted (human in loop)
 - [Claude Video Editing](reports/claude-video-editing-hyperframes.md)
@@ -121,6 +152,11 @@ Auto-generated index of all video reports. Use this to find the right report whe
 - [Vibe Coded $400K/mo App](reports/vibe-coded-400k-app-claude-code.md)
 - [Claude Cowork — Social Media Automation](reports/claude-cowork-social-media-blotato.md)
 - [design.md — AI Consistent UI Generation](reports/design-md-ai-consistent-ui-generation.md)
+- [Claude + Higgsfield UGC Skill + Marketing Studio](reports/claude-higgsfield-ugc-skill-marketing-studio.md)
+- [Seedance UGC Skill + GPT Image + CapCut](reports/seedance-ugc-skill-gpt-image-capcut.md)
+- [Seedance Prompting + Omni Reference (GenHQ)](reports/seedance-prompting-omni-reference-genhq.md)
+- [Higgsfield MCP Solo App Marketing Ads](reports/higgsfield-mcp-solo-app-marketing-ads.md)
+- [Claude Ads Skill Multi-Platform Planning](reports/claude-ads-skill-multi-platform-planning.md)
 
 ---
 
@@ -166,7 +202,7 @@ Auto-generated index of all video reports. Use this to find the right report whe
 
 **orchestrator**: claude-code-content-team-11-skills
 
-**feedback-loop**: claude-code-content-team-11-skills
+**feedback-loop**: claude-code-content-team-11-skills, claude-cowork-arcads-dropshipping-ugc, claude-arcads-autonomous-ad-engine-pink
 
 **design-system**: design-md-ai-consistent-ui-generation
 
@@ -222,7 +258,7 @@ Auto-generated index of all video reports. Use this to find the right report whe
 
 **no-code**: utility-site-passive-income-hostinger
 
-**seo**: utility-site-passive-income-hostinger
+**seo**: utility-site-passive-income-hostinger, hermes-agent-seo-content-engine
 
 **google-ads**: utility-site-passive-income-hostinger
 
@@ -234,7 +270,7 @@ Auto-generated index of all video reports. Use this to find the right report whe
 
 **storyboard**: claude-higgsfield-content-creation-storyboard, claude-cinematic-ads-agent-fal
 
-**fal-ai**: claude-cinematic-ads-agent-fal
+**fal-ai**: claude-cinematic-ads-agent-fal, claude-code-seedance-fal-promotional-video
 
 **ugc-video**: claude-higgsfield-content-creation-storyboard
 
@@ -262,12 +298,39 @@ Auto-generated index of all video reports. Use this to find the right report whe
 
 **skill-extraction**: self-evolving-agents-memory-ai-jason, hermes-agent-7-use-cases
 
+**ugc**: claude-higgsfield-ugc-skill-marketing-studio, claude-cowork-arcads-dropshipping-ugc, claude-seedance-ugc-autopilot-arcads, seedance-ugc-skill-gpt-image-capcut, higgsfield-mcp-solo-app-marketing-ads, claude-browser-starop-ugc-five-formats, claude-arcads-autonomous-ad-engine-pink
+
+**seedance**: claude-seedance-ugc-autopilot-arcads, seedance-ugc-skill-gpt-image-capcut, claude-code-seedance-fal-promotional-video, seedance-prompting-omni-reference-genhq
+
+**arcads**: claude-cowork-arcads-dropshipping-ugc, claude-seedance-ugc-autopilot-arcads, claude-arcads-autonomous-ad-engine-pink, claude-browser-starop-ugc-five-formats
+
+**omni-reference**: seedance-prompting-omni-reference-genhq
+
+**competitor-clone**: claude-higgsfield-ugc-skill-marketing-studio, claude-seedance-ugc-autopilot-arcads
+
+**hermes-agent**: hermes-agent-7-use-cases, hermes-agent-v012-self-maintaining, hermes-agent-seo-content-engine
+
+**ad-planning**: claude-ads-skill-multi-platform-planning
+
+**browser-automation**: claude-browser-starop-ugc-five-formats
+
 ---
 
 ## All Reports (Chronological)
 
 | Date | Report | Channel | Complexity |
 |------|--------|---------|------------|
+| 2026-05-06 | [Hermes Agent SEO Content Engine](reports/hermes-agent-seo-content-engine.md) | AR Profit | Intermediate |
+| 2026-05-06 | [Claude Ads Skill Multi-Platform Planning](reports/claude-ads-skill-multi-platform-planning.md) | RankingStandard creator | Beginner |
+| 2026-05-06 | [Claude + Arcads Autonomous Ad Engine](reports/claude-arcads-autonomous-ad-engine-pink.md) | German AI creator | Intermediate |
+| 2026-05-06 | [Claude Browser + Starop UGC 5 Formats](reports/claude-browser-starop-ugc-five-formats.md) | David — ecom AI | Intermediate |
+| 2026-05-06 | [Higgsfield MCP Solo App Marketing Ads](reports/higgsfield-mcp-solo-app-marketing-ads.md) | Solo founder creator | Beginner |
+| 2026-05-06 | [Seedance Prompting + Omni Reference](reports/seedance-prompting-omni-reference-genhq.md) | Gen HQ | Intermediate |
+| 2026-05-06 | [Claude Code + Seedance + fal.ai Promo Video](reports/claude-code-seedance-fal-promotional-video.md) | AI dev creator | Advanced |
+| 2026-05-06 | [Seedance UGC Skill + GPT Image + CapCut](reports/seedance-ugc-skill-gpt-image-capcut.md) | AI creator | Intermediate |
+| 2026-05-06 | [Claude + Seedance/Arcads UGC Autopilot](reports/claude-seedance-ugc-autopilot-arcads.md) | AI marketing creator | Advanced |
+| 2026-05-06 | [Claude Cowork + Arcads Dropshipping UGC](reports/claude-cowork-arcads-dropshipping-ugc.md) | Cowork creator | Intermediate |
+| 2026-05-06 | [Claude + Higgsfield UGC Skill + Marketing Studio](reports/claude-higgsfield-ugc-skill-marketing-studio.md) | Gen HQ | Intermediate |
 | 2026-05-06 | [Content Team with Claude Code — 11 Skills](reports/claude-code-content-team-11-skills.md) | Marketing Against the Grain | Advanced |
 | 2026-05-06 | [Claude Cowork — Social Media Automation](reports/claude-cowork-social-media-blotato.md) | Marketing Against the Grain | Beginner |
 | 2026-05-06 | [design.md — AI Consistent UI Generation](reports/design-md-ai-consistent-ui-generation.md) | Greg Isenberg (Startup Ideas Podcast) | Intermediate |

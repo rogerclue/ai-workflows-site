@@ -515,6 +515,189 @@ Extracted cross-report primitives. Each pattern is tool-agnostic where possible,
 
 ---
 
+## Pattern 28: UGC Ad Planning Framework (Hook → Problem → Solution → CTA)
+
+**What it does**: Structures any UGC ad into a proven 4-part formula that maximizes watch time and conversion by frontloading attention capture in the first 3 seconds.
+
+**Steps**:
+1. **Hook**: Make the right viewer feel called out within 3 seconds — bold, relatable, controversial, or unexpected; make them feel you're talking directly to them
+2. **Problem**: Name the pain the viewer is experiencing; quantify the cost of not solving it
+3. **Solution**: Show how the product solves it; make them care about the outcome, not just the features
+4. **CTA**: Direct, specific action — visit URL, download app, try free
+
+**Hook generation pattern**: give Claude your product URL + target audience → "generate 5 hook variations" → Claude asks clarifying questions → select best angle
+
+**Tools**: Claude (any), custom UGC skill
+**Reports**: [Higgsfield MCP Solo App Marketing Ads](reports/higgsfield-mcp-solo-app-marketing-ads.md), [Claude + Higgsfield UGC Skill](reports/claude-higgsfield-ugc-skill-marketing-studio.md)
+**Key insight**: Frontload all creative effort into the hook — once a viewer stays past 3 seconds, they'll likely watch the rest
+
+---
+
+## Pattern 29: Claude Skill → Video Generation Platform (Prompt Builder Pattern)
+
+**What it does**: A reusable Claude skill file encodes all platform-specific prompting knowledge (terminology, parameter syntax, timing structure, VFX language), so every generation starts from expert-level prompts without manual expertise.
+
+**Steps**:
+1. Build skill file encoding: scene timing structure, camera behavior vocabulary, lighting design, color hex codes, character description format, atmospheric effects terminology
+2. User inputs simple description → Claude skill generates full platform-ready prompt
+3. Check character limit (Seedance: 4000, Higgsfield: 3000) → if over: paste back to Claude → "make under [X] chars"
+4. Copy prompt → paste into generation platform or submit via API
+
+**Applicable to**: Seedance/SeaDance prompting, Higgsfield UGC Marketing Studio, Arcads, fal.ai Seedance API
+
+**Tools**: Claude + custom skill file
+**Reports**: [Seedance Prompting + Omni Reference](reports/seedance-prompting-omni-reference-genhq.md), [Claude Code + Seedance + fal.ai](reports/claude-code-seedance-fal-promotional-video.md), [Claude + Higgsfield UGC Skill](reports/claude-higgsfield-ugc-skill-marketing-studio.md)
+**Key insight**: The skill file IS the competitive advantage — encode expert-level platform knowledge once, use it forever
+
+---
+
+## Pattern 30: Omni Reference — Multi-Ingredient Video Generation
+
+**What it does**: Instead of describing what you want in text, upload multiple "ingredient" images (character sheet + location + product/object) and let the video model synthesize them into a coherent scene that accurately represents all inputs.
+
+**Steps**:
+1. Prepare ingredients: character sheet (multi-angle photos of person/avatar), location image, optional product/text reference
+2. Upload all ingredients to Higgsfield/SeaDance prompt bar
+3. Write brief prompt describing the action/scenario
+4. Model generates video incorporating all ingredients
+
+**Use cases**:
+- Character in specific location: character sheet + location image
+- 3D text in scene: location image + 3D text reference image
+- Product interaction: character sheet + product image
+- Full story scene: character sheet + second character sheet + location
+
+**Tools**: Higgsfield (SeaDance 2.0)
+**Report**: [Seedance Prompting + Omni Reference](reports/seedance-prompting-omni-reference-genhq.md)
+**Key insight**: Omni reference shifts the paradigm from "describe what you want" to "show what ingredients you have" — dramatically improves character accuracy and scene consistency
+
+---
+
+## Pattern 31: Voice Consistency Trick for Multi-Clip Video Production
+
+**What it does**: Maintains consistent voice and character identity across multiple independently generated video clips by extracting audio from the first clip and uploading it as a voice reference for subsequent clips.
+
+**Steps**:
+1. Generate first video clip (15 seconds max in Seedance)
+2. Extract audio from clip 1: `ffmpeg -i clip1.mp4 -vn -acodec mp3 voice_reference.mp3`
+3. For clip 2+: upload voice_reference.mp3 as a reference element alongside the character sheet
+4. Generate subsequent clips — voice stays consistent
+5. Stitch all clips: `ffmpeg -f concat -i file_list.txt -c copy final_video.mp4`
+
+**Tools**: Seedance 2.0, ffmpeg, Claude Code (to run ffmpeg)
+**Reports**: [Seedance UGC Skill + GPT Image + CapCut](reports/seedance-ugc-skill-gpt-image-capcut.md), [Claude + Seedance/Arcads UGC Autopilot](reports/claude-seedance-ugc-autopilot-arcads.md)
+**Key insight**: The voice reference trick is the missing piece for multi-clip productions — without it, each clip generates a different voice, making longer videos feel disjointed
+
+---
+
+## Pattern 32: Competitor Ad Clone Workflow
+
+**What it does**: Analyzes the structure of a winning competitor ad (hook type, pacing, script formula, visual style) and rebuilds it with a fresh avatar and original dialogue — capturing proven effectiveness without copying.
+
+**Steps**:
+1. Identify winning ad on TikTok/Meta (high engagement, running for weeks = confirmed winner)
+2. Download ad → analyze with Gemini or Claude: "analyze this ad's structure — hook type, problem framing, pacing, CTA approach"
+3. Claude identifies what made it work (emotional register, problem specificity, visual style)
+4. Generate fresh script using same structural formula but original copy and different product angle
+5. Select different actor/avatar from library
+6. Generate new video — proven structure, fresh execution
+
+**Tools**: Gemini (video analysis), Claude (script rewrite), Arcads/Seedance (generation)
+**Reports**: [Claude + Higgsfield UGC Skill](reports/claude-higgsfield-ugc-skill-marketing-studio.md), [Claude + Seedance/Arcads UGC Autopilot](reports/claude-seedance-ugc-autopilot-arcads.md)
+**Key insight**: The structure (hook type, pacing, problem framing) is what makes an ad work — the specific copy and actor are interchangeable; clone the structure, not the content
+
+---
+
+## Pattern 33: 48-Hour Ad Performance Feedback Loop
+
+**What it does**: Closes the loop between ad generation and optimization by feeding real performance data back into Claude every 48 hours, so the system learns what works and compounds that intelligence into every subsequent batch.
+
+**Steps**:
+1. Run generated ads (Meta/TikTok) for 48 hours
+2. Paste performance data into Claude: CTR, CPM, ROAS, watch time by ad variant
+3. Claude analyzes: which hooks performed? which actors? which problem framings?
+4. Claude identifies winning patterns and failure modes
+5. Claude writes next batch of scripts optimized for identified winners
+6. Save learned patterns to CLAUDE.md permanently → agent carries forward intelligence
+7. Repeat every 48 hours
+
+**Tools**: Claude Cowork/Code, CLAUDE.md, Meta/TikTok Ads Manager (data source)
+**Reports**: [Claude Cowork + Arcads Dropshipping UGC](reports/claude-cowork-arcads-dropshipping-ugc.md), [Claude + Arcads Autonomous Ad Engine](reports/claude-arcads-autonomous-ad-engine-pink.md)
+**Key insight**: The 48-hour feedback loop turns an ad machine into a learning system — the same infrastructure that generates volume also generates intelligence when performance data flows back in
+
+---
+
+## Pattern 34: fal.ai LLM Docs → Instant Skill Update
+
+**What it does**: Any fal.ai model page includes a "Copy content for LLMs" section specifically designed to be pasted into AI agents — giving Claude complete API syntax, parameter schemas, and best practices in one paste.
+
+**Steps**:
+1. Go to fal.ai model page (e.g., Seedance 2.0, Flux, SDXL)
+2. Find "LLM content" or "Copy content for LLMs" section → copy
+3. Paste into Claude Code conversation: "Update my skill file with this new model capability"
+4. Claude reads the docs, understands parameter syntax, and updates skill file
+5. Skill now generates valid API calls for that model without guessing
+
+**Applicable to**: Any fal.ai hosted model; pattern also works for other providers that publish LLM-optimized docs
+
+**Tools**: Claude Code, fal.ai API
+**Report**: [Claude Code + Seedance + fal.ai Promotional Video](reports/claude-code-seedance-fal-promotional-video.md)
+**Key insight**: fal.ai's "LLM content" section removes all integration friction — one paste gives Claude everything it needs to call any model correctly
+
+---
+
+## Pattern 35: Autonomous SEO Content Engine (Hermes + Hyperframes)
+
+**What it does**: Fully autonomous content flywheel: keyword research → content strategy → article writing → video generation → publishing → daily scheduled execution, without human involvement in the execution loop.
+
+**Steps**:
+1. Set up Hermes with website context → run strategy swarm (12 parallel agents): competitor gap, content calendar, topical map, internal linking rules, featured snippet opportunities
+2. Set persistent goal: "rank this site, publish one post every morning" → Hermes loops until complete (20-50 turns with AI quality judge)
+3. Connect Hyperframes skill → one-prompt video generation: script → voiceover → animated slides → render
+4. Connect HeyGen API → add AI avatar to videos
+5. Set scheduled task: "one video + one article per day from content calendar"
+6. Distribute: publish article → post video to YouTube + LinkedIn + Reddit + X = multiple rankings for same keyword
+7. Self-improvement: Hermes analyzes own output each session → updates its skills → quality compounds
+
+**Tools**: Hermes Agent + Hyperframes + HeyGen + Netlify/WordPress + Ahrefs
+**Report**: [Hermes Agent SEO Content Engine](reports/hermes-agent-seo-content-engine.md)
+**Key insight**: AI has leveled the content playing field — backlinks are now the critical differentiator; content engine without backlink building will plateau for competitive keywords
+
+---
+
+## Pattern 36: CLAUDE.md Agent Brain for Autonomous Ad Generation
+
+**What it does**: Encodes all agent operating instructions into CLAUDE.md so every new session instantly restores full context — role, quality standards, API structure, and script format — without re-briefing.
+
+**CLAUDE.md structure for ad agent**:
+```
+# Role
+You are a [Product Name] advertising agent. You create bulk UGC-style video ads using the [Platform] API.
+
+# Script Structure  
+Hook (0-3s): [format]
+Problem (3-8s): [format]
+Solution (8-12s): [format]
+CTA (12-15s): [format]
+
+# Quality Checklist
+- [ ] CTA always present
+- [ ] Timing matches structure
+- [ ] Character matches target demographic
+- [ ] Product mentioned by name
+
+# API Reference
+Endpoint: [platform API endpoint]
+Auth: from .env PLATFORM_AUTH_HEADER
+Script format: [JSON structure]
+```
+
+**Tools**: Claude Code/Cowork, any UGC API (Arcads, Starop, etc.)
+**Reports**: [Claude + Arcads Autonomous Ad Engine](reports/claude-arcads-autonomous-ad-engine-pink.md), [Claude Cowork + Arcads Dropshipping UGC](reports/claude-cowork-arcads-dropshipping-ugc.md)
+**Key insight**: CLAUDE.md is the agent's permanent memory — encode the operating manual once, and every session inherits full expertise without re-briefing
+
+---
+
 ## Decision Framework: Automation Tool Selection
 
 ```
@@ -574,4 +757,22 @@ Do you want to build a social media content skill in your own voice?
 
 Do you want to replace a content team with an automated system?
   → 11-skill orchestrator pattern (Claude Code) + monthly analytics feedback loop
+
+Do you want to generate UGC ads via API at scale (200-500/mo)?
+  → CLAUDE.md brain + Arcads Pro API + Claude Cowork (feedback loop every 48 hours)
+
+Do you want to generate UGC ads in-browser across 13 formats?
+  → Claude Chrome Extension + Starop + Claude Desktop code tab
+
+Do you need voice consistency across multi-clip Seedance videos?
+  → Extract audio from clip 1 as MP3 voice reference → upload with character sheet for clip 2+
+
+Do you want to clone a winning competitor ad without copying it?
+  → Download ad → Gemini/Claude structure analysis → rebuild with fresh actor + same structural formula
+
+Do you want autonomous daily SEO content (articles + videos)?
+  → Hermes Agent + Hyperframes + scheduled persistent goals + backlink campaign (backlinks still required)
+
+Do you want to call Seedance or any fal.ai model from Claude Code without UI?
+  → Paste fal.ai "LLM content" docs into Claude Code → instant skill update → API calls via bash
 ```
