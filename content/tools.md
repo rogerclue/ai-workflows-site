@@ -1,6 +1,6 @@
 # AI Workflows — Master Tool Registry
 
-Auto-generated from 31 video reports. Each entry includes cost/tier, role, and which reports reference it.
+Auto-generated from 32 video reports. Each entry includes cost/tier, role, and which reports reference it.
 
 ---
 
@@ -127,7 +127,8 @@ Auto-generated from 31 video reports. Each entry includes cost/tier, role, and w
 
 | Tool | Description | Cost/Tier | Reports |
 |------|-------------|-----------|---------|
-| **Perplexity** | Real-time research API; used for talking point extraction with current stats and recent news | API (paid) | claude-code-content-team-11-skills |
+| **Perplexity** | Real-time research API; used for talking point extraction with current stats and recent news; also used as AI code-generation assistant (paste request/response examples → generate Python wrapper) | API (paid) | claude-code-content-team-11-skills, scrape-website-video-api |
+| **Browser DevTools** | Native browser developer tools for inspecting network requests, XHR/Fetch calls, and page structure; used to reverse-engineer web app API flows | Free (built into all browsers) | scrape-website-video-api |
 | **Firecrawl** | URL content extraction and web scraping API; used for repurposing web content into social posts | API (paid) | claude-code-content-team-11-skills |
 | **X API** | Twitter/X analytics and post data; used in monthly feedback loop to pull performance metrics for skill-update analysis | Free tier / paid | claude-code-content-team-11-skills |
 

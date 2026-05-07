@@ -48,6 +48,7 @@ Auto-generated index of all video reports. Use this to find the right report whe
 
 ### Developer Skills & Tooling
 - **[15 Claude Code Tricks](reports/claude-code-15-tricks.md)** — `--chrome` flag, `/branch` forking, remote control/teleport cross-device, Git worktrees, `/grill-me` disambiguation, CLAUDE.md discipline, token analysis. *Intermediate / manual-assisted*
+- **[Scrape Website → Personal Video API](reports/scrape-website-video-api.md)** — Reverse-engineer a web-based video generation tool via DevTools inspection → Python API wrapper → custom web interface. *Intermediate / manual-assisted*
 
 ### Agent Infrastructure
 - **[Self-Evolving Agents — Memory Architecture](reports/self-evolving-agents-memory-ai-jason.md)** — State-of-the-art 3-layer memory blueprint (hot/warm/cold), async skill extraction, hooks-based self-improvement for Claude Code and Hermes Agent. *Advanced / agent-loop*
@@ -89,6 +90,7 @@ Auto-generated index of all video reports. Use this to find the right report whe
 ### Intermediate
 | Report | Core Workflow |
 |--------|--------------|
+| [Scrape Website → Personal Video API](reports/scrape-website-video-api.md) | DevTools inspection → Python API wrapper → custom web UI |
 | [Hermes Agent — 7 Use Cases](reports/hermes-agent-7-use-cases.md) | Self-improving agent with skill library |
 | [Higgsfield MCP — Instagram Ad Campaign](reports/higgsfield-mcp-instagram-ad-campaign.md) | Product photo → 50 ads via competitive research + Higgsfield MCP |
 | [Claude + Higgsfield MCP](reports/claude-higgsfield-mcp-marketing.md) | Brand → assets → website in one session |
@@ -160,6 +162,7 @@ Auto-generated index of all video reports. Use this to find the right report whe
 - [Higgsfield MCP Solo App Marketing Ads](reports/higgsfield-mcp-solo-app-marketing-ads.md)
 - [Claude Ads Skill Multi-Platform Planning](reports/claude-ads-skill-multi-platform-planning.md)
 - [Automate EVERY AI Model with Higgsfield + Claude](reports/higgsfield-mcp-claude-all-ai-models.md)
+- [Scrape Website → Personal Video API](reports/scrape-website-video-api.md)
 
 ---
 
@@ -323,12 +326,21 @@ Auto-generated index of all video reports. Use this to find the right report whe
 
 **browser-automation**: claude-browser-starop-ugc-five-formats
 
+**web-scraping**: scrape-website-video-api
+
+**api-reverse-engineering**: scrape-website-video-api
+
+**video-generation**: scrape-website-video-api
+
+**perplexity**: scrape-website-video-api
+
 ---
 
 ## All Reports (Chronological)
 
 | Date | Report | Channel | Complexity |
 |------|--------|---------|------------|
+| 2026-05-07 | [Scrape Website → Personal Video API](reports/scrape-website-video-api.md) | Creator's Journey | Intermediate |
 | 2026-05-06 | [Automate EVERY AI Model with Higgsfield + Claude](reports/higgsfield-mcp-claude-all-ai-models.md) | Jay E \| RoboNuggets | Intermediate |
 | 2026-05-06 | [Hermes Agent SEO Content Engine](reports/hermes-agent-seo-content-engine.md) | AR Profit | Intermediate |
 | 2026-05-06 | [Claude Ads Skill Multi-Platform Planning](reports/claude-ads-skill-multi-platform-planning.md) | RankingStandard creator | Beginner |

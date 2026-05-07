@@ -722,6 +722,26 @@ Script format: [JSON structure]
 
 ---
 
+## Pattern 38: DevTools-First API Discovery → Python Wrapper
+
+**What it does**: Reverse-engineers any web-based AI tool's generation API by inspecting live network requests, then wraps it in a Python API layer for unlimited programmatic access — bypassing UI limits.
+
+**Steps**:
+1. Open target website → trigger the generation action you want to automate
+2. Open DevTools (F12) → Network tab → XHR/Fetch filter → reproduce the action
+3. Identify the key request: endpoint URL, auth headers (Bearer token, cookies), request payload, response format
+4. Use AI (Claude Code or Perplexity) to generate a Python wrapper: "Here is the request I observed. Write a Python function that replicates this call."
+5. Iterate: paste response examples → ask AI to add error handling, retry logic, response parsing
+6. Wrap in a lightweight web interface or script for repeated use
+
+**Note**: This pattern carries ToS risk — most platforms prohibit automated access via undocumented APIs. The video itself is a teaser only; no specific platform or code is shown.
+
+**Tools**: Browser DevTools + Python + Claude Code or Perplexity
+**Report**: [Scrape Website → Personal Video API](reports/scrape-website-video-api.md)
+**Key insight**: Any AI generation platform accessible via browser is accessible via Python — DevTools reveals the exact API calls the site makes, and an AI assistant can translate those into reusable code within minutes
+
+---
+
 ## Decision Framework: Automation Tool Selection
 
 ```
