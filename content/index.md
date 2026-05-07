@@ -7,6 +7,7 @@ Auto-generated index of all video reports. Use this to find the right report whe
 ## By Use Case
 
 ### Marketing & Brand Automation
+- **[Automate EVERY AI Model with Higgsfield + Claude](reports/higgsfield-mcp-claude-all-ai-models.md)** — Logo → brand book (multi-model comparison) → storyboard → Seedance animation → landing page mockup → working website. *Intermediate / manual-assisted*
 - **[Higgsfield MCP — Instagram Ad Campaign](reports/higgsfield-mcp-instagram-ad-campaign.md)** — 50-ad Instagram campaign (5 angles × 5 concepts × 2 ratios) from one product photo; competitive research via Playwright + Meta Ads Library. *Intermediate / automated-pipeline*
 - **[Claude + Higgsfield MCP](reports/claude-higgsfield-mcp-marketing.md)** — Brand Launch Pack + GTM Pack + UGC generation via Claude Code slash commands; full Shopify rebrand pipeline. *Intermediate / automated-pipeline*
 - **[AI Agents Run My Business](reports/greg-isenberg-ai-agents-run-business.md)** — Autonomous marketing agent managing Meta/Reddit ads via PostHog data; three-agent business stack (support + dev + marketing). *Advanced / automated-pipeline*
@@ -104,6 +105,7 @@ Auto-generated index of all video reports. Use this to find the right report whe
 | [Claude Browser + Starop UGC Five Formats](reports/claude-browser-starop-ugc-five-formats.md) | Claude browser automation → Starop 5-format UGC generation |
 | [Claude + Arcads Autonomous Ad Engine](reports/claude-arcads-autonomous-ad-engine-pink.md) | CLAUDE.md brain + Arcads API + 48-hour performance feedback loop |
 | [Hermes Agent SEO Content Engine](reports/hermes-agent-seo-content-engine.md) | Autonomous SEO engine: persistent goals + agent swarms + self-improving |
+| [Automate EVERY AI Model with Higgsfield + Claude](reports/higgsfield-mcp-claude-all-ai-models.md) | Logo → brand book (multi-model) → storyboard → Seedance animation → website |
 
 ### Advanced
 | Report | Core Workflow |
@@ -157,6 +159,7 @@ Auto-generated index of all video reports. Use this to find the right report whe
 - [Seedance Prompting + Omni Reference (GenHQ)](reports/seedance-prompting-omni-reference-genhq.md)
 - [Higgsfield MCP Solo App Marketing Ads](reports/higgsfield-mcp-solo-app-marketing-ads.md)
 - [Claude Ads Skill Multi-Platform Planning](reports/claude-ads-skill-multi-platform-planning.md)
+- [Automate EVERY AI Model with Higgsfield + Claude](reports/higgsfield-mcp-claude-all-ai-models.md)
 
 ---
 
@@ -194,7 +197,13 @@ Auto-generated index of all video reports. Use this to find the right report whe
 
 **blotato**: claude-cowork-social-media-blotato
 
-**mcp**: higgsfield-mcp-instagram-ad-campaign, claude-higgsfield-mcp-marketing, claude-cowork-social-media-blotato
+**mcp**: higgsfield-mcp-instagram-ad-campaign, claude-higgsfield-mcp-marketing, claude-cowork-social-media-blotato, higgsfield-mcp-claude-all-ai-models
+
+**higgsfield-mcp**: higgsfield-mcp-instagram-ad-campaign, claude-higgsfield-mcp-marketing, claude-higgsfield-content-creation-storyboard, higgsfield-mcp-claude-all-ai-models
+
+**brand-book**: higgsfield-mcp-claude-all-ai-models
+
+**logo-animation**: higgsfield-mcp-claude-all-ai-models
 
 **skill-creation**: claude-cowork-social-media-blotato, claude-code-content-team-11-skills
 
@@ -320,6 +329,7 @@ Auto-generated index of all video reports. Use this to find the right report whe
 
 | Date | Report | Channel | Complexity |
 |------|--------|---------|------------|
+| 2026-05-06 | [Automate EVERY AI Model with Higgsfield + Claude](reports/higgsfield-mcp-claude-all-ai-models.md) | Jay E \| RoboNuggets | Intermediate |
 | 2026-05-06 | [Hermes Agent SEO Content Engine](reports/hermes-agent-seo-content-engine.md) | AR Profit | Intermediate |
 | 2026-05-06 | [Claude Ads Skill Multi-Platform Planning](reports/claude-ads-skill-multi-platform-planning.md) | RankingStandard creator | Beginner |
 | 2026-05-06 | [Claude + Arcads Autonomous Ad Engine](reports/claude-arcads-autonomous-ad-engine-pink.md) | German AI creator | Intermediate |

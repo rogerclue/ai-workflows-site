@@ -698,6 +698,30 @@ Script format: [JSON structure]
 
 ---
 
+## 37. Logo → Full Brand Kit via Higgsfield MCP (Multi-Model Comparison Pattern)
+
+**What it does**: Takes a single logo and produces a complete brand kit in one Claude session — brand book (two models compared side-by-side), 6-panel logo animation storyboard, Seedance logo animation video, landing page mockup, and working localhost website.
+
+**Steps**:
+1. Attach logo image to Claude Code chat with Higgsfield MCP connected
+2. Request brand book with two models: "Create brand book for this logo — use Nano Banana 2 for one and GPT Image 2 for the other so we can compare" → Higgsfield skill shows plan before generating (credit-gate)
+3. Review both brand books → select preferred model for subsequent work
+4. Request 6-panel storyboard: "Create a logo animation storyboard with GPT Image 2 — 6 panels showing how the logo evolves" → each panel gets a scene description
+5. Feed storyboard to Seedance: "Send this storyboard to Seedance 2.0 via Higgsfield MCP, follow the storyboard instructions" → credit-gate fires → downgrade to 480p/4s if needed → generate animation
+6. Request landing page mockup: "Using GPT Image 2, create a landing page mockup using our design system color palettes"
+7. Fork conversation (VS Code extension) → "Translate that landing page mockup into a working landing page, open on localhost, make it interactive"
+8. Output: brand book + logo animation + working website — all from one logo
+
+**Credit-gate pattern**: the Higgsfield skill causes Claude to show resolution + duration + model specs before any expensive generation — always gives you a chance to downgrade
+
+**Multi-model comparison pattern**: request the same asset from two models in one prompt → Claude generates both via Higgsfield → compare before committing to one for all subsequent work
+
+**Tools**: Claude Code + Higgsfield MCP + Nano Banana 2 + GPT Image 2 + Seedance 2.0
+**Report**: [Automate EVERY AI Model with Higgsfield + Claude](reports/higgsfield-mcp-claude-all-ai-models.md)
+**Key insight**: **Staying in one Claude conversation from logo to working website** eliminates context loss — the brand colors, typography, and design decisions made in step 2 are still in context when building the website in step 7, so everything stays visually consistent without re-briefing
+
+---
+
 ## Decision Framework: Automation Tool Selection
 
 ```
@@ -775,4 +799,10 @@ Do you want autonomous daily SEO content (articles + videos)?
 
 Do you want to call Seedance or any fal.ai model from Claude Code without UI?
   → Paste fal.ai "LLM content" docs into Claude Code → instant skill update → API calls via bash
+
+Do you want a brand book, logo animation, and landing page from a single logo?
+  → Higgsfield MCP + Claude Code (multi-model comparison → storyboard → Seedance → mockup → working site)
+
+Should you use Higgsfield subscription or fal.ai pay-as-you-go?
+  → Existing Higgsfield subscriber: use the MCP; new to ecosystem: fal.ai or wavespeed.ai (same models, often cheaper, no lock-in)
 ```
