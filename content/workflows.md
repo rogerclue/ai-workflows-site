@@ -767,6 +767,175 @@ Script format: [JSON structure]
 
 ---
 
+## Pattern 40: Messy Feed → Mispriced Asset → Agent → Buyer (Weekend Business Formula)
+
+**What it does**: Finds underserved arbitrage opportunities in public data feeds and builds a lightweight AI agent that alerts buyers faster than they can monitor manually — turning information asymmetry into a subscription or lead-gen business.
+
+**Steps**:
+1. Identify a "messy feed" — a stream of public data that is high-volume and hard to monitor manually (expiring domains, estate sale listings, job board postings, permit filings, FOIA releases)
+2. Define the mispriced or overlooked asset within that feed (expiring domains with backlinks, liquidation inventory below market, roles posted without recruiter awareness)
+3. Build trigger logic: daily scan → extract relevant items → filter by criteria → alert
+4. Identify the buyer — who pays for speed or insight that this feed provides?
+5. Choose a monetization model: subscription (recurring), per-lead (transaction), or commission (success-fee)
+6. Use GenSpark Claw or Claude Code to build the agent without local infrastructure
+
+**Tools**: GenSpark Claw (no-terminal cloud agent), Claude Code (local scraper/alerting logic)
+**Report**: [7 Tiny AI Agent Business Ideas](reports/genspark-claw-7-ai-business-ideas.md)
+**Key insight**: The arbitrage insight (which feed, which asset, which buyer) is more valuable than the technology — the agent is just a speed multiplier on a valid business model
+
+---
+
+## Pattern 41: AI Agency Sales System (Operational Waste Elimination)
+
+**What it does**: Gives AI agency owners a repeatable sales process — positioning, discovery call framework, ROI calculation, and objection handling — that converts SMB prospects into $1,500–$4,000/month retainer clients.
+
+**Steps**:
+1. Position as "operational waste eliminator" — never lead with "AI" or "chatbots"
+2. Research prospect's industry before the call; identify common time-drain patterns
+3. Run discovery call: team size → biggest time drains → current tools → "what would you do with 10 extra hours/week?"
+4. Quantify waste on the call: hours/week × hourly rate × 52 = annual cost of the problem
+5. Map pain to one of 5 ROI pillars: lead gen, support deflection, data entry, scheduling, or reporting
+6. Present proposal showing current cost / AI solution cost / annual ROI / payback period
+7. Handle objections with prepared scripts; close on a pilot scope not the full vision
+
+**ROI formula**: (hours saved/week × hourly rate × 52) − tool cost = annual ROI
+**Tools**: GoHighLevel + n8n (delivery); Retell AI (voice agent deliverables)
+**Report**: [AI Agency Sales System](reports/ai-agency-sales-system-discovery-call.md)
+**Key insight**: Frame every proposal around the ROI math — once the numbers are on the table, the purchase decision becomes financially obvious rather than speculative
+
+---
+
+## Pattern 42: 6-Part Voice AI Prompt Structure
+
+**What it does**: Produces reliable, consistent voice agent behavior by structuring prompts with six explicit sections — eliminating the need to enumerate edge cases by using example interactions as implicit rules.
+
+**Structure**:
+1. **Role/Objective**: 1–2 sentences — what the agent does and for whom
+2. **Personality**: tone, pace, formality, energy — match to brand voice
+3. **Context**: business info, hours, FAQs, pricing, key facts
+4. **Instructions**: (a) communication guidelines — interruptions, silences, off-topic, escalation; (b) tool usage rules — when to transfer, message-take, book
+5. **Numbered Stages**: 5–7 steps (greeting → qualify → handle → resolve → close → wrap-up)
+6. **Example Interactions**: 2–3 sample dialogues demonstrating correct behavior for the most common caller types
+
+**Tools**: Retell AI, GPT-4.1
+**Report**: [Voice AI Prompt Structure](reports/voice-ai-prompt-structure-gpt41-playbook.md)
+**Key insight**: Example interactions replace dozens of edge-case rules — the model generalizes from demonstrations rather than requiring every scenario to be explicitly scripted
+
+---
+
+## Pattern 43: 3-of-4 Rule for Voice Agent Splitting
+
+**What it does**: Provides a clear, repeatable decision rule for when to split a monolithic voice agent into a multi-agent network — preventing both over-splitting (unnecessary complexity) and under-splitting (degraded performance).
+
+**Steps**:
+1. List all distinct "jobs" the agent performs (booking, tech support, billing, routing, FAQ, etc.)
+2. For each pair of jobs, score four properties: goal, tone, toolset, knowledge scope
+3. If 3 or more of the four differ → split into separate specialist agents
+4. If 2 or fewer differ → keep in one agent
+5. For router agents (3+ specialists): add an agent transfer function with explicit trigger condition: "Use [function] the moment [trigger]. Don't ask permission, just swap."
+6. For deterministic routing (time-based, VIP caller, department): use conversational flow with logic split nodes — not LLM judgment
+7. Set post-call analysis to "both agent and transferred agent" to capture full transcripts
+
+**Tools**: Retell AI
+**Report**: [Retell Multi-Agent Voice Systems](reports/retell-multi-agent-voice-systems-split-guide.md)
+**Key insight**: A single-prompt agent degrades past ~7,000 tokens — the 3-of-4 rule gives an objective threshold for splitting before degradation occurs, not after it's noticed
+
+---
+
+## Pattern 44: CLI-First Agent Tool Philosophy
+
+**What it does**: Replaces MCP servers with compiled CLI tools for repetitive, well-defined agent tasks — dramatically reducing token consumption and improving reliability for high-frequency operations.
+
+**Steps**:
+1. For any repetitive agent task (file operations, API calls, data transforms), ask: is this well-defined enough to be a CLI?
+2. If yes: browse printingpress.dev for a pre-built CLI, or describe the tool in natural language to build a custom one
+3. Install the CLI binary (Go-based; runs on macOS/Linux/Windows with separate compilation)
+4. Claude Code auto-discovers CLIs in PATH — no additional configuration needed
+5. For MCP vs CLI decision: use CLI when task is repetitive + well-defined; use MCP when task is stateful, complex, or requires two-way protocol
+
+**Token efficiency**: CLIs pass only input/output data; MCPs pass full schema + protocol overhead per call — ~35x difference
+**Tools**: Printing Press + Claude Code + Go
+**Report**: [Printing Press CLI Factory](reports/printing-press-cli-factory-claude-code.md)
+**Key insight**: For 1,000 agent calls/day, the MCP-to-CLI switch saves significant API cost and latency — the pre-built library means most common tools are one install command away
+
+---
+
+## Pattern 45: Official API CLI → Natural Language Reports
+
+**What it does**: Connects a platform's official CLI to Claude Code via a `.env` credential file, enabling natural language queries that produce HTML dashboards or markdown reports without manual UI navigation.
+
+**Steps**:
+1. Create official API credentials (system user, never-expiring token, minimal required permissions)
+2. Store credentials in a `.env` file (never commit to git)
+3. Install the platform CLI tool
+4. Claude Code reads `.env` and calls CLI commands via Bash tool
+5. Claude transforms raw JSON output into HTML dashboards or markdown reports from natural language prompts
+6. Example: "Show week-over-week performance for all active campaigns" → Claude runs CLI → formats HTML table
+
+**Applicable to**: Meta Ads CLI, any platform with an official CLI and machine-readable output
+**Tools**: Meta Ads CLI + Claude Code
+**Report**: [Meta Ads CLI + Claude Code](reports/meta-ads-cli-claude-code-setup.md)
+**Key insight**: The official CLI approach eliminates ToS risk from unofficial scrapers while the `.env` pattern gives Claude persistent access without re-authentication each session
+
+---
+
+## Pattern 46: Keyword-First App Naming + ASO Stack
+
+**What it does**: Maximizes App Store discoverability for indie apps by front-loading primary keywords in the app name, optimizing all metadata fields, A/B testing screenshots, and timing review requests at the first moment of user success.
+
+**Steps**:
+1. LLM brainstorm → Ahrefs validation (popularity + difficulty) → target high-popularity even if competitive
+2. App name: [Primary Keyword] – [Brand Name] (keyword first, always)
+3. Subtitle (30 chars): secondary keywords different from name field
+4. Keyword field (100 chars): comma-separated, no spaces, no repeats, no plurals
+5. First screenshot: best feature, real UI — not marketing graphics
+6. A/B test screenshots via Apple's product page optimization tool
+7. Review prompt: trigger at first moment of success (first habit completed, first task done)
+8. Respond to every review (positive and negative) to signal engagement to the algorithm
+9. Email signature: "If you're enjoying the app, I'd be grateful for a review"
+
+**Tools**: Ahrefs + App Store Connect
+**Report**: [ASO Masterclass](reports/aso-masterclass-app-store-optimization-habit-kit.md)
+**Key insight**: Indie developers cannot afford brand-first naming — putting the primary keyword first in the app name is the single highest-leverage ASO change available
+
+---
+
+## Pattern 47: Web-First → Mobile Port (Claude Code + Expo)
+
+**What it does**: Builds both a web app and a mobile app from one codebase by developing in browser first (fast iteration) then porting to mobile via Expo — with Claude Code scaffolding and writing the entire project.
+
+**Steps**:
+1. Open Anti-Gravity IDE + Claude Code extension
+2. Prompt Claude Code to scaffold Expo + React Native project
+3. Develop and iterate in browser web view (fast, no device needed)
+4. Test on phone via Expo Go (QR code → live hot-reload app, no App Store submission)
+5. Progress stack incrementally: local storage → REST API → Supabase → cloud → auth
+6. Production: EAS Build → compile binary → submit to App Store / Play Store
+
+**Tools**: Claude Code + Expo + React Native + Anti-Gravity IDE + EAS Build + Expo Go
+**Report**: [Build a Mobile App With Claude Code](reports/mobile-app-claude-code-react-native-expo-course.md)
+**Key insight**: Build as a web app first — web iteration is faster than rebuilding on device, and the Expo codebase gives you both a web version and a mobile app without duplication
+
+---
+
+## Pattern 48: HTML Output as Agent Communication Layer
+
+**What it does**: Uses HTML outputs from Claude Code instead of markdown for four specific use cases where visual representation dramatically increases comprehension and stakeholder engagement.
+
+**Use cases**:
+- **Understand**: "Build a 2-way interactive HTML page explaining [complex concept]" — visual > text wall
+- **Explain**: HTML slides for stakeholder presentations — self-contained, no Gamma account needed
+- **Prototype**: "Create an HTML file showing [UI component] with interactive controls" — faster than framework scaffold
+- **Tweak**: HTML slider panel (Impeccable "tweak" skill) for design parameter adjustment → bake back to code
+
+**Rule**: markdown for versioned files (CLAUDE.md, project docs); HTML for one-off visual outputs
+
+**Tools**: Claude Code (native); Impeccable "tweak" skill for design panels
+**Report**: [HTML vs Markdown for Claude Code](reports/html-vs-markdown-claude-code-outputs.md)
+**Key insight**: HTML is 2–4x slower to generate but produces dramatically higher ROI per token because humans actually read and engage with visual outputs — the slowdown is worth it for communication-critical outputs
+
+---
+
 ## Decision Framework: Automation Tool Selection
 
 ```
@@ -850,4 +1019,46 @@ Do you want a brand book, logo animation, and landing page from a single logo?
 
 Should you use Higgsfield subscription or fal.ai pay-as-you-go?
   → Existing Higgsfield subscriber: use the MCP; new to ecosystem: fal.ai or wavespeed.ai (same models, often cheaper, no lock-in)
+
+Do you want to sell AI services to SMBs without technical heavy lifting?
+  → "Operational waste elimination" positioning + discovery call ROI formula + GoHighLevel + n8n delivery stack
+
+Do you need speed-to-lead for a client's Meta lead gen campaign?
+  → Meta lead forms → n8n webhook → GoHighLevel CRM → Retell AI outbound call within 60 seconds
+
+Do you need to prompt a Retell AI voice agent well?
+  → Use the 6-part GPT-4.1 playbook structure: Role → Personality → Context → Instructions → Numbered Stages → Example Interactions
+
+Do you need to decide whether to split a Retell voice agent into multiple agents?
+  → Apply the 3-of-4 rule: score goal / tone / toolset / knowledge scope; split if 3+ differ between any two jobs
+
+Do you want to find a weekend AI agent business idea?
+  → Messy feed → mispriced asset → trigger → buyer → monetize; build agent with GenSpark Claw or Claude Code
+
+Do you want better AI image/video prompts without learning platform syntax?
+  → Install Banana Pro Director (image) + Cinema Worldbuilder (video) Claude skills — describe in plain language, get expert prompts
+
+Do you want to remove AI slop from a vibe-coded website?
+  → Impeccable v3: Chrome extension scans → Claude Code applies fixes → tweak sliders → bake patch back to code
+
+Do you want a professional design system for a vibe-coded project with no budget?
+  → Referral Styles (2,000 free design system markdown files) + Impeccable teach + Cult UI components
+
+Do you want natural language Meta Ads reporting without clicking in Ads Manager?
+  → Meta Ads CLI + .env never-expiring token + Claude Code → HTML dashboards or markdown reports
+
+Do you want token-efficient Claude Code tools for repetitive tasks?
+  → Printing Press CLIs (35x fewer tokens than MCPs; 50+ pre-built; custom Go binaries in ~10 minutes)
+
+Do you want to build a mobile app with no coding experience?
+  → Anti-Gravity IDE + Claude Code + Expo + React Native; build web-first, test on phone via Expo Go
+
+Do you want App Store growth for an indie mobile app?
+  → ASO stack: keyword-first app name + Ahrefs validation + 100-char keyword field + screenshot A/B test + happy-moment review prompt
+
+Do you want local AI agent management without a terminal?
+  → Hermes desktop app (one-click installer) or Hermes Workspace (localhost:3000 dashboard with kanban, cron, swarm)
+
+Do you need stakeholder-friendly visual outputs without Gamma or PowerPoint?
+  → Ask Claude Code to "build a 2-way interactive HTML page explaining X" — self-contained, no extra tool accounts
 ```
