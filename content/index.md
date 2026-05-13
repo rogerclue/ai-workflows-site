@@ -79,6 +79,7 @@ Auto-generated index of all video reports. Use this to find the right report whe
 ### Voice AI & Agent Design
 - **[Voice AI Prompt Structure (GPT-4.1 Playbook)](reports/voice-ai-prompt-structure-gpt41-playbook.md)** — 6-part prompt template (Role → Personality → Context → Instructions → Stages → Examples) adapted from OpenAI's 29-page guide. *Intermediate / manual-assisted*
 - **[Retell Multi-Agent Voice Systems](reports/retell-multi-agent-voice-systems-split-guide.md)** — "3 of 4 rule" for agent splitting; specialist vs. router patterns; conversational flow for deterministic routing. *Advanced / agent-loop*
+- **[Master Voice Agent Testing (Retell AI)](reports/retell-voice-agent-testing-framework.md)** — 4-layer testing framework: manual chat → simulation (25 surgical scenarios) → voice calls → production deployment data. *Intermediate / manual-assisted*
 
 ### Mobile App Development
 - **[Build a Mobile App With Claude Code (Full Course)](reports/mobile-app-claude-code-react-native-expo-course.md)** — Zero to App Store: Expo + React Native + Anti-Gravity IDE + EAS Build; web-first → mobile port pattern. *Beginner / vibe-coding*
@@ -157,6 +158,7 @@ Auto-generated index of all video reports. Use this to find the right report whe
 | [Claude Code + Seedance + fal.ai Promotional Video](reports/claude-code-seedance-fal-promotional-video.md) | fal.ai API + Seedance + Claude Code skill, no browser UI |
 | [Building a $4,127/Month AI Agency Service](reports/ai-agency-meta-ads-followup-automation-build.md) | Meta lead form → n8n → GHL → Retell 60-second speed-to-lead |
 | [Retell Multi-Agent Voice Systems](reports/retell-multi-agent-voice-systems-split-guide.md) | 3-of-4 rule; specialist vs. router; conversational flow routing |
+| [Master Voice Agent Testing](reports/retell-voice-agent-testing-framework.md) | Manual chat → simulation → voice → production deployment testing |
 
 ---
 
@@ -213,6 +215,7 @@ Auto-generated index of all video reports. Use this to find the right report whe
 - [Voice AI Prompt Structure](reports/voice-ai-prompt-structure-gpt41-playbook.md)
 - [ASO Masterclass](reports/aso-masterclass-app-store-optimization-habit-kit.md)
 - [HTML vs Markdown for Claude Code](reports/html-vs-markdown-claude-code-outputs.md)
+- [Master Voice Agent Testing](reports/retell-voice-agent-testing-framework.md)
 
 ### vibe-coding (human-guided generation)
 - [7 Tiny AI Agent Business Ideas](reports/genspark-claw-7-ai-business-ideas.md)
@@ -421,13 +424,15 @@ Auto-generated index of all video reports. Use this to find the right report whe
 
 **gohighlevel**: ai-agency-meta-ads-followup-automation-build, ai-audit-boomer-business-corey-ganim
 
-**retell-ai**: ai-agency-meta-ads-followup-automation-build, retell-multi-agent-voice-systems-split-guide
+**retell-ai**: ai-agency-meta-ads-followup-automation-build, retell-multi-agent-voice-systems-split-guide, retell-voice-agent-testing-framework
 
-**voice-ai**: voice-ai-prompt-structure-gpt41-playbook, retell-multi-agent-voice-systems-split-guide
+**voice-ai**: voice-ai-prompt-structure-gpt41-playbook, retell-multi-agent-voice-systems-split-guide, retell-voice-agent-testing-framework
 
-**prompt-engineering**: voice-ai-prompt-structure-gpt41-playbook
+**prompt-engineering**: voice-ai-prompt-structure-gpt41-playbook, retell-voice-agent-testing-framework
 
 **agent-design**: voice-ai-prompt-structure-gpt41-playbook, retell-multi-agent-voice-systems-split-guide
+
+**testing**: retell-voice-agent-testing-framework
 
 **multi-agent**: claude-code-content-team-11-skills, retell-multi-agent-voice-systems-split-guide, hermes-workspace-agent-command-center
 
@@ -487,6 +492,7 @@ Auto-generated index of all video reports. Use this to find the right report whe
 
 | Date | Report | Channel | Complexity |
 |------|--------|---------|------------|
+| 2026-05-13 | [Master Voice Agent Testing](reports/retell-voice-agent-testing-framework.md) | Tech Tomlet | Intermediate |
 | 2026-05-12 | [7 Tiny AI Agent Business Ideas](reports/genspark-claw-7-ai-business-ideas.md) | Greg Isenberg | Beginner |
 | 2026-05-12 | [AI Agency Sales System](reports/ai-agency-sales-system-discovery-call.md) | Vendasta / Luke Pierce | Intermediate |
 | 2026-05-12 | [Voice AI Prompt Structure](reports/voice-ai-prompt-structure-gpt41-playbook.md) | Alejo & Paige | Intermediate |

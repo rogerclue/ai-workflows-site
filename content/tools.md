@@ -1,6 +1,6 @@
 # AI Workflows — Master Tool Registry
 
-Auto-generated from 49 video reports. Each entry includes cost/tier, role, and which reports reference it.
+Auto-generated from 50 video reports. Each entry includes cost/tier, role, and which reports reference it.
 
 ---
 
@@ -121,7 +121,8 @@ Auto-generated from 49 video reports. Each entry includes cost/tier, role, and w
 
 | Tool | Description | Cost/Tier | Reports |
 |------|-------------|-----------|---------|
-| **Retell AI** | Voice agent platform; hosts intake agents, outbound calling, and multi-agent voice networks with transfer functions; supports single-prompt and conversational flow agents | Usage-based | ai-audit-boomer-business-corey-ganim, ai-agency-meta-ads-followup-automation-build, retell-multi-agent-voice-systems-split-guide |
+| **Retell AI** | Voice agent platform; hosts intake agents, outbound calling, and multi-agent voice networks with transfer functions; supports single-prompt and conversational flow agents | Usage-based | ai-audit-boomer-business-corey-ganim, ai-agency-meta-ads-followup-automation-build, retell-multi-agent-voice-systems-split-guide, retell-voice-agent-testing-framework |
+| **GPT-4.1** | OpenAI's best model for simulation evaluator in Retell testing; used as the LLM powering test scenario evaluation — more accurate than GPT-4.1 mini but more expensive | OpenAI API (paid) | retell-voice-agent-testing-framework |
 | **Gamma** | AI-powered document/slideshow creation; auto-populates branded audit report templates from `.docx` uploads | Paid (SaaS) | ai-audit-boomer-business-corey-ganim |
 | **Futurepedia** | Curated AI tool directory; Claude searches it to find off-the-shelf solutions matching client pain points | Free | ai-audit-boomer-business-corey-ganim |
 | **GoHighLevel** | CRM + AI employee platform; sold as upsell to SMB clients; includes 24/7 AI phone agent for lead capture and SMS/email nurture sequences | SaaS subscription | ai-audit-boomer-business-corey-ganim, ai-agency-meta-ads-followup-automation-build |

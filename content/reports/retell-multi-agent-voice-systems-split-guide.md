@@ -1,6 +1,6 @@
 ---
 title: "Multi-Agent Voice Systems in Retell: When and How to Split Your Voice Agent"
-channel: Owen Rensland
+channel: Tech Tomlet
 url: https://www.youtube.com/watch?v=Kwe-zrZ7clc
 date: 2026-05-12
 tags: [retell-ai, voice-agents, multi-agent, prompt-engineering, ai-agency]

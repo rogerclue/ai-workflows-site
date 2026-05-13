@@ -1061,4 +1061,52 @@ Do you want local AI agent management without a terminal?
 
 Do you need stakeholder-friendly visual outputs without Gamma or PowerPoint?
   → Ask Claude Code to "build a 2-way interactive HTML page explaining X" — self-contained, no extra tool accounts
+
+Do you want to test a voice agent thoroughly before going to production?
+  → 4-layer framework: manual chat (Replay Chat + Debug regenerate) → simulation (25 surgical single-assertion scenarios via GPT) → voice calls (manual dial + friends) → first-week production data → Claude prompt fixes
 ```
+
+---
+
+## 49. 4-Layer Voice Agent Testing Framework
+
+**What it does**: Systematically validates a voice agent across brain logic, edge cases, audio quality, and real-world performance before and after launch.
+
+**Steps**:
+
+**Layer 1 — Manual Chat (text only, brain testing)**
+1. Open agent in Retell chat panel
+2. Walk through core scenarios; watch tool invocations live
+3. Use **Replay Chat** to re-run a scenario before touching the prompt — verify the error is consistent, not a one-time fluke
+4. Use **Debug → Regenerate × 10** to see the full probabilistic spread of responses for one prompt state
+5. Tweak prompt → Replay → verify
+
+**Layer 2 — Simulation (25 surgical scenarios)**
+1. Paste full agent prompt into GPT scenario generator: "Generate 25 most common scenarios that might break my agent" using RACE format
+2. Paste output into GPT JSON formatter → download JSON → import into Retell Simulations tab
+3. Run all 25 simultaneously; review results
+4. For each failure: paste transcript into Claude: *"Using best prompting practices for voice agents, analyze what went wrong and give me the simplest prompt fix"*
+5. If snippet doesn't fix it: give Claude full prompt: *"Do not change anything besides the exact part that fixes this error. Output the entire unchanged prompt with only your modification"*
+6. Repeat until near 100% pass rate
+
+**Layer 3 — Voice (manual phone calls)**
+1. Dial the agent from your real phone
+2. Test: pronunciation, readback speed, latency, accent (multilingual), handling interruptions
+3. Send to team members and to people who don't know they're talking to a bot
+4. Paste call transcripts into Claude: *"Suggest prompt improvements and enumerate everything this agent might be doing wrong"*
+
+**Layer 4 — Production deployment data**
+1. First week of deployment: collect real call history
+2. Feed transcripts into Claude for prompt refinement
+3. Client framing: *"Your new receptionist needs training too — when we teach it something, it never forgets"*
+
+**Key rules**:
+- Always test text layer (Layers 1–2) before voice layer (Layer 3)
+- Simulation scenarios must be **tiny and surgical** — one rule per test, never broad multi-step scenarios
+- Always add end-call function or simulations loop infinitely
+- Use GPT-4.1 (not mini) as simulation evaluator
+- Don't simulate until manual chat testing is substantially complete
+
+**Tools**: Retell AI, GPT-4.1, Claude, ChatGPT (custom GPTs)
+**Reports**: [Master Voice Agent Testing](reports/retell-voice-agent-testing-framework.md)
+**Time**: 2–4 hours for full cycle on a production agent
