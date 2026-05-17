@@ -1062,6 +1062,18 @@ Do you want local AI agent management without a terminal?
 Do you need stakeholder-friendly visual outputs without Gamma or PowerPoint?
   → Ask Claude Code to "build a 2-way interactive HTML page explaining X" — self-contained, no extra tool accounts
 
+Do you want AI video without video generation models?
+  → Use HyperFrames with Hermes Agent (HTML/CSS composition → localhost preview → FFmpeg export)
+
+Do you need deterministic routing in a voice agent?
+  → Use Retell conversational flow (not single prompt) — rigid/flex node types, logic splits, agent transfer nodes
+
+Do you want self-hosted voice AI without vendor lock-in?
+  → Consider Dogora (Docker Compose, visual workflow builder, bring-your-own LLM/STT/TTS)
+
+Do you want UI design research with real app references?
+  → Use Mobbin MCP (search_screens → select references → annotate → build in Claude Code)
+
 Do you want to test a voice agent thoroughly before going to production?
   → 4-layer framework: manual chat (Replay Chat + Debug regenerate) → simulation (25 surgical single-assertion scenarios via GPT) → voice calls (manual dial + friends) → first-week production data → Claude prompt fixes
 ```
@@ -1110,3 +1122,148 @@ Do you want to test a voice agent thoroughly before going to production?
 **Tools**: Retell AI, GPT-4.1, Claude, ChatGPT (custom GPTs)
 **Reports**: [Master Voice Agent Testing](reports/retell-voice-agent-testing-framework.md)
 **Time**: 2–4 hours for full cycle on a production agent
+
+---
+
+## Pattern 50: Solopreneur Agent Council Architecture
+
+**What it does**: Structures a solo operator's AI system as a company org chart — one PM agent coordinates multiple parallel specialist councils, each with its own model tier and focus area.
+
+**Pattern**: PM agent (Opus) → Technical/Creative/Delivery councils (parallel, cheaper models) → session context locking via /use client command → CTX plugin for window management
+
+**Steps**:
+1. Define your clients or projects; each gets a dedicated context loaded with `/use [client]`
+2. PM agent (Opus) receives high-level goal and breaks it into parallel work streams
+3. Specialist councils (Technical, Creative, Delivery) run simultaneously on cheaper models
+4. CTX plugin manages context windows — prevents cross-client contamination
+5. PM agent synthesizes council outputs into deliverable or next action
+
+**Use cases**: Building full apps, solopreneurs running multiple parallel workstreams, managing multiple clients without context bleed
+
+**Tools**: Hermes Agent, Claude Opus (PM), cheaper Claude models (workers)
+**Report**: [Solopreneur 16-Agent Harness](reports/solopreneur-16-agent-harness.md)
+
+---
+
+## Pattern 51: AI OS Bridge — Agent Reads Developer Logs
+
+**What it does**: Hermes Agent acts as an operating system layer that reads Claude Code session logs overnight and generates a morning improvement brief — creating a feedback loop between your coding sessions and your agent system.
+
+**Pattern**: Hermes Agent reads Claude Code chat logs overnight → generates morning improvement brief → delivers via cron; soul.md for personality; Obsidian for persistent memory
+
+**Steps**:
+1. Set up Hermes with soul.md (personality/identity file) and Obsidian vault as memory
+2. Configure cron to run nightly: Hermes reads Claude Code session logs
+3. Hermes generates morning brief: what patterns emerged, what to improve, what to prioritize
+4. Apollo.io integration scrapes leads on demand (e.g., 20 roofing companies in Austin)
+5. Zapia MCP handles Gmail/Calendar in draft-only mode (no send permission)
+6. Named AI personas (Pantheon system) handle different domains within the same Hermes instance
+
+**Use cases**: Continuous self-improvement of agent system, morning briefing, lead generation on autopilot
+
+**Tools**: Hermes Agent, Claude Code, Obsidian, cron, Apollo.io, Zapia MCP
+**Report**: [Hermes + Claude Code OS Bridge](reports/hermes-claude-code-os-bridge.md)
+
+---
+
+## Pattern 52: Brand-First UGC Studio
+
+**What it does**: Builds a complete UGC content pipeline from a single URL — brand DNA extraction → character creation → UGC video generation — as a chain of Claude Code skills with no manual steps between stages.
+
+**Pattern**: URL scrape → brand DNA markdown → character sheet → character images (headshot + full body) → creative brief → UGC selfie → talking head video — all one command chain
+
+**Steps**:
+1. `/brand-dna-builder [URL]` — scrapes site, extracts brand voice, colors, messaging, outputs brand-dna.md
+2. `/character-creator` — reads brand-dna.md, generates character sheet with backstory, appearance, personality
+3. Generate character images: headshot + full body using brand-consistent style
+4. `/product-ugc-generator` — reads brand-dna.md + character sheet → generates creative brief → UGC selfie image → talking head video
+5. All outputs brand-consistent without manual re-briefing between steps
+
+**Use cases**: E-commerce brands, UGC at scale, agencies serving multiple product brands
+
+**Tools**: Claude Code skills, image generation API, video generation API
+**Report**: [AI UGC Studio in Claude Code](reports/ai-ugc-studio-claude-code-skills.md)
+
+---
+
+## Pattern 53: HTML-Native Video Generation Pipeline
+
+**What it does**: Generates professional video content entirely from HTML/CSS composition — no video generation model required — using Hermes Agent to orchestrate HyperFrames from any source material.
+
+**Pattern**: Source material (HTML slides / website / GitHub repo / transcript) → HyperFrames composition via Hermes Agent → localhost studio preview → debug → export MP4
+
+**Steps**:
+1. Provide source material: HTML slides, website URL, GitHub repo, or transcript
+2. Hermes Agent converts source to HyperFrames composition (HTML/CSS scenes with timing)
+3. Preview in localhost HyperFrames Studio — inspect timeline, adjust timing
+4. Debug any rendering issues via Hermes; iterate until clean
+5. Export to MP4 via FFmpeg
+6. Optional: trim to shorts format, add to website as promo, publish as repo explainer
+
+**Use cases**: Product explainers, YouTube shorts, promotional videos without video generation model costs, repo walkthroughs
+
+**Tools**: Hermes Agent, HyperFrames, FFmpeg
+**Report**: [Hermes + HyperFrames Video Generation](reports/hermes-hyperframes-video-generation.md)
+
+---
+
+## Pattern 54: Domain Language Documentation (Grill With Docs)
+
+**What it does**: Creates a living shared vocabulary between developer and AI — preventing the AI from re-inventing terminology each session and ensuring all code, tests, and documentation use the same domain language.
+
+**Pattern**: context.md (living glossary) + ADRs (non-obvious decisions) → /grill-with-docs skill reads both → session sharpens language and updates context.md → next session uses shared language
+
+**Steps**:
+1. Create context.md: define domain terms, entities, relationships in plain language
+2. Create ADRs (Architecture Decision Records) for non-obvious decisions and their rationale
+3. `/grill-with-docs` skill reads both files at session start — quizzes Claude on the domain
+4. Session proceeds with shared vocabulary; Claude uses exact terms from context.md
+5. After session: update context.md with any new terms or refined definitions
+6. Next session inherits the sharpened language automatically
+
+**Use cases**: Any codebase with domain-specific terminology; prevents AI from re-inventing terms each session; onboarding new developers to complex domains
+
+**Tools**: Claude Code, /grill-with-docs skill, context.md, ADRs
+**Reports**: [Grill With Docs — Ubiquitous Language Skill](reports/grill-with-docs-ubiquitous-language-skill.md), [Matt Pocock's .claude Folder](reports/matt-pocock-claude-folder-open-sourced.md)
+
+---
+
+## Pattern 55: Reference-Driven UI Design (Mobbin MCP)
+
+**What it does**: Uses real app screenshots as design references rather than text descriptions — dramatically improving the specificity and quality of AI-generated UI by showing concrete examples instead of describing abstract aesthetics.
+
+**Pattern**: Mobbin MCP search → select real app references → identify what you like from each → build combined design in Claude Code → iterate with OpenAI Image API for custom images
+
+**Steps**:
+1. Run `search_screens` via Mobbin MCP: search for app category, flow type, or UI pattern
+2. Review real screenshots; select 2–4 that capture different aspects you want
+3. Annotate each: "I want the nav from this, the card style from this, the color palette from this"
+4. Pass references + annotations to Claude Code: "Build a hero section combining these references"
+5. Iterate: generate custom images via OpenAI Image API for unique brand elements
+6. Optional: use Magic Path infinite canvas to see all design iterations side by side
+
+**Use cases**: Client hero sections, onboarding flows, UI prototypes, mood boards for design pitches
+
+**Tools**: Mobbin MCP, Claude Code, OpenAI Image API, Magic Path (optional)
+**Reports**: [Mobbin MCP Design Inspiration](reports/mobbin-mcp-design-inspiration-claude.md), [Codex Infinite Canvas with Magic Path](reports/codex-infinite-canvas-magic-path.md)
+
+---
+
+## Pattern 56: Conversational Flow + Single Prompt Hybrid
+
+**What it does**: Combines deterministic conversational flow agents (for structured data collection and compliance) with free-form single-prompt agents (for natural caller-led conversation) — getting the reliability of scripts and the warmth of open dialogue in the same call.
+
+**Pattern**: Conversational flow agent handles deterministic routing and structured data collection → agent transfer node hands off to single-prompt agent for free-form caller-led portions
+
+**Steps**:
+1. Map the call: identify which portions require exact data collection (name, DOB, case number) vs. open-ended conversation
+2. Build conversational flow nodes for structured portions: rigid mode for exact responses, flex mode for natural language with guardrails
+3. Set transition conditions: move to next node when required fields collected or caller signals readiness
+4. Add agent transfer node at the handoff point → transfers to single-prompt agent for open-ended portions
+5. Configure Claude Code integration: use conversational flow for intake, Claude for analysis/recommendations
+6. Test both paths independently before integration testing
+
+**Use cases**: Compliance-heavy intake (law, medical, insurance), booking with fallback support, structured intake + conversational follow-up
+
+**Tools**: Retell AI
+**Report**: [Retell Conversational Flow Complete Guide](reports/retell-conversational-flow-complete-guide.md)

@@ -1,6 +1,6 @@
 # AI Workflows — Master Tool Registry
 
-Auto-generated from 50 video reports. Each entry includes cost/tier, role, and which reports reference it.
+Auto-generated from 64 video reports. Each entry includes cost/tier, role, and which reports reference it.
 
 ---
 
@@ -12,8 +12,8 @@ Auto-generated from 50 video reports. Each entry includes cost/tier, role, and w
 | **Expo / Expo Go** | React Native development toolchain; Expo Go enables phone testing without App Store submission; QR code → live app on device | Free / open-source | vibe-coded-400k-app-claude-code |
 | **React Native** | Cross-platform mobile app framework; Claude Code sets up project scaffold automatically | Free / open-source | vibe-coded-400k-app-claude-code |
 | **Playwright MCP** | Browser automation MCP server (Microsoft open-source); used for structured scraping of Meta Ads Library and web pages; install via `git clone github.com/microsoft/playwright-mcp` | Free/open-source | higgsfield-mcp-instagram-ad-campaign |
-| **Codex** (OpenAI) | General-purpose knowledge work orchestrator with time-based pricing (5–10 hr/mo at $100/mo); parallel tasks, computer use, browser use, dictation, Chronicle memory | $100/mo | codex-best-software-ever |
-| **Hermes Agent** | Open-source self-improving agent with persistent skill library, learning loop, cron scheduling, and multi-platform messaging | Free/open-source | hermes-agent-7-use-cases, hermes-agent-v012-self-maintaining, hermes-agent-seo-content-engine, hermes-agent-desktop-app-open-claw, hermes-workspace-agent-command-center |
+| **Codex** (OpenAI) | General-purpose knowledge work orchestrator with time-based pricing (5–10 hr/mo at $100/mo); parallel tasks, computer use, browser use, dictation, Chronicle memory | $100/mo | codex-best-software-ever, codex-infinite-canvas-magic-path, codex-slash-goal-ios-app-build |
+| **Hermes Agent** | Open-source self-improving agent with persistent skill library, learning loop, cron scheduling, and multi-platform messaging | Free/open-source | hermes-agent-7-use-cases, hermes-agent-v012-self-maintaining, hermes-agent-seo-content-engine, hermes-agent-desktop-app-open-claw, hermes-workspace-agent-command-center, solopreneur-16-agent-harness, hermes-claude-code-os-bridge, hermes-hyperframes-video-generation |
 | **Hermes Workspace** | Free open-source browser dashboard (localhost:3000) for Hermes Agent management: chat, memory, skills, kanban, cron jobs, 17-agent swarm mode, 3D office view, smart routing | Free/open-source | hermes-workspace-agent-command-center |
 | **OpenClaw** | Underlying agent framework wrapped by Hermes desktop app; also available as standalone web app | Free/open-source | hermes-agent-desktop-app-open-claw |
 | **GenSpark Claw** | Cloud-hosted OpenClaw instance; build and run AI agents from a browser with no local setup required | Free tier / paid | genspark-claw-7-ai-business-ideas |
@@ -21,6 +21,9 @@ Auto-generated from 50 video reports. Each entry includes cost/tier, role, and w
 | **EAS Build** | Expo Application Services; cloud build service for producing App Store and Play Store binaries without local Xcode | Free tier / paid | mobile-app-claude-code-react-native-expo-course |
 | **Harbor** | Open-source GUI agent harness (org-chart view, knowledge bases, env vars) for multi-agent orchestration; built on OpenClaw | Open-source | greg-isenberg-ai-agents-run-business |
 | **Claude Routines** | Native Claude (web/desktop) scheduled agent feature via `/schedule` command; 15 daily slots on Max, 5 on Pro | Claude Max/Pro | claude-routines-scheduled-agents |
+| **Magic Path** | AI design canvas tool; connects to Codex via skill install; displays all designs in infinite canvas; supports component annotation and editing | Paid (subscription) | codex-infinite-canvas-magic-path |
+| **Dogora** | Open-source self-hosted voice AI platform; Docker Compose deploy; visual workflow builder for voice agents; bring-your-own LLM/STT/TTS; full tracing (transcript, tool calls, state changes, recording) | Free/open-source | dogora-open-source-voice-ai-platform |
+| **Claude Design** | Anthropic's AI-native design tool; code (HTML/CSS/JS) as universal medium; creates animated videos, slide decks, landing pages, mobile apps, design systems; clarifying questions before generation; built-in playtesting with screenshots | Claude subscription | claude-design-five-use-cases |
 
 ---
 
@@ -31,7 +34,7 @@ Auto-generated from 50 video reports. Each entry includes cost/tier, role, and w
 | **GPT-image-2** | OpenAI photorealistic image generation; used for product images, UI mockups, 6-panel cinematic storyboards, and UGC avatar generation at 2K quality; near-perfect text rendering | OpenAI paid / Included via Higgsfield / fal.ai | claude-higgsfield-mcp-marketing, codex-best-software-ever, claude-higgsfield-content-creation-storyboard, claude-cinematic-ads-agent-fal, seedance-ugc-skill-gpt-image-capcut, higgsfield-mcp-claude-all-ai-models, claude-seedance-ugc-ads-alex-robinson |
 | **fal.ai** | Model-as-a-service aggregator; hosts GPT-image-2 and C-dance 2.0 APIs; "Copy content for LLMs" pattern gives agents full API access without manual integration | Usage-based | claude-cinematic-ads-agent-fal, claude-code-seedance-fal-promotional-video, higgsfield-mcp-claude-all-ai-models |
 | **wavespeed.ai** | Pay-as-you-go model-as-a-service provider; hosts same AI models as fal.ai (Seedance, GPT Image 2, etc.); alternative to Higgsfield subscription for cost-conscious users | Usage-based | higgsfield-mcp-claude-all-ai-models |
-| **Nano Banana Pro** | Alternative image generation model for character reference sheets; available via Higgsfield | Included via Higgsfield | claude-higgsfield-content-creation-storyboard |
+| **Nano Banana Pro** | Alternative image generation model for character reference sheets; available via Higgsfield | Included via Higgsfield | claude-higgsfield-content-creation-storyboard, claude-nanobanana-instagram-carousels, ai-ugc-studio-claude-code-skills |
 | **Flux** (via ComfyUI) | Local image generation model; accessed via Hermes News Portal subscription | Paid (subscription) | hermes-agent-7-use-cases |
 | **ComfyUI** | Local image generation runner; bundled with Hermes v0.12 (hardware-gated); supports Flux | Free (local) | hermes-agent-7-use-cases, hermes-agent-v012-self-maintaining |
 
@@ -41,10 +44,10 @@ Auto-generated from 50 video reports. Each entry includes cost/tier, role, and w
 
 | Tool | Description | Cost/Tier | Reports |
 |------|-------------|-----------|---------|
-| **Hyperframes** | Open-source video rendering from HTML/code; V2 adds subtitles, floating card animations, 3D assets, color keying, and Hyperframes Studio (localhost timeline UI) | Free / open-source | claude-video-editing-hyperframes, hyperframes-v2-video-editing-bit-framework |
+| **Hyperframes** | Open-source video rendering from HTML/code; V2 adds subtitles, floating card animations, 3D assets, color keying, and Hyperframes Studio (localhost timeline UI) | Free / open-source | claude-video-editing-hyperframes, hyperframes-v2-video-editing-bit-framework, hermes-hyperframes-video-generation |
 | **Hyperframes Studio** | Localhost timeline UI for previewing and manually fine-tuning Hyperframes renders before final export | Included with Hyperframes | hyperframes-v2-video-editing-bit-framework |
 | **fast-whisper** | Audio transcription with word-level timestamps; used under the hood by Hyperframes V2 raw footage pipeline | Free / open-source | hyperframes-v2-video-editing-bit-framework |
-| **Nano Banana 2** | Generates logo/character images with green screen backgrounds for 3D logo workflow; also used for brand book generation and clean product renders (white background removal); available via Higgsfield | Via Higgsfield | hyperframes-v2-video-editing-bit-framework, higgsfield-mcp-claude-all-ai-models, claude-seedance-ugc-ads-alex-robinson |
+| **Nano Banana 2** | Generates logo/character images with green screen backgrounds for 3D logo workflow; also used for brand book generation and clean product renders (white background removal); available via Higgsfield | Via Higgsfield | hyperframes-v2-video-editing-bit-framework, higgsfield-mcp-claude-all-ai-models, claude-seedance-ugc-ads-alex-robinson, claude-nanobanana-instagram-carousels |
 | **Kling 3.0** | Animates green-screen images into rotating 3D objects; used for 3D logo generation in Hyperframes pipeline | Via Higgsfield | hyperframes-v2-video-editing-bit-framework |
 | **Remotion** | Programmatic video rendering framework; React-based, version-controlled; used by Hyperframes, Claude Code built-in skill, and Codex for motion graphics generation | Open-source | claude-video-editing-hyperframes, claude-capcut-animations-remotion, stop-using-claude-start-codex-isenberg |
 | **Higgsfield MCP** | Claude Code MCP connector to Higgsfield AI's image + video generation platform; connect via Claude desktop Settings → Connectors → Add Custom Connector (remote URL: `https://mcp.higgsfield.ai/mcp`); also accessible via `/mcp` in IDE terminal | Higgsfield subscription | claude-higgsfield-mcp-marketing, higgsfield-mcp-instagram-ad-campaign, claude-higgsfield-content-creation-storyboard, higgsfield-mcp-claude-all-ai-models, claude-seedance-ugc-ads-alex-robinson |
@@ -74,6 +77,32 @@ Auto-generated from 50 video reports. Each entry includes cost/tier, role, and w
 | **Untitled UI** | Largest open-source React/Tailwind component library; marketing templates require pro plan | Free (pro for templates) | 9-free-vibe-design-tools-professional-ui |
 | **Banana Pro Director** | Claude skill for structured image/character prompt generation; injects lighting, camera angle, and style tags | Free (GitHub) | banana-pro-cinema-worldbuilder-claude-skills |
 | **Cinema Worldbuilder** | Claude skill with 5 video prompt modes (Symbol, Camera, Scene, Narrative, World); outputs multi-part video prompts with timing and motion cues | Free (GitHub) | banana-pro-cinema-worldbuilder-claude-skills |
+
+---
+
+## MCP Servers
+
+| Tool | Description | Cost/Tier | Reports |
+|------|-------------|-----------|---------|
+| **Mobbin MCP** | Single `search_screens` tool accessing Mobbin's database of hundreds of thousands of real app UI screenshots; use for design research, mood boards, trend analysis, pattern critique | $10-15/month (Mobbin subscription required) | mobbin-mcp-design-inspiration-claude, codex-infinite-canvas-magic-path |
+| **Zapia MCP** | Gmail and Calendar MCP integration; principle of least access — draft-only mode, no send permission | Freemium | hermes-claude-code-os-bridge |
+
+---
+
+## Data & APIs
+
+| Tool | Description | Cost/Tier | Reports |
+|------|-------------|-----------|---------|
+| **Apollo.io** | B2B lead database and scraping API; used for lead generation (e.g., 20 roofing companies in Austin); integrate via API key in Hermes Agent | Usage-based | hermes-claude-code-os-bridge |
+
+---
+
+## Design & UI Tools
+
+| Tool | Description | Cost/Tier | Reports |
+|------|-------------|-----------|---------|
+| **Obsidian** | Local markdown knowledge management app; connected to Hermes Agent as persistent memory store across sessions | Free / commercial | hermes-claude-code-os-bridge |
+| **Mobbin** | UI screenshot database for real mobile/web app designs; used as design reference for inspiration and pattern research | $10-15/month | mobbin-mcp-design-inspiration-claude |
 
 ---
 
@@ -121,7 +150,7 @@ Auto-generated from 50 video reports. Each entry includes cost/tier, role, and w
 
 | Tool | Description | Cost/Tier | Reports |
 |------|-------------|-----------|---------|
-| **Retell AI** | Voice agent platform; hosts intake agents, outbound calling, and multi-agent voice networks with transfer functions; supports single-prompt and conversational flow agents | Usage-based | ai-audit-boomer-business-corey-ganim, ai-agency-meta-ads-followup-automation-build, retell-multi-agent-voice-systems-split-guide, retell-voice-agent-testing-framework |
+| **Retell AI** | Voice agent platform; hosts intake agents, outbound calling, and multi-agent voice networks with transfer functions; supports single-prompt and conversational flow agents | Usage-based | ai-audit-boomer-business-corey-ganim, ai-agency-meta-ads-followup-automation-build, retell-multi-agent-voice-systems-split-guide, retell-voice-agent-testing-framework, retell-conversational-flow-complete-guide |
 | **GPT-4.1** | OpenAI's best model for simulation evaluator in Retell testing; used as the LLM powering test scenario evaluation — more accurate than GPT-4.1 mini but more expensive | OpenAI API (paid) | retell-voice-agent-testing-framework |
 | **Gamma** | AI-powered document/slideshow creation; auto-populates branded audit report templates from `.docx` uploads | Paid (SaaS) | ai-audit-boomer-business-corey-ganim |
 | **Futurepedia** | Curated AI tool directory; Claude searches it to find off-the-shelf solutions matching client pain points | Free | ai-audit-boomer-business-corey-ganim |

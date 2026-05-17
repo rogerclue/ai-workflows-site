@@ -21,6 +21,8 @@ Auto-generated index of all video reports. Use this to find the right report whe
 - **[Claude Browser + Starop UGC Five Formats](reports/claude-browser-starop-ugc-five-formats.md)** — Claude browser automation → Starop 5-format UGC generation. *Intermediate / automated-pipeline*
 - **[Claude + Arcads Autonomous Ad Engine](reports/claude-arcads-autonomous-ad-engine-pink.md)** — CLAUDE.md brain + Arcads API + 48-hour performance feedback loop. *Intermediate / agent-loop*
 - **[Claude Ads Skill Multi-Platform Planning](reports/claude-ads-skill-multi-platform-planning.md)** — Multi-platform ad strategy + PDF report from website URL. *Beginner / manual-assisted*
+- **[Claude + NanoBanana Instagram Carousels](reports/claude-nanobanana-instagram-carousels.md)** — Brand system document + NanoBanana custom images → Claude carousels with image-per-slide mood matching. *Beginner / manual-assisted*
+- **[AI UGC Studio in Claude Code](reports/ai-ugc-studio-claude-code-skills.md)** — /brand-dna-builder → /character-creator → /product-ugc-generator pipeline; fully automated brand-consistent video. *Intermediate / automated-pipeline*
 
 ### Content Creation & Video
 - **[Claude Video Editing](reports/claude-video-editing-hyperframes.md)** — Natural language → trimmed/subtitled/motion-graphics video via Hyperframes + Remotion. *Beginner / manual-assisted*
@@ -33,6 +35,8 @@ Auto-generated index of all video reports. Use this to find the right report whe
 - **[Claude Cowork — Social Media Automation](reports/claude-cowork-social-media-blotato.md)** — Interview-to-skill creation, screenshot → multi-platform posts, Blotato MCP for infographics + scheduling, "update the skill" continuous improvement. *Beginner / manual-assisted*
 - **[Content Team with Claude Code — 11 Skills](reports/claude-code-content-team-11-skills.md)** — Orchestrator + 11 sub-skills (lookalike content, post enricher, platform formatters) with monthly analytics feedback loop that auto-updates all skills. *Advanced / agent-loop*
 - **[Seedance Prompting + Omni Reference (GenHQ)](reports/seedance-prompting-omni-reference-genhq.md)** — SeaDance Omni reference + VFX + real footage integration. *Intermediate / manual-assisted*
+- **[Hermes + HyperFrames Video Generation](reports/hermes-hyperframes-video-generation.md)** — HTML/CSS video generation without video models; slides → video → shorts → website promos → repo explainers. *Advanced / agent-loop*
+- **[Claude Design — 5 Use Cases](reports/claude-design-five-use-cases.md)** — Animated videos, slide decks, landing pages, mobile apps, and design systems via code-as-medium. *Beginner / vibe-coding*
 
 ### Productivity & Scheduling
 - **[Claude Routines](reports/claude-routines-scheduled-agents.md)** — 6 live founder routines: daily brief, meeting digest, product brief, revenue pulse. *Beginner / automated-pipeline*
@@ -49,6 +53,10 @@ Auto-generated index of all video reports. Use this to find the right report whe
 - **[9 Free Vibe-Design Tools](reports/9-free-vibe-design-tools-professional-ui.md)** — Referral Styles + Impeccable + KD Icons + Cult UI + SVGL stack eliminates AI slop from vibe-coded UIs. *Beginner / vibe-coding*
 - **[Impeccable v3 — AI Slop Detection](reports/impeccable-v3-ai-slop-detection-website-design.md)** — Chrome extension scans for 37 slop patterns → Claude Code applies fixes → tweak sliders → bake patch. *Intermediate / vibe-coding*
 - **[HTML vs Markdown for Claude Code](reports/html-vs-markdown-claude-code-outputs.md)** — HTML outputs (understand / explain / prototype / tweak) are higher ROI than markdown for visual communication. *Beginner / manual-assisted*
+- **[Codex Infinite Canvas with Magic Path](reports/codex-infinite-canvas-magic-path.md)** — Codex + Magic Path browser panel: build designs while watching them appear live in infinite canvas. *Intermediate / manual-assisted*
+- **[Mobbin MCP Design Inspiration](reports/mobbin-mcp-design-inspiration-claude.md)** — Real app screenshots from Mobbin as design reference; search → reference → rebuild in Claude Code. *Intermediate / manual-assisted*
+- **[9 Free UI Component Libraries + AI](reports/free-ui-component-libraries-ai.md)** — 9 curated free component libraries; download → AI extracts design system → applies everywhere. *Beginner / manual-assisted*
+- **[Claude Design — 5 Use Cases](reports/claude-design-five-use-cases.md)** — Animated videos, slide decks, landing pages, mobile apps, design systems via Claude Design. *Beginner / vibe-coding*
 
 ### Developer Skills & Tooling
 - **[15 Claude Code Tricks](reports/claude-code-15-tricks.md)** — `--chrome` flag, `/branch` forking, remote control/teleport cross-device, Git worktrees, `/grill-me` disambiguation, CLAUDE.md discipline, token analysis. *Intermediate / manual-assisted*
@@ -57,6 +65,9 @@ Auto-generated index of all video reports. Use this to find the right report whe
 - **[Printing Press CLI Factory](reports/printing-press-cli-factory-claude-code.md)** — 50+ pre-built CLIs for Claude Code; 35x more token-efficient than MCPs; natural language → Go binary in ~10 minutes. *Intermediate / automated-pipeline*
 - **[Meta Ads CLI + Claude Code](reports/meta-ads-cli-claude-code-setup.md)** — Official Meta CLI + `.env` token → natural language ad reporting → HTML dashboards without Ads Manager clicks. *Intermediate / automated-pipeline*
 - **[2 Free Claude Skills (Banana Pro + Cinema Worldbuilder)](reports/banana-pro-cinema-worldbuilder-claude-skills.md)** — Domain vocabulary injection for image and video prompting; 5-mode Cinema Worldbuilder prompt system. *Beginner / vibe-coding*
+- **[Matt Pocock's .claude Folder (68K Stars)](reports/matt-pocock-claude-folder-open-sourced.md)** — /grill-me, ubiquitous language, /tdd, /diagnose — skills as the new package.json. *Beginner / manual-assisted*
+- **[Grill With Docs — Ubiquitous Language Skill](reports/grill-with-docs-ubiquitous-language-skill.md)** — Domain-driven design meets Claude Code; context.md glossary + ADRs for aligned AI coding. *Intermediate / manual-assisted*
+- **[Codex /goal — iOS App Build](reports/codex-slash-goal-ios-app-build.md)** — One /goal prompt → fully built iOS app in 1 hour with zero babysitting. *Beginner / automated-pipeline*
 
 ### Agent Infrastructure
 - **[Self-Evolving Agents — Memory Architecture](reports/self-evolving-agents-memory-ai-jason.md)** — State-of-the-art 3-layer memory blueprint (hot/warm/cold), async skill extraction, hooks-based self-improvement for Claude Code and Hermes Agent. *Advanced / agent-loop*
@@ -65,6 +76,8 @@ Auto-generated index of all video reports. Use this to find the right report whe
 - **[Hermes Agent SEO Content Engine](reports/hermes-agent-seo-content-engine.md)** — Autonomous SEO engine: persistent goals + agent swarms + self-improving content loops. *Intermediate / agent-loop*
 - **[Hermes Agent Desktop App](reports/hermes-agent-desktop-app-open-claw.md)** — One-click installer eliminates terminal barrier; 3D Office view, cron scheduling, gateway connectors (Slack/WhatsApp/Telegram). *Beginner / agent-loop*
 - **[Hermes Workspace](reports/hermes-workspace-agent-command-center.md)** — Free localhost dashboard replacing terminal: chat, memory, kanban, jobs, swarm (17 agents), smart routing. *Beginner / agent-loop*
+- **[Solopreneur 16-Agent Harness](reports/solopreneur-16-agent-harness.md)** — Hermes Agent: PM (Opus) + Technical/Creative/Delivery councils; session context locking + CTX plugin. *Advanced / agent-loop*
+- **[Hermes + Claude Code OS Bridge](reports/hermes-claude-code-os-bridge.md)** — Pantheon system (named AI personas), Obsidian vault, Apollo lead scraping, Zapia MCP, morning brief via cron. *Advanced / agent-loop*
 
 ### SEO & Content Growth
 - **[Hermes Agent SEO Content Engine](reports/hermes-agent-seo-content-engine.md)** — Autonomous SEO engine: persistent goals + agent swarms + self-improving content loops. *Intermediate / agent-loop*
@@ -80,9 +93,12 @@ Auto-generated index of all video reports. Use this to find the right report whe
 - **[Voice AI Prompt Structure (GPT-4.1 Playbook)](reports/voice-ai-prompt-structure-gpt41-playbook.md)** — 6-part prompt template (Role → Personality → Context → Instructions → Stages → Examples) adapted from OpenAI's 29-page guide. *Intermediate / manual-assisted*
 - **[Retell Multi-Agent Voice Systems](reports/retell-multi-agent-voice-systems-split-guide.md)** — "3 of 4 rule" for agent splitting; specialist vs. router patterns; conversational flow for deterministic routing. *Advanced / agent-loop*
 - **[Master Voice Agent Testing (Retell AI)](reports/retell-voice-agent-testing-framework.md)** — 4-layer testing framework: manual chat → simulation (25 surgical scenarios) → voice calls → production deployment data. *Intermediate / manual-assisted*
+- **[Dogora: Open-Source Voice AI Platform](reports/dogora-open-source-voice-ai-platform.md)** — Self-hosted Vapi alternative; Docker Compose + visual workflow builder + bring-your-own LLM/STT/TTS. *Intermediate / automated-pipeline*
+- **[Retell Conversational Flow Complete Guide](reports/retell-conversational-flow-complete-guide.md)** — 4-hour course: all node types, transition types, rigid/flex mode, Claude Code + conversational flow integration. *Advanced / automated-pipeline*
 
 ### Mobile App Development
 - **[Build a Mobile App With Claude Code (Full Course)](reports/mobile-app-claude-code-react-native-expo-course.md)** — Zero to App Store: Expo + React Native + Anti-Gravity IDE + EAS Build; web-first → mobile port pattern. *Beginner / vibe-coding*
+- **[Codex /goal — iOS App Build](reports/codex-slash-goal-ios-app-build.md)** — /goal autonomous builder: idea → 50%-production-ready iOS MVP in 1 hour. *Beginner / automated-pipeline*
 
 ### Trading & Finance
 - **[Claude Code for Quant Trading](reports/claude-code-trading-quant-systems.md)** — 5 institutional-grade trading systems built with Claude Code: regime detection, Monte Carlo backtesting, portfolio risk dashboard, sentiment analysis, correlation break detector. *Advanced / manual-assisted*
@@ -118,6 +134,11 @@ Auto-generated index of all video reports. Use this to find the right report whe
 | [Hermes Workspace](reports/hermes-workspace-agent-command-center.md) | localhost:3000 dashboard: chat, memory, kanban, swarm, cron |
 | [ASO Masterclass](reports/aso-masterclass-app-store-optimization-habit-kit.md) | Keyword-first naming + screenshot A/B testing + review timing |
 | [Build a Mobile App With Claude Code](reports/mobile-app-claude-code-react-native-expo-course.md) | Zero to App Store: Expo + React Native + Claude Code |
+| [Codex /goal — iOS App Build](reports/codex-slash-goal-ios-app-build.md) | /goal autonomous iOS app build in 1 hour |
+| [Matt Pocock's .claude Folder](reports/matt-pocock-claude-folder-open-sourced.md) | Skills catalog: /grill-me, ubiquitous language, /tdd, /diagnose |
+| [Claude + NanoBanana Instagram Carousels](reports/claude-nanobanana-instagram-carousels.md) | Brand system + NanoBanana images → branded Instagram carousels |
+| [Claude Design — 5 Use Cases](reports/claude-design-five-use-cases.md) | Animated videos, slides, landing pages, apps, design systems |
+| [9 Free UI Component Libraries + AI](reports/free-ui-component-libraries-ai.md) | 9 free component libraries; AI extracts design system from component |
 
 ### Intermediate
 | Report | Core Workflow |
@@ -145,6 +166,11 @@ Auto-generated index of all video reports. Use this to find the right report whe
 | [Printing Press CLI Factory](reports/printing-press-cli-factory-claude-code.md) | 50+ CLIs for Claude Code; 35x token savings over MCPs |
 | [Meta Ads CLI + Claude Code](reports/meta-ads-cli-claude-code-setup.md) | Official Meta CLI + `.env` → natural language reports + HTML dashboards |
 | [Impeccable v3 — AI Slop Detection](reports/impeccable-v3-ai-slop-detection-website-design.md) | Chrome scan → Claude Code fixes → tweak sliders → bake patch |
+| [Dogora: Open-Source Voice AI](reports/dogora-open-source-voice-ai-platform.md) | Docker Compose self-hosted voice agent with visual workflow builder |
+| [Codex Infinite Canvas with Magic Path](reports/codex-infinite-canvas-magic-path.md) | Codex + Magic Path browser panel for live design canvas |
+| [Grill With Docs](reports/grill-with-docs-ubiquitous-language-skill.md) | context.md + ADRs + /grill-with-docs for domain-aligned AI coding |
+| [AI UGC Studio in Claude Code](reports/ai-ugc-studio-claude-code-skills.md) | Three-skill pipeline: brand DNA → character → UGC video |
+| [Mobbin MCP Design Inspiration](reports/mobbin-mcp-design-inspiration-claude.md) | Real app screenshots as design reference for Claude Code |
 
 ### Advanced
 | Report | Core Workflow |
@@ -159,6 +185,10 @@ Auto-generated index of all video reports. Use this to find the right report whe
 | [Building a $4,127/Month AI Agency Service](reports/ai-agency-meta-ads-followup-automation-build.md) | Meta lead form → n8n → GHL → Retell 60-second speed-to-lead |
 | [Retell Multi-Agent Voice Systems](reports/retell-multi-agent-voice-systems-split-guide.md) | 3-of-4 rule; specialist vs. router; conversational flow routing |
 | [Master Voice Agent Testing](reports/retell-voice-agent-testing-framework.md) | Manual chat → simulation → voice → production deployment testing |
+| [Solopreneur 16-Agent Harness](reports/solopreneur-16-agent-harness.md) | Hermes Agent councils: PM (Opus) + Technical/Creative/Delivery |
+| [Hermes + Claude Code OS Bridge](reports/hermes-claude-code-os-bridge.md) | Pantheon personas, Obsidian vault, Apollo, Zapia, morning brief cron |
+| [Hermes + HyperFrames Video Generation](reports/hermes-hyperframes-video-generation.md) | HTML-native video without video models; full pipeline in Hermes |
+| [Retell Conversational Flow Complete Guide](reports/retell-conversational-flow-complete-guide.md) | All node types, transitions, rigid/flex, Claude Code integration |
 
 ---
 
@@ -177,6 +207,10 @@ Auto-generated index of all video reports. Use this to find the right report whe
 - [Printing Press CLI Factory](reports/printing-press-cli-factory-claude-code.md)
 - [Meta Ads CLI + Claude Code](reports/meta-ads-cli-claude-code-setup.md)
 - [Building a $4,127/Month AI Agency Service](reports/ai-agency-meta-ads-followup-automation-build.md)
+- [Codex /goal iOS App Build](reports/codex-slash-goal-ios-app-build.md)
+- [AI UGC Studio in Claude Code](reports/ai-ugc-studio-claude-code-skills.md)
+- [Dogora Open-Source Voice AI](reports/dogora-open-source-voice-ai-platform.md)
+- [Retell Conversational Flow Guide](reports/retell-conversational-flow-complete-guide.md)
 
 ### agent-loop (persistent, self-improving)
 - [Hermes Agent — 7 Use Cases](reports/hermes-agent-7-use-cases.md)
@@ -190,6 +224,9 @@ Auto-generated index of all video reports. Use this to find the right report whe
 - [Hermes Agent Desktop App](reports/hermes-agent-desktop-app-open-claw.md)
 - [Hermes Workspace](reports/hermes-workspace-agent-command-center.md)
 - [Retell Multi-Agent Voice Systems](reports/retell-multi-agent-voice-systems-split-guide.md)
+- [Solopreneur 16-Agent Harness](reports/solopreneur-16-agent-harness.md)
+- [Hermes + Claude Code OS Bridge](reports/hermes-claude-code-os-bridge.md)
+- [Hermes + HyperFrames Video Generation](reports/hermes-hyperframes-video-generation.md)
 
 ### manual-assisted (human in loop)
 - [Claude Video Editing](reports/claude-video-editing-hyperframes.md)
@@ -216,6 +253,12 @@ Auto-generated index of all video reports. Use this to find the right report whe
 - [ASO Masterclass](reports/aso-masterclass-app-store-optimization-habit-kit.md)
 - [HTML vs Markdown for Claude Code](reports/html-vs-markdown-claude-code-outputs.md)
 - [Master Voice Agent Testing](reports/retell-voice-agent-testing-framework.md)
+- [Codex Infinite Canvas with Magic Path](reports/codex-infinite-canvas-magic-path.md)
+- [Grill With Docs](reports/grill-with-docs-ubiquitous-language-skill.md)
+- [Mobbin MCP Design Inspiration](reports/mobbin-mcp-design-inspiration-claude.md)
+- [Matt Pocock's .claude Folder](reports/matt-pocock-claude-folder-open-sourced.md)
+- [Claude + NanoBanana Instagram Carousels](reports/claude-nanobanana-instagram-carousels.md)
+- [9 Free UI Component Libraries](reports/free-ui-component-libraries-ai.md)
 
 ### vibe-coding (human-guided generation)
 - [7 Tiny AI Agent Business Ideas](reports/genspark-claw-7-ai-business-ideas.md)
@@ -223,6 +266,7 @@ Auto-generated index of all video reports. Use this to find the right report whe
 - [9 Free Vibe-Design Tools](reports/9-free-vibe-design-tools-professional-ui.md)
 - [Impeccable v3 — AI Slop Detection](reports/impeccable-v3-ai-slop-detection-website-design.md)
 - [Build a Mobile App With Claude Code](reports/mobile-app-claude-code-react-native-expo-course.md)
+- [Claude Design 5 Use Cases](reports/claude-design-five-use-cases.md)
 
 ---
 
@@ -380,7 +424,7 @@ Auto-generated index of all video reports. Use this to find the right report whe
 
 **competitor-clone**: claude-higgsfield-ugc-skill-marketing-studio, claude-seedance-ugc-autopilot-arcads
 
-**hermes-agent**: hermes-agent-7-use-cases, hermes-agent-v012-self-maintaining, hermes-agent-seo-content-engine
+**hermes-agent**: hermes-agent-7-use-cases, hermes-agent-v012-self-maintaining, hermes-agent-seo-content-engine, solopreneur-16-agent-harness, hermes-claude-code-os-bridge, hermes-hyperframes-video-generation
 
 **ad-planning**: claude-ads-skill-multi-platform-planning
 
@@ -424,9 +468,9 @@ Auto-generated index of all video reports. Use this to find the right report whe
 
 **gohighlevel**: ai-agency-meta-ads-followup-automation-build, ai-audit-boomer-business-corey-ganim
 
-**retell-ai**: ai-agency-meta-ads-followup-automation-build, retell-multi-agent-voice-systems-split-guide, retell-voice-agent-testing-framework
+**retell-ai**: ai-agency-meta-ads-followup-automation-build, retell-multi-agent-voice-systems-split-guide, retell-voice-agent-testing-framework, retell-conversational-flow-complete-guide
 
-**voice-ai**: voice-ai-prompt-structure-gpt41-playbook, retell-multi-agent-voice-systems-split-guide, retell-voice-agent-testing-framework
+**voice-ai**: voice-ai-prompt-structure-gpt41-playbook, retell-multi-agent-voice-systems-split-guide, retell-voice-agent-testing-framework, dogora-open-source-voice-ai-platform, retell-conversational-flow-complete-guide
 
 **prompt-engineering**: voice-ai-prompt-structure-gpt41-playbook, retell-voice-agent-testing-framework
 
@@ -486,12 +530,86 @@ Auto-generated index of all video reports. Use this to find the right report whe
 
 **app-store-publishing**: mobile-app-claude-code-react-native-expo-course
 
+**agent-orchestration**: solopreneur-16-agent-harness, hermes-claude-code-os-bridge
+
+**self-hosting**: solopreneur-16-agent-harness, dogora-open-source-voice-ai-platform
+
+**vapi-alternative**: dogora-open-source-voice-ai-platform
+
+**workflow-builder**: dogora-open-source-voice-ai-platform
+
+**obsidian**: hermes-claude-code-os-bridge
+
+**apollo**: hermes-claude-code-os-bridge
+
+**lead-generation**: hermes-claude-code-os-bridge
+
+**magic-path**: codex-infinite-canvas-magic-path
+
+**design-canvas**: codex-infinite-canvas-magic-path
+
+**slash-goal**: codex-slash-goal-ios-app-build
+
+**ios-development**: codex-slash-goal-ios-app-build
+
+**autonomous-coding**: codex-slash-goal-ios-app-build
+
+**domain-driven-design**: grill-with-docs-ubiquitous-language-skill, matt-pocock-claude-folder-open-sourced
+
+**ubiquitous-language**: grill-with-docs-ubiquitous-language-skill
+
+**context-management**: grill-with-docs-ubiquitous-language-skill
+
+**claude-code-skills**: grill-with-docs-ubiquitous-language-skill, matt-pocock-claude-folder-open-sourced, ai-ugc-studio-claude-code-skills
+
+**ugc-content**: ai-ugc-studio-claude-code-skills
+
+**brand-automation**: ai-ugc-studio-claude-code-skills
+
+**html-video**: hermes-hyperframes-video-generation
+
+**content-automation**: hermes-hyperframes-video-generation
+
+**mobbin-mcp**: mobbin-mcp-design-inspiration-claude
+
+**design-research**: mobbin-mcp-design-inspiration-claude
+
+**instagram-carousels**: claude-nanobanana-instagram-carousels
+
+**nanobanana**: claude-nanobanana-instagram-carousels
+
+**claude-design**: claude-design-five-use-cases
+
+**animated-video**: claude-design-five-use-cases
+
+**ui-libraries**: free-ui-component-libraries-ai
+
+**component-libraries**: free-ui-component-libraries-ai
+
+**conversational-flow**: retell-conversational-flow-complete-guide
+
+**compliance**: retell-conversational-flow-complete-guide
+
 ---
 
 ## All Reports (Chronological)
 
 | Date | Report | Channel | Complexity |
 |------|--------|---------|------------|
+| 2026-05-17 | [Retell Conversational Flow Complete Guide](reports/retell-conversational-flow-complete-guide.md) | Tech Tomlet | Advanced |
+| 2026-05-17 | [9 Free UI Component Libraries + AI](reports/free-ui-component-libraries-ai.md) | Ras Mic | Beginner |
+| 2026-05-17 | [Claude Design — 5 Use Cases](reports/claude-design-five-use-cases.md) | Peter Yang | Beginner |
+| 2026-05-17 | [Claude + NanoBanana Instagram Carousels](reports/claude-nanobanana-instagram-carousels.md) | Grow with Alex | Beginner |
+| 2026-05-17 | [Matt Pocock's .claude Folder (68K Stars)](reports/matt-pocock-claude-folder-open-sourced.md) | Bitwise AI | Beginner |
+| 2026-05-17 | [Mobbin MCP Design Inspiration](reports/mobbin-mcp-design-inspiration-claude.md) | Lukas Margerie | Intermediate |
+| 2026-05-17 | [Hermes + HyperFrames Video Generation](reports/hermes-hyperframes-video-generation.md) | Onchain AI Garage | Advanced |
+| 2026-05-17 | [AI UGC Studio in Claude Code](reports/ai-ugc-studio-claude-code-skills.md) | Mr. Pynk | Intermediate |
+| 2026-05-17 | [Grill With Docs — Ubiquitous Language Skill](reports/grill-with-docs-ubiquitous-language-skill.md) | Matt Pocock | Intermediate |
+| 2026-05-17 | [Codex /goal — iOS App Build](reports/codex-slash-goal-ios-app-build.md) | Zach Sells AI | Beginner |
+| 2026-05-17 | [Codex Infinite Canvas with Magic Path](reports/codex-infinite-canvas-magic-path.md) | Lukas Margerie | Intermediate |
+| 2026-05-17 | [Hermes + Claude Code OS Bridge](reports/hermes-claude-code-os-bridge.md) | Jack Roberts | Advanced |
+| 2026-05-17 | [Dogora: Open-Source Voice AI Platform](reports/dogora-open-source-voice-ai-platform.md) | Better Stack | Intermediate |
+| 2026-05-17 | [Solopreneur 16-Agent Harness](reports/solopreneur-16-agent-harness.md) | Jordan Urbs | Advanced |
 | 2026-05-13 | [Master Voice Agent Testing](reports/retell-voice-agent-testing-framework.md) | Tech Tomlet | Intermediate |
 | 2026-05-12 | [7 Tiny AI Agent Business Ideas](reports/genspark-claw-7-ai-business-ideas.md) | Greg Isenberg | Beginner |
 | 2026-05-12 | [AI Agency Sales System](reports/ai-agency-sales-system-discovery-call.md) | Vendasta / Luke Pierce | Intermediate |
